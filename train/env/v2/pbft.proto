@@ -1,0 +1,35 @@
+syntax = "proto3";
+
+message PbftPreprepare {
+    int32 sn = 1;
+    int32 view = 2;
+    int32 leader = 3;
+    Batch batch = 4;
+    bool aborted = 5;
+    int64 ts = 6;
+}
+
+message PbftPrepare {
+    int32 sn = 1;
+    int32 view = 2;
+    bytes digest = 3;
+}
+
+message PbftCommit {
+    int32 sn = 1;
+    int32 view = 2;
+    bytes digest = 3;
+    int64 ts = 4;
+}
+
+message Batch {
+    string data = 1;
+}
+
+message Empty {}
+
+service PbftService {
+    rpc SendPreprepare(PbftPreprepare) returns (Empty);
+    rpc SendPrepare(PbftPrepare) returns (Empty);
+    rpc SendCommit(PbftCommit) returns (Empty);
+}

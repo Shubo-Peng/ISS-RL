@@ -25,6 +25,16 @@ import (
 
 var Config configuration
 
+// TODO: Separate statistics for different servers
+var TotalRequests int64
+var TotalPayload int64
+var ProposedRequests [100]int64
+var PRPayload [100]int64
+var CommittedRequests [100]int64
+var TotalDelay [100]int64
+var SnSender [10000000]int32
+var ReceiveTs [40000000]int64
+
 type configuration struct {
 	LoggingLevelStr string `yaml:"Logging"`
 	LoggingLevel    zerolog.Level
@@ -51,8 +61,8 @@ type configuration struct {
 	Orderer           string `yaml:"Orderer"`
 	Manager           string `yaml:"Manager"`
 	Checkpointer      string `yaml:"Checkpointer"`
-	Failures     	  int    `yaml:"Failures"`
-	CrashTiming  	  string `yaml:"CrashTiming"`
+	Failures          int    `yaml:"Failures"`
+	CrashTiming       string `yaml:"CrashTiming"`
 	RandomSeed        int64  `yaml:"RandomSeed"`
 	NodeToLeaderRatio int    `yaml:"NodeToLeaderRatio"`
 
@@ -109,6 +119,29 @@ type configuration struct {
 	BatchVerifier             string `yaml:"BatchVerifier"`
 }
 
+func LoadParameters() {
+	filePath := "../../../train/parameters.yml"
+	file, err := ioutil.ReadFile(filePath)
+
+	if err != nil {
+		logger.Fatal().Err(err).Str("file", filePath).Msg("Could not read config file.")
+	}
+
+	err = yaml.Unmarshal(file, &Config)
+	if err != nil {
+		logger.Fatal().Err(err).Str("file", filePath).Msg("Could not unmarshal config file.")
+	}
+
+	logger.Debug().Int("BatchSize", Config.BatchSize).Msg("Config")
+	logger.Debug().Int("BatchTimeoutMs", Config.BatchTimeoutMs).Msg("Config")
+	// logger.Debug().Int("CheckpointInterval", Config.CheckpointInterval).Msg("Config")
+	// logger.Debug().Int("WatermarkWindowSize", Config.WatermarkWindowSize).Msg("Config")
+	// logger.Debug().Int("EpochLength", Config.EpochLength).Msg("Config")
+	// logger.Debug().Int("SegmentLength", Config.SegmentLength).Msg("Config")
+
+	Config.BatchTimeout = time.Duration(Config.BatchTimeoutMs) * time.Millisecond
+}
+
 func LoadFile(configFileName string) {
 	f, err := ioutil.ReadFile(configFileName)
 
@@ -153,7 +186,8 @@ func LoadFile(configFileName string) {
 	logger.Debug().Str("LeaderPolicy", Config.LeaderPolicy).Msg("Config")
 	logger.Debug().Int("DefaultLeaderBan", Config.DefaultLeaderBan).Msg("Config")
 	logger.Debug().Int("NumBuckets", Config.NumBuckets).Msg("Config")
-	logger.Debug().Int("BatchSize", Config.BatchTimeoutMs).Msg("Config")
+	logger.Debug().Int("BatchSize", Config.BatchSize).Msg("Config")
+	logger.Debug().Int("BatchTimeoutMs", Config.BatchTimeoutMs).Msg("Config")
 	logger.Debug().Bool("DisabledViewChange", Config.DisabledViewChange).Msg("Config")
 	logger.Debug().Int("ViewChangeTimeout", Config.ViewChangeTimeoutMs).Msg("Config")
 	logger.Debug().Int("ClientTraceSampling", Config.ClientTraceSampling).Msg("Config")

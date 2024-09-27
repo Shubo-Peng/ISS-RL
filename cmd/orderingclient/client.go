@@ -1,6 +1,7 @@
 package main
 
 import (
+	"crypto/rand"
 	"fmt"
 	"os"
 	"sort"
@@ -8,8 +9,6 @@ import (
 	"sync/atomic"
 	"time"
 
-	"github.com/rs/zerolog"
-	logger "github.com/rs/zerolog/log"
 	"github.com/hyperledger-labs/mirbft/config"
 	"github.com/hyperledger-labs/mirbft/crypto"
 	"github.com/hyperledger-labs/mirbft/discovery"
@@ -19,12 +18,20 @@ import (
 	pb "github.com/hyperledger-labs/mirbft/protobufs"
 	"github.com/hyperledger-labs/mirbft/request"
 	"github.com/hyperledger-labs/mirbft/tracing"
+	"github.com/rs/zerolog"
+	logger "github.com/rs/zerolog/log"
 	"google.golang.org/grpc"
 )
 
 const (
 	reqFanout = 3
+	// payloadsize will change every $requestsThreshold requests submitted
+	requestsThreshold = 2000
 )
+
+var submittedRequests = 0
+var timestamp_rate = int64(0)
+var timestamp_size = int64(0)
 
 type client struct {
 	sync.Mutex
@@ -236,8 +243,8 @@ func (c *client) Run(wg *sync.WaitGroup) {
 	var ordererIDs []int32
 	if config.Config.LeaderPolicy == "SimulatedRandomFailures" {
 		ordererIDs = manager.NewLeaderPolicy(config.Config.LeaderPolicy).GetLeaders(0)
-	//} else if config.Config.Failures > 0 && (config.Config.CrashTiming == "EpochStart" || config.Config.CrashTiming == "EpochEnd") {
-	//	ordererIDs = membership.CorrectPeers()
+		//} else if config.Config.Failures > 0 && (config.Config.CrashTiming == "EpochStart" || config.Config.CrashTiming == "EpochEnd") {
+		//	ordererIDs = membership.CorrectPeers()
 	} else {
 		ordererIDs = membership.AllNodeIDs()
 	}
@@ -275,9 +282,12 @@ func (c *client) Run(wg *sync.WaitGroup) {
 
 		timeBetweenRequests := int64(1000000 / config.Config.RequestRate)
 		nextSubmitTime := time.Now().UnixNano() / 1000 // Submit first request immediately
+		timestamp_rate = time.Now().UnixNano() / 1000000000
+		timestamp_size = time.Now().UnixNano() / 1000000000
 
 		// Submit requests
 		var i int32
+		tmp_count, tmp_cnt := 0, 0
 		for i = int32(0); i < int32(c.numRequests) && atomic.LoadInt32(&c.stop) == 0; i++ {
 
 			// Before submitting each request, wait for some time to respect the maximum request rate.
@@ -306,7 +316,11 @@ func (c *client) Run(wg *sync.WaitGroup) {
 			}
 
 			// blocks while watermark window is full
-			c.submitRequest(i)
+			tmp_count = tmp_count + 1
+			if tmp_count == 100 {
+				c.submitRequest(int32(tmp_cnt), &timeBetweenRequests)
+				tmp_count, tmp_cnt = 0, tmp_cnt+1
+			}
 		}
 		c.log.Info().Int32("nReq", i).Msg("Finished submitting requests.")
 		atomic.StoreInt32(&c.stop, 1) // A non-zero value of the stop variable halts the request submissions.
@@ -368,7 +382,10 @@ func (c *client) sendRequests(ordererID int32, clientStub pb.Messenger_RequestCl
 		// Send requests as long as there are any.
 		for req := range ch {
 			c.Lock()
-			c.sentTimestamps[req.RequestId.ClientSn] = time.Now().UnixNano() / 1000 // In us
+			// for i := int32(0); i < 100; i++ {
+			// 	c.sentTimestamps[req.RequestId.ClientSn*100+i] = time.Now().UnixNano()/1000 + int64(1000000/config.Config.RequestRate*int(i)) // In us
+			// }
+			c.sentTimestamps[req.RequestId.ClientSn] = time.Now().UnixNano() / 1000
 			c.Unlock()
 			if err := clientStub.Send(req); err != nil {
 				c.log.Error().Err(err).
@@ -391,7 +408,7 @@ func (c *client) sendRequests(ordererID int32, clientStub pb.Messenger_RequestCl
 
 // Submits a single client request with sequence number seqNr.
 // Blocks until the request fits in the client watermark window.
-func (c *client) submitRequest(seqNr int32) {
+func (c *client) submitRequest(seqNr int32, timeBetweenRequests *int64) {
 
 	var req *pb.ClientRequest = nil
 	if config.Config.PrecomputeRequests {
@@ -403,7 +420,10 @@ func (c *client) submitRequest(seqNr int32) {
 	// For request creation, the client need not be locked.
 	c.Lock()
 
-	c.submitTimestamps[seqNr] = time.Now().UnixNano() / 1000 // In us
+	// for i := int32(0); i < 100; i++ {
+	// 	c.submitTimestamps[seqNr*100+i] = time.Now().UnixNano()/1000 + int64(1000000/config.Config.RequestRate*int(i)) // In us
+	// }
+	c.submitTimestamps[seqNr] = time.Now().UnixNano() / 1000
 
 	// Write request to the wartermark window channel.
 	// The buffer of this channel is as big as the watermark window size and requests stay in this channel until
@@ -436,6 +456,42 @@ func (c *client) submitRequest(seqNr int32) {
 	for _, ordererID := range destIDs {
 		if c.reqSinks[ordererID] != nil {
 			c.reqSinks[ordererID] <- req
+			// TODO: change the payLoadSize and requestsRate every $requestsThreshold requests submitted
+			// submittedRequests += 1
+			// if submittedRequests >= requestsThreshold {
+			if time.Now().UnixNano()/1000000000-timestamp_rate > 100 {
+				c.log.Info().Msg("Change request rate.")
+				// randomRequestPayload will vary randomly within the range plus or minus 70% of the original
+				// factor := rand.Float64()*1.4 - 0.7
+				// randomRequestPayload = make([]byte, int(float64(config.Config.RequestPayloadSize)*(1+factor)))
+				// rand.Read(randomRequestPayload)
+				// requestRate will vary randomly within the range plus or minus 70% of the original
+				// factor := rand.Float64()*1.4 - 0.7
+				// *timeBetweenRequests = int64(1000000 / int(float64(config.Config.RequestRate)*(1+factor)))
+				// submittedRequests = 0
+				timestamp_rate = time.Now().UnixNano() / 1000000000
+				if config.Config.RequestRate == 1000 {
+					config.Config.RequestRate = 10000
+				} else if config.Config.RequestRate == 10000 {
+					config.Config.RequestRate = 100
+				} else {
+					config.Config.RequestRate = 1000
+				}
+				*timeBetweenRequests = int64(1000000 / config.Config.RequestRate)
+			}
+			if time.Now().UnixNano()/1000000000-timestamp_size > 30 {
+				c.log.Info().Msg("Change request size.")
+				timestamp_size = time.Now().UnixNano() / 1000000000
+				if config.Config.RequestPayloadSize == 200 {
+					config.Config.RequestPayloadSize = 1000
+				} else if config.Config.RequestPayloadSize == 1000 {
+					config.Config.RequestPayloadSize = 50
+				} else if config.Config.RequestPayloadSize == 50 {
+					config.Config.RequestPayloadSize = 200
+				}
+				randomRequestPayload = make([]byte, config.Config.RequestPayloadSize)
+				rand.Read(randomRequestPayload)
+			}
 		} else {
 			c.log.Warn().Int32("ordererId", ordererID).Msg("Not sending request to orderer. No connection established.")
 		}

@@ -23,7 +23,7 @@ master_machine=cloud-machine-templates/dedicated-machine-32-CPUs-32GB-RAM-fra02.
 #master_machine=cloud-machine-templates/dedicated-machine-32-CPUs-32GB-RAM-mil01.cmt
 #master_machine=cloud-machine-templates/small-machine-mil01.cmt
 #master_machine=cloud-machine-templates/small-machine-fra02.cmt
-master_port=9999
+master_port=9997
 machine_status_poll_period=5
 
 # The maximum number of open files to be set at remote machines.

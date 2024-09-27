@@ -3,7 +3,8 @@ import sys
 from collections import defaultdict
 import fileinput
 
-CLIENT_TIMEOUT = 480000 # In milliseconds
+# CLIENT_TIMEOUT = 480000 # In milliseconds
+CLIENT_TIMEOUT = 400000000 # In milliseconds
 SIGNAL_DELAY = "5s"
 STOP_SLAVES_DELAY = "3s"
 SCP_RETRY_COUNT = "10"
@@ -14,7 +15,7 @@ OLDMIR_SERVER_CONFIG = "config/oldmir-config-server.yml"
 OLDMIR_CLIENT_CONFIG = "config/oldmir-config-client.yml"
 LOCAL_MASTER_STATUS_FILE = "master-status"
 LOCAL_IP_ADDRESS = "127.0.0.1"
-LOCAL_MASTER_PORT = "9999"
+LOCAL_MASTER_PORT = "9997"
 
 
 lastFinished = -1

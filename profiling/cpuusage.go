@@ -15,12 +15,14 @@
 package profiling
 
 import (
+	"fmt"
 	"math"
+	"os"
 	"time"
 
 	linuxproc "github.com/c9s/goprocinfo/linux"
-	logger "github.com/rs/zerolog/log"
 	"github.com/hyperledger-labs/mirbft/tracing"
+	logger "github.com/rs/zerolog/log"
 )
 
 func StartCPUTracing(trace tracing.Trace, interval time.Duration) {
@@ -29,6 +31,22 @@ func StartCPUTracing(trace tracing.Trace, interval time.Duration) {
 		for {
 			usage := GetCPUUsage([]string{"Load", "System"}, interval)
 			trace.Event(tracing.CPU_USAGE, int64(math.Round(float64(usage[0]*100))), int64(math.Round(float64(usage[1])*100)))
+		}
+	}()
+}
+
+func MonitorCPU(ID int32) {
+	go func() {
+		filePath := fmt.Sprintf("CPU_Usage%d.txt", ID)
+		file, err := os.Create(filePath)
+		if err != nil {
+			return
+		}
+		defer file.Close()
+		for {
+			usage := GetCPUUsage([]string{"Load", "System"}, 2000*time.Millisecond)
+			fmt.Fprintf(file, "%d, Load: %d, System: %d\n", time.Now().UnixNano(), int64(math.Round(float64(usage[0]*100))), int64(math.Round(float64(usage[1])*100)))
+			// time.Sleep(2000 * time.Millisecond)
 		}
 	}()
 }

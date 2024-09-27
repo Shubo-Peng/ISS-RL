@@ -15,11 +15,17 @@
 package log
 
 import (
+	"fmt"
+	"os"
+	"runtime"
+	"runtime/debug"
 	"sync"
+	"time"
 
-	logger "github.com/rs/zerolog/log"
+	"github.com/hyperledger-labs/mirbft/config"
 	pb "github.com/hyperledger-labs/mirbft/protobufs"
 	"github.com/hyperledger-labs/mirbft/tracing"
+	logger "github.com/rs/zerolog/log"
 )
 
 const (
@@ -33,6 +39,9 @@ const (
 )
 
 var (
+	// output file
+	file, _ = os.OpenFile("batches.txt", os.O_CREATE|os.O_WRONLY|os.O_APPEND, 0777)
+
 	// All entries indexed by sequence number
 	entries = sync.Map{}
 
@@ -162,11 +171,12 @@ func EntriesOutOfOrder() chan *Entry {
 
 // Blocks until entry with sequence number sn and all previous entries are committed.
 // TODO: Do we really want to wait until all previous entries are committed too?
-//       This can unnecessarily delay a segment just because there is a hole somewhere in the past.
-//       (Move the notification to CommitEntry instead of PublishEntries?, If yes, watch out for the lock!)
-//       Added after changes to the SimpleCheckpointer:
-//         SimpleCheckpointer relies on the absence of holes guaranteed by WaitForEntry.
-//         The Manager relies on the absence of holes for consistent watermark advancement.
+//
+//	This can unnecessarily delay a segment just because there is a hole somewhere in the past.
+//	(Move the notification to CommitEntry instead of PublishEntries?, If yes, watch out for the lock!)
+//	Added after changes to the SimpleCheckpointer:
+//	  SimpleCheckpointer relies on the absence of holes guaranteed by WaitForEntry.
+//	  The Manager relies on the absence of holes for consistent watermark advancement.
 func WaitForEntry(sn int32) {
 
 	// Need this lock to protect from concurrent publishers.
@@ -268,6 +278,21 @@ func publishEntries() {
 		// On each iteration, push new log Entry to all in-order subscriber channels.
 		publishEntry(entry.(*Entry), logSubscribers)
 
+		// Commit, TODO: calculate the total delay and the number of committed requests
+		{
+			tmpEntry := entry.(*Entry)
+			if config.SnSender[tmpEntry.Sn] > 0 {
+				sender := config.SnSender[tmpEntry.Sn] - 1
+				// config.TotalDelay[sender] += (tmpEntry.CommitTs - tmpEntry.ProposeTs) * int64(len(tmpEntry.Batch.Requests))
+				config.CommittedRequests[sender] += int64(len(tmpEntry.Batch.Requests))
+				file.WriteString(fmt.Sprintf("%d: Batch %d with %d requests has been committed\n", time.Now().UnixNano(), tmpEntry.Sn, len(tmpEntry.Batch.Requests)))
+				for _, request := range tmpEntry.Batch.Requests {
+					// config.PRPayload[sender] -= int64(len(request.Payload))
+					config.TotalDelay[sender] += tmpEntry.CommitTs - config.ReceiveTs[request.RequestId.ClientSn]
+				}
+			}
+		}
+
 		// Notify entry subscribers
 		// The Manager relies on an entry to be published (pushed to all log subscribers)
 		// before the entry subscribers are notified.
@@ -299,4 +324,16 @@ func publishEntry(e *Entry, subscribers []chan *Entry) {
 			logger.Warn().Int32("sn", e.Sn).Msg("Unblocking.")
 		}
 	}
+}
+
+func FreeOldEntries(snStart int32, snEnd int32) {
+	entries.Range(func(key, value interface{}) bool {
+		entries.Delete(key)
+		return true
+	})
+	entries = sync.Map{}
+	for i := 0; i < 3; i++ {
+		runtime.GC()
+	}
+	debug.FreeOSMemory()
 }

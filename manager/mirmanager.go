@@ -18,7 +18,6 @@ import (
 	"sort"
 	"sync"
 
-	logger "github.com/rs/zerolog/log"
 	"github.com/hyperledger-labs/mirbft/config"
 	"github.com/hyperledger-labs/mirbft/log"
 	"github.com/hyperledger-labs/mirbft/membership"
@@ -28,7 +27,10 @@ import (
 	"github.com/hyperledger-labs/mirbft/statetransfer"
 	"github.com/hyperledger-labs/mirbft/tracing"
 	"github.com/hyperledger-labs/mirbft/util"
+	logger "github.com/rs/zerolog/log"
 )
+
+var mutex sync.Mutex
 
 // Holds the state of the MirManager.
 type MirManager struct {
@@ -83,6 +85,12 @@ func NewMirManager() *MirManager {
 		epochEntryBuffer:    util.NewChannelBuffer(maxEpochLength),
 		currentSuspects:     make(map[int32]bool),
 	}
+}
+
+func (mm *MirManager) GETLEADERS() []int32 {
+	mutex.Lock()
+	defer mutex.Unlock()
+	return mm.leaderPolicy.GetLeaders(mm.epoch)
 }
 
 // Starts the MirManager. Afer the call to Start(), the MirManager starts observing the log and:
@@ -186,8 +194,12 @@ func (mm *MirManager) handleLogEntries(wg *sync.WaitGroup) {
 			// Only after the watermarks are up to date, we can move on to the next epoch and create new segments.
 			// This cannot happen before or even concurrently, as the orderers might misinterpret incoming messages
 			// if all the state is not up to date.
+			mutex.Lock()
 			mm.epoch++
+			mutex.Unlock()
 			mm.currentSuspects = make(map[int32]bool)
+			// TODO: This is where the epoch changes, modify the config By reading file and
+			// output the statistics
 
 			newLeaders := mm.leaderPolicy.GetLeaders(mm.epoch)
 

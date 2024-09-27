@@ -1,15 +1,15 @@
 package main
 
 import (
-	"math/rand"
+	"crypto/rand"
 	"os"
 	"sync"
 
-	"github.com/rs/zerolog"
-	logger "github.com/rs/zerolog/log"
 	"github.com/hyperledger-labs/mirbft/config"
 	"github.com/hyperledger-labs/mirbft/membership"
 	"github.com/hyperledger-labs/mirbft/profiling"
+	"github.com/rs/zerolog"
+	logger "github.com/rs/zerolog/log"
 )
 
 var (
@@ -78,6 +78,7 @@ func main() {
 
 	// Generate random request payload
 	randomRequestPayload = make([]byte, config.Config.RequestPayloadSize)
+	// randomRequestPayload = make([]byte, 0)
 	rand.Read(randomRequestPayload)
 
 	logger.Info().

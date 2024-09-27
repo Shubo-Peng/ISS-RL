@@ -17,11 +17,13 @@ package orderer
 import (
 	"bytes"
 	"fmt"
+	"os"
+	"runtime"
+	"runtime/debug"
 	"sync"
 	"time"
 
 	"github.com/golang/protobuf/proto"
-	logger "github.com/rs/zerolog/log"
 	"github.com/hyperledger-labs/mirbft/announcer"
 	"github.com/hyperledger-labs/mirbft/config"
 	"github.com/hyperledger-labs/mirbft/crypto"
@@ -33,11 +35,14 @@ import (
 	"github.com/hyperledger-labs/mirbft/request"
 	"github.com/hyperledger-labs/mirbft/statetransfer"
 	"github.com/hyperledger-labs/mirbft/tracing"
+	logger "github.com/rs/zerolog/log"
 )
 
 const (
 	catchupDelay = 400 * time.Millisecond
 )
+
+var file, _ = os.OpenFile("batches.txt", os.O_CREATE|os.O_WRONLY|os.O_APPEND, 0777)
 
 // TODO: Consolidate the segment-internal and the global checkpoints.
 
@@ -98,8 +103,8 @@ type viewChangeMsg struct {
 
 func (pi *pbftInstance) newViewChangeInfo(view int32) {
 	viewChange := &viewChangeInfo{
-		view: view,
-		s:    make(map[int32]*viewChangeMsg),
+		view:                       view,
+		s:                          make(map[int32]*viewChangeMsg),
 		fetchingMissingPreprepares: false,
 	}
 	pi.viewChange[view] = viewChange
@@ -145,6 +150,8 @@ func (pi *pbftInstance) init(seg manager.Segment, orderer *PbftOrderer) {
 	// Next indext of sn of the segment to propose
 	// pi.next = 0
 
+	pi.freeMemory()
+
 	// Attach segment to the instance
 	pi.segment = seg
 
@@ -181,6 +188,54 @@ func (pi *pbftInstance) init(seg manager.Segment, orderer *PbftOrderer) {
 	pi.startTs = time.Now().UnixNano()
 }
 
+func (pi *pbftInstance) freeMemory() {
+	for k := range pi.batches {
+		for j := range pi.batches[k] {
+			delete(pi.batches[k], j)
+		}
+		pi.batches[k] = nil
+	}
+	pi.batches = nil
+	runtime.GC()
+	debug.FreeOSMemory()
+
+	for k := range pi.checkpointMsgs {
+		delete(pi.checkpointMsgs, k)
+	}
+	pi.checkpointMsgs = nil
+	runtime.GC()
+	debug.FreeOSMemory()
+
+	for k := range pi.checkpointDigests {
+		delete(pi.checkpointDigests, k)
+	}
+	pi.checkpointDigests = nil
+	runtime.GC()
+	debug.FreeOSMemory()
+
+	for k := range pi.viewChange {
+		delete(pi.viewChange, k)
+	}
+	pi.viewChange = nil
+	runtime.GC()
+	debug.FreeOSMemory()
+
+	if pi.backlog != nil {
+		for k := range pi.backlog.backlogMsgs {
+			delete(pi.backlog.backlogMsgs, k)
+		}
+		pi.backlog.backlogMsgs = nil
+		runtime.GC()
+		debug.FreeOSMemory()
+	}
+
+	if pi.segment != nil {
+		log.FreeOldEntries(pi.segment.FirstSN(), pi.segment.LastSN())
+	}
+	runtime.GC()
+	debug.FreeOSMemory()
+}
+
 func (pi *pbftInstance) lead() {
 
 	logger.Debug().Int("segID", pi.segment.SegID()).Msg("Leading segment.")
@@ -188,14 +243,12 @@ func (pi *pbftInstance) lead() {
 
 	// Simulate a straggler.
 	if membership.SimulatedCrashes[membership.OwnID] != nil && config.Config.CrashTiming == "Straggler" {
-		config.Config.BatchTimeoutMs = int(0.5*float64(config.Config.ViewChangeTimeoutMs))
+		config.Config.BatchTimeoutMs = int(0.5 * float64(config.Config.ViewChangeTimeoutMs))
 		config.Config.BatchTimeout = time.Duration(config.Config.BatchTimeoutMs) * time.Millisecond
 		logger.Info().Str("byzantine", config.Config.CrashTiming).Int("batchTimeout", config.Config.BatchTimeoutMs)
 		// we set the batchsize to an infinate practically size, so that we always wait for the timeout
 		batchSize = 1000000000
 	}
-
-
 
 	// Send a proposal for each sequence number in the Segment.
 	for _, sn := range pi.segment.SNs() {
@@ -227,7 +280,11 @@ func (pi *pbftInstance) lead() {
 				},
 			},
 		}
+
 		pi.serializer.serialize(msg)
+
+		// Propose, TODO: output the correct number of requests
+		// file.WriteString(fmt.Sprintf("%d: Server %d proposed batch %d contained %d requests\n", time.Now().UnixNano(), membership.OwnID, sn, 1))
 
 		// Wait until the batch is actually cut. Otherwise this goroutine would just loop quickly through
 		// all sequence numbers as soon as there is more than BatchSize requests in the buckets.
@@ -260,8 +317,8 @@ func (pi *pbftInstance) proposeSN(preprepare *pb.PbftPreprepare, sn int32) {
 	// Simulate a straggler.
 	batchSize := pi.segment.BatchSize()
 	if membership.SimulatedCrashes[membership.OwnID] != nil && config.Config.CrashTiming == "Straggler" {
-			// we cut an empty batch to maximize damage
-			batchSize = 0
+		// we cut an empty batch to maximize damage
+		batchSize = 0
 	}
 
 	// Create the actual request batch. The timeout is 0, since the we already waited for the batch in pi.lead().
@@ -309,6 +366,14 @@ func (pi *pbftInstance) proposeSN(preprepare *pb.PbftPreprepare, sn int32) {
 	}
 
 	tracing.MainTrace.Event(tracing.PROPOSE, int64(sn), int64(len(batch.Requests)))
+
+	// Propose
+	config.SnSender[sn] = membership.OwnID + 1
+	config.ProposedRequests[membership.OwnID] += int64(len(batch.Requests))
+	// for _, request := range batch.Requests {
+	// 	config.PRPayload[membership.OwnID] += int64(len(request.Msg.Payload))
+	// }
+	file.WriteString(fmt.Sprintf("%d: Server %d proposed batch %d that contained %d requests\n", time.Now().UnixNano(), membership.OwnID, sn, len(batch.Requests)))
 
 	// Enqueue the message for all followers
 	for _, nodeID := range pi.segment.Followers() {
@@ -552,7 +617,7 @@ func (pi *pbftInstance) handleCommit(commit *pb.PbftCommit, msg *pb.ProtocolMess
 	//logger.Trace().Int32("sn", sn).
 	//	Int32("view", pi.view).
 	//	Int32("senderID", senderID).
-	//	Msg("Handling COMMIT.")
+	//	Msg("Handling .")
 
 	if sn != commit.Sn {
 		return fmt.Errorf("malformed message from %d: header sequence number doesn't match", senderID)
@@ -1914,7 +1979,7 @@ func (pi *pbftInstance) setViewChangeTimer(sn int32, after time.Duration) {
 				View: pi.view,
 			}},
 	}
-	batch.viewChangeTimer = time.AfterFunc(pi.viewChangeTimeout + after, func() { pi.serializer.serialize(msg) })
+	batch.viewChangeTimer = time.AfterFunc(pi.viewChangeTimeout+after, func() { pi.serializer.serialize(msg) })
 }
 
 // Looks for the most recent batch with a preprepare message with sequence number sn in previous views.
@@ -1982,8 +2047,8 @@ func (pi *pbftInstance) startView(view int32) {
 			// If we have a median commitTime from previous epochs
 			// Set an adaptive timeout for each batch
 			if pi.orderer.commitTime != 0 {
-				pi.setViewChangeTimer(sn, time.Duration(i) * config.Config.BatchTimeout + pi.orderer.commitTime)
-				logger.Info().Int64("initial",int64(config.Config.BatchTimeout)).Int64("advanced",int64(time.Duration(i) * config.Config.BatchTimeout + pi.orderer.commitTime)).Msg("Advanced timeout")
+				pi.setViewChangeTimer(sn, time.Duration(i)*config.Config.BatchTimeout+pi.orderer.commitTime)
+				logger.Info().Int64("initial", int64(config.Config.BatchTimeout)).Int64("advanced", int64(time.Duration(i)*config.Config.BatchTimeout+pi.orderer.commitTime)).Msg("Advanced timeout")
 			}
 
 			// Except for at initialization, carry over state from the previous view.

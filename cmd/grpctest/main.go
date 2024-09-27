@@ -12,10 +12,10 @@ import (
 	"os"
 	"strconv"
 
-	logger "github.com/rs/zerolog/log"
 	"github.com/hyperledger-labs/mirbft/config"
 	"github.com/hyperledger-labs/mirbft/messenger"
 	pb "github.com/hyperledger-labs/mirbft/protobufs"
+	logger "github.com/rs/zerolog/log"
 	"google.golang.org/grpc"
 	"google.golang.org/grpc/credentials"
 )
@@ -55,7 +55,7 @@ func main() {
 	if os.Args[1] == "server" {
 
 		if len(os.Args) > 2 && os.Args[2] == "--tls" {
-			useTLS = true
+			useTLS = false
 		}
 
 		wg.Add(1)
@@ -65,7 +65,7 @@ func main() {
 	} else if os.Args[1] == "client" {
 
 		if len(os.Args) > 3 && os.Args[3] == "--tls" {
-			useTLS = true
+			useTLS = false
 		}
 
 		wg.Add(1)

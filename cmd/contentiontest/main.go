@@ -9,17 +9,17 @@ import (
 	"sync/atomic"
 	"time"
 
-	"github.com/rs/zerolog"
 	"github.com/hyperledger-labs/mirbft/profiling"
+	"github.com/rs/zerolog"
 
 	"net"
 	"os"
 	"strconv"
 
-	logger "github.com/rs/zerolog/log"
 	"github.com/hyperledger-labs/mirbft/config"
 	"github.com/hyperledger-labs/mirbft/messenger"
 	pb "github.com/hyperledger-labs/mirbft/protobufs"
+	logger "github.com/rs/zerolog/log"
 	"google.golang.org/grpc"
 	"google.golang.org/grpc/credentials"
 )
@@ -72,7 +72,7 @@ func main() {
 
 		for len(os.Args) > 0 {
 			if os.Args[0] == "--tls" {
-				useTLS = true
+				useTLS = false
 				tlsDir = os.Args[1]
 				os.Args = os.Args[1:]
 				logger.Info().Str("tlsDir", tlsDir).Msg("Using TLS.")
@@ -124,7 +124,7 @@ func main() {
 
 		for len(os.Args) > 0 {
 			if os.Args[0] == "--tls" {
-				useTLS = true
+				useTLS = false
 				tlsDir = os.Args[1]
 				os.Args = os.Args[1:]
 				logger.Info().Str("tlsDir", tlsDir).Msg("Using TLS.")
