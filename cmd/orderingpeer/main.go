@@ -39,7 +39,7 @@ var statistics [10]linkedList
 var msg_lock sync.Mutex
 
 const (
-	trainer_addr = "10.16.51.191:32767"
+	trainer_addr = "localhost:32767"
 )
 
 func main() {
