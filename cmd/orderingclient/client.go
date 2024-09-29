@@ -317,7 +317,7 @@ func (c *client) Run(wg *sync.WaitGroup) {
 
 			// blocks while watermark window is full
 			tmp_count = tmp_count + 1
-			if tmp_count == 100 {
+			if tmp_count == 1 {
 				c.submitRequest(int32(tmp_cnt), &timeBetweenRequests)
 				tmp_count, tmp_cnt = 0, tmp_cnt+1
 			}
