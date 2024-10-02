@@ -1,0 +1,533 @@
+{"level":"debug","Logging":"info","time":"2024-09-27T20:06:53+08:00","message":"Config"}
+{"level":"debug","UseTLS":false,"time":"2024-09-27T20:06:53+08:00","message":"Config"}
+{"level":"debug","CACertFile":"tls-data/ca.pem","time":"2024-09-27T20:06:53+08:00","message":"Config"}
+{"level":"debug","KeyFile":"tls-data/auth.key","time":"2024-09-27T20:06:53+08:00","message":"Config"}
+{"level":"debug","CertFile":"tls-data/auth.pem","time":"2024-09-27T20:06:53+08:00","message":"Config"}
+{"level":"debug","PriorityConnections":2,"time":"2024-09-27T20:06:53+08:00","message":"Config"}
+{"level":"debug","BasicConnections":4,"time":"2024-09-27T20:06:53+08:00","message":"Config"}
+{"level":"debug","TestConnections":false,"time":"2024-09-27T20:06:53+08:00","message":"Config"}
+{"level":"debug","ExcessConnections":1,"time":"2024-09-27T20:06:53+08:00","message":"Config"}
+{"level":"debug","ConnectionTestMsgs":4,"time":"2024-09-27T20:06:53+08:00","message":"Config"}
+{"level":"debug","ConnectionTestPayload":131072,"time":"2024-09-27T20:06:53+08:00","message":"Config"}
+{"level":"debug","OutMessageBufsize":1024,"time":"2024-09-27T20:06:53+08:00","message":"Config"}
+{"level":"debug","OutMessageBufsize":1,"time":"2024-09-27T20:06:53+08:00","message":"Config"}
+{"level":"debug","ThroughputCap":131072000,"time":"2024-09-27T20:06:53+08:00","message":"Config"}
+{"level":"debug","StragglerTolerance":1000,"time":"2024-09-27T20:06:53+08:00","message":"Config"}
+{"level":"debug","BatchSizeIncrement":256,"time":"2024-09-27T20:06:53+08:00","message":"Config"}
+{"level":"debug","Orderer":"Pbft","time":"2024-09-27T20:06:53+08:00","message":"Config"}
+{"level":"debug","Manager":"Mir","time":"2024-09-27T20:06:53+08:00","message":"Config"}
+{"level":"debug","Failures":0,"time":"2024-09-27T20:06:53+08:00","message":"Config"}
+{"level":"debug","CrashTiming":"EpochStart","time":"2024-09-27T20:06:53+08:00","message":"Config"}
+{"level":"debug","CheckpointInterval":256,"time":"2024-09-27T20:06:53+08:00","message":"Config"}
+{"level":"debug","WatermarkWindowSize":256,"time":"2024-09-27T20:06:53+08:00","message":"Config"}
+{"level":"debug","EpochLength":256,"time":"2024-09-27T20:06:53+08:00","message":"Config"}
+{"level":"debug","SegmentLength":256,"time":"2024-09-27T20:06:53+08:00","message":"Config"}
+{"level":"debug","WaitForCheckpoints":true,"time":"2024-09-27T20:06:53+08:00","message":"Config"}
+{"level":"debug","ClientWatermarkWindowSize":4194304,"time":"2024-09-27T20:06:53+08:00","message":"Config"}
+{"level":"debug","ClientRequestBacklogSize":4194304,"time":"2024-09-27T20:06:53+08:00","message":"Config"}
+{"level":"debug","RandomSeed":2479,"time":"2024-09-27T20:06:53+08:00","message":"Config"}
+{"level":"debug","NodeToLeaderRatio":1,"time":"2024-09-27T20:06:53+08:00","message":"Config"}
+{"level":"debug","LeaderPolicy":"Single","time":"2024-09-27T20:06:53+08:00","message":"Config"}
+{"level":"debug","DefaultLeaderBan":2,"time":"2024-09-27T20:06:53+08:00","message":"Config"}
+{"level":"debug","NumBuckets":16,"time":"2024-09-27T20:06:53+08:00","message":"Config"}
+{"level":"debug","BatchSize":1000,"time":"2024-09-27T20:06:53+08:00","message":"Config"}
+{"level":"debug","BatchTimeoutMs":1000,"time":"2024-09-27T20:06:53+08:00","message":"Config"}
+{"level":"debug","DisabledViewChange":false,"time":"2024-09-27T20:06:53+08:00","message":"Config"}
+{"level":"debug","ViewChangeTimeout":60000,"time":"2024-09-27T20:06:53+08:00","message":"Config"}
+{"level":"debug","ClientTraceSampling":10,"time":"2024-09-27T20:06:53+08:00","message":"Config"}
+{"level":"debug","EventBufferSize":2097152,"time":"2024-09-27T20:06:53+08:00","message":"Config"}
+{"level":"debug","TraceSampling":1,"time":"2024-09-27T20:06:53+08:00","message":"Config"}
+{"level":"debug","ClientsPerProcess":1,"time":"2024-09-27T20:06:53+08:00","message":"Config"}
+{"level":"debug","RequestsPerClient":2400000,"time":"2024-09-27T20:06:53+08:00","message":"Config"}
+{"level":"debug","ClientRunTime":1200000,"time":"2024-09-27T20:06:53+08:00","message":"Config"}
+{"level":"debug","RequestRate":1000,"time":"2024-09-27T20:06:53+08:00","message":"Config"}
+{"level":"debug","HardRequestRateLimit":false,"time":"2024-09-27T20:06:53+08:00","message":"Config"}
+{"level":"debug","RequestPayloadSize":200,"time":"2024-09-27T20:06:53+08:00","message":"Config"}
+{"level":"debug","SignRequests":true,"time":"2024-09-27T20:06:53+08:00","message":"Config"}
+{"level":"debug","ClientPrivKeyFile":"tls-data/client-ecdsa-256.key","time":"2024-09-27T20:06:53+08:00","message":"Config"}
+{"level":"debug","ClientPubKeyFile":"tls-data/client-ecdsa-256.pem","time":"2024-09-27T20:06:53+08:00","message":"Config"}
+{"level":"debug","PrecomputeRequests":false,"time":"2024-09-27T20:06:53+08:00","message":"Config"}
+{"level":"debug","RequestHandlerThreads":32,"time":"2024-09-27T20:06:53+08:00","message":"Config"}
+{"level":"debug","RequestInputChannelBuffer":8192,"time":"2024-09-27T20:06:53+08:00","message":"Config"}
+{"level":"debug","BatchVerifier":"external","time":"2024-09-27T20:06:53+08:00","message":"Config"}
+20:06:53.263 INF Registered with discovery server. numPeers=4 ownID=3
+20:06:53.264 INF Profiling enabled.
+20:06:53.264 INF Setting up profiling.
+20:06:53.264 INF Started Profiler: CPU
+20:06:53.264 INF Started Profiler: BLOCK
+20:06:53.264 INF Started Profiler: MUTEX
+20:06:53.264 INF Profiler will stop on signal. exit=true
+20:06:53.265 INF Tracing will stop on signal. exit=false
+20:06:53.265 INF Started tracing. traceFile=experiment-output/0000/slave-000/peer.trc
+20:06:53.266 INF Connecting to peer. addr=127.0.0.1:10022 basicConns=4 priorityConns=2
+20:06:53.266 INF Listening for connections. port=10033 useTLS=false
+20:06:53.266 INF Connecting to peer. addr=127.0.0.1:10000 basicConns=4 priorityConns=2
+20:06:53.266 INF Connecting to peer. addr=127.0.0.1:10011 basicConns=4 priorityConns=2
+20:06:53.266 INF Connecting to peer. addr=127.0.0.1:10033 basicConns=4 priorityConns=2
+20:06:53.274 INF Incoming connection for protocol messages. addr=127.0.0.1:49892
+20:06:53.275 INF Incoming connection for protocol messages. addr=127.0.0.1:49876
+20:06:53.279 INF Incoming connection for protocol messages. addr=127.0.0.1:49930
+20:06:53.281 INF Incoming connection for protocol messages. addr=127.0.0.1:49968
+20:06:53.282 INF Incoming connection for protocol messages. addr=127.0.0.1:49922
+20:06:53.282 INF Incoming connection for protocol messages. addr=127.0.0.1:50014
+20:06:53.284 INF Incoming connection for protocol messages. addr=127.0.0.1:49928
+20:06:53.284 INF Incoming connection for protocol messages. addr=127.0.0.1:49910
+20:06:53.285 INF Incoming connection for protocol messages. addr=127.0.0.1:49984
+20:06:53.286 INF Incoming connection for protocol messages. addr=127.0.0.1:50000
+20:06:53.280 INF Incoming connection for protocol messages. addr=127.0.0.1:49906
+20:06:53.287 INF Incoming connection for protocol messages. addr=127.0.0.1:50044
+20:06:53.287 INF Incoming connection for protocol messages. addr=127.0.0.1:50022
+20:06:53.286 INF Incoming connection for protocol messages. addr=127.0.0.1:50018
+20:06:53.288 INF Incoming connection for protocol messages. addr=127.0.0.1:50064
+20:06:53.288 INF Incoming connection for protocol messages. addr=127.0.0.1:50034
+20:06:53.288 INF Incoming connection for protocol messages. addr=127.0.0.1:49958
+20:06:53.287 INF Incoming connection for protocol messages. addr=127.0.0.1:50050
+20:06:53.288 INF Incoming connection for protocol messages. addr=127.0.0.1:49944
+20:06:53.289 INF Incoming connection for protocol messages. addr=127.0.0.1:50030
+20:06:53.289 INF Incoming connection for protocol messages. addr=127.0.0.1:50048
+20:06:53.290 INF Incoming connection for protocol messages. addr=127.0.0.1:50070
+20:06:53.290 INF Incoming connection for protocol messages. addr=127.0.0.1:50086
+20:06:53.291 INF Connected to all peers.
+20:06:53.291 INF Incoming connection for protocol messages. addr=127.0.0.1:50088
+20:06:53.294 INF All peers finished connecting. Starting ISS.
+20:06:53.295 INF PbftOrderer received a new segment: [0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43 44 45 46 47 48 49 50 51 52 53 54 55 56 57 58 59 60 61 62 63 64 65 66 67 68 69 70 71 72 73 74 75 76 77 78 79 80 81 82 83 84 85 86 87 88 89 90 91 92 93 94 95 96 97 98 99 100 101 102 103 104 105 106 107 108 109 110 111 112 113 114 115 116 117 118 119 120 121 122 123 124 125 126 127 128 129 130 131 132 133 134 135 136 137 138 139 140 141 142 143 144 145 146 147 148 149 150 151 152 153 154 155 156 157 158 159 160 161 162 163 164 165 166 167 168 169 170 171 172 173 174 175 176 177 178 179 180 181 182 183 184 185 186 187 188 189 190 191 192 193 194 195 196 197 198 199 200 201 202 203 204 205 206 207 208 209 210 211 212 213 214 215 216 217 218 219 220 221 222 223 224 225 226 227 228 229 230 231 232 233 234 235 236 237 238 239 240 241 242 243 244 245 246 247 248 249 250 251 252 253 254 255] first leader=0 firstSN=0 lastSN=255 len=256 length=256 segId=0
+20:06:53.315 INF Starting new view. segID=0 timeout=60000 view=0
+20:06:53.316 INF Starting PBFT instance. first=0 last=255 segID=0
+20:06:53.316 INF Starting serialized message processing. segID=0
+20:06:54.325 INF Handling PREPREPARE. nReq=0 senderID=0 sn=0
+20:06:54.328 INF Committed entry. latency=0 nReq=0 sn=0
+20:06:54.328 INF Delivered batch. nReq=0 sn=0
+20:06:55.319 INF Handling PREPREPARE. nReq=0 senderID=0 sn=1
+20:06:55.322 INF Committed entry. latency=0 nReq=0 sn=1
+20:06:55.322 INF Delivered batch. nReq=0 sn=1
+20:06:55.340 INF Incoming connection for requests. addr=127.0.0.1:40258
+20:06:56.370 INF Handling PREPREPARE. nReq=969 senderID=0 sn=2
+20:06:56.414 INF Committed entry. latency=0 nReq=969 sn=2
+20:06:56.414 INF Delivered batch. nReq=969 sn=2
+20:06:57.353 INF Handling PREPREPARE. nReq=1000 senderID=0 sn=3
+20:06:57.382 INF Committed entry. latency=0 nReq=1000 sn=3
+20:06:57.382 INF Delivered batch. nReq=1000 sn=3
+20:06:58.356 INF Handling PREPREPARE. nReq=1000 senderID=0 sn=4
+20:06:58.413 INF Committed entry. latency=0 nReq=1000 sn=4
+20:06:58.413 INF Delivered batch. nReq=1000 sn=4
+20:06:59.298 INF collect metrics. times=2 timestamp=1727438819298489090
+20:06:59.347 INF Handling PREPREPARE. nReq=1000 senderID=0 sn=5
+20:06:59.389 INF Committed entry. latency=0 nReq=1000 sn=5
+20:06:59.389 INF Delivered batch. nReq=1000 sn=5
+20:06:59.798 INF send metrics to agent. timestamp=1727438819798704332
+20:06:59.804 INF receive response and modify the config timestamp=1727438819804979598
+20:07:00.298 INF collect metrics. times=3 timestamp=1727438820298921097
+==================
+WARNING: DATA RACE
+Read at 0x0000012d99f0 by goroutine 550:
+  main.main.func1()
+      /opt/gopath/src/github.com/hyperledger-labs/mirbft/cmd/orderingpeer/main.go:298 +0xacb
+
+Previous write at 0x0000012d99f0 by goroutine 551:
+  main.main.func1.1()
+      /opt/gopath/src/github.com/hyperledger-labs/mirbft/cmd/orderingpeer/main.go:272 +0x5e4
+
+Goroutine 550 (running) created at:
+  main.main()
+      /opt/gopath/src/github.com/hyperledger-labs/mirbft/cmd/orderingpeer/main.go:214 +0x17dd
+  runtime.deferreturn()
+      /home/ubuntu/go/src/runtime/panic.go:476 +0x32
+  main.main()
+      /opt/gopath/src/github.com/hyperledger-labs/mirbft/cmd/orderingpeer/main.go:166 +0xed8
+  runtime.deferreturn()
+      /home/ubuntu/go/src/runtime/panic.go:476 +0x32
+  main.main()
+      /opt/gopath/src/github.com/hyperledger-labs/mirbft/cmd/orderingpeer/main.go:82 +0x56c
+
+Goroutine 551 (running) created at:
+  main.main.func1()
+      /opt/gopath/src/github.com/hyperledger-labs/mirbft/cmd/orderingpeer/main.go:256 +0x4ee
+==================
+==================
+WARNING: DATA RACE
+Read at 0x0000012d99f8 by goroutine 550:
+  main.main.func1()
+      /opt/gopath/src/github.com/hyperledger-labs/mirbft/cmd/orderingpeer/main.go:298 +0xafa
+
+Previous write at 0x0000012d99f8 by goroutine 551:
+  main.main.func1.1()
+      /opt/gopath/src/github.com/hyperledger-labs/mirbft/cmd/orderingpeer/main.go:273 +0x89
+
+Goroutine 550 (running) created at:
+  main.main()
+      /opt/gopath/src/github.com/hyperledger-labs/mirbft/cmd/orderingpeer/main.go:214 +0x17dd
+  runtime.deferreturn()
+      /home/ubuntu/go/src/runtime/panic.go:476 +0x32
+  main.main()
+      /opt/gopath/src/github.com/hyperledger-labs/mirbft/cmd/orderingpeer/main.go:166 +0xed8
+  runtime.deferreturn()
+      /home/ubuntu/go/src/runtime/panic.go:476 +0x32
+  main.main()
+      /opt/gopath/src/github.com/hyperledger-labs/mirbft/cmd/orderingpeer/main.go:82 +0x56c
+
+Goroutine 551 (running) created at:
+  main.main.func1()
+      /opt/gopath/src/github.com/hyperledger-labs/mirbft/cmd/orderingpeer/main.go:256 +0x4ee
+==================
+20:07:00.341 INF Handling PREPREPARE. nReq=980 senderID=0 sn=6
+20:07:00.365 INF Committed entry. latency=0 nReq=980 sn=6
+20:07:00.365 INF Delivered batch. nReq=980 sn=6
+20:07:00.440 INF Handling PREPREPARE. nReq=128 senderID=0 sn=7
+20:07:00.452 INF Committed entry. latency=0 nReq=128 sn=7
+20:07:00.452 INF Delivered batch. nReq=128 sn=7
+20:07:00.535 INF Handling PREPREPARE. nReq=50 senderID=0 sn=8
+20:07:00.542 INF Committed entry. latency=0 nReq=50 sn=8
+20:07:00.542 INF Delivered batch. nReq=50 sn=8
+20:07:00.635 INF Handling PREPREPARE. nReq=38 senderID=0 sn=9
+20:07:00.642 INF Committed entry. latency=0 nReq=38 sn=9
+20:07:00.642 INF Delivered batch. nReq=38 sn=9
+20:07:00.746 INF Handling PREPREPARE. nReq=217 senderID=0 sn=10
+20:07:00.762 INF Committed entry. latency=0 nReq=217 sn=10
+20:07:00.763 INF Delivered batch. nReq=217 sn=10
+20:07:00.798 INF send metrics to agent. timestamp=1727438820798752663
+20:07:00.805 INF receive response and modify the config timestamp=1727438820805017081
+20:07:00.838 INF Handling PREPREPARE. nReq=98 senderID=0 sn=11
+20:07:00.848 INF Committed entry. latency=0 nReq=98 sn=11
+20:07:00.848 INF Delivered batch. nReq=98 sn=11
+20:07:00.940 INF Handling PREPREPARE. nReq=102 senderID=0 sn=12
+20:07:00.952 INF Committed entry. latency=0 nReq=102 sn=12
+20:07:00.952 INF Delivered batch. nReq=102 sn=12
+20:07:01.041 INF Handling PREPREPARE. nReq=101 senderID=0 sn=13
+20:07:01.052 INF Committed entry. latency=0 nReq=101 sn=13
+20:07:01.052 INF Delivered batch. nReq=101 sn=13
+20:07:01.142 INF Handling PREPREPARE. nReq=100 senderID=0 sn=14
+20:07:01.151 INF Committed entry. latency=0 nReq=100 sn=14
+20:07:01.152 INF Delivered batch. nReq=100 sn=14
+20:07:01.242 INF Handling PREPREPARE. nReq=102 senderID=0 sn=15
+20:07:01.253 INF Committed entry. latency=0 nReq=102 sn=15
+20:07:01.253 INF Delivered batch. nReq=102 sn=15
+20:07:01.298 INF collect metrics. times=4 timestamp=1727438821298923416
+20:07:01.343 INF Handling PREPREPARE. nReq=100 senderID=0 sn=16
+20:07:01.353 INF Committed entry. latency=0 nReq=100 sn=16
+20:07:01.353 INF Delivered batch. nReq=100 sn=16
+20:07:01.443 INF Handling PREPREPARE. nReq=100 senderID=0 sn=17
+20:07:01.452 INF Committed entry. latency=0 nReq=100 sn=17
+20:07:01.453 INF Delivered batch. nReq=100 sn=17
+20:07:01.544 INF Handling PREPREPARE. nReq=101 senderID=0 sn=18
+20:07:01.555 INF Committed entry. latency=0 nReq=101 sn=18
+20:07:01.555 INF Delivered batch. nReq=101 sn=18
+20:07:01.645 INF Handling PREPREPARE. nReq=101 senderID=0 sn=19
+20:07:01.656 INF Committed entry. latency=0 nReq=101 sn=19
+20:07:01.656 INF Delivered batch. nReq=101 sn=19
+20:07:01.747 INF Handling PREPREPARE. nReq=101 senderID=0 sn=20
+20:07:01.755 INF Committed entry. latency=0 nReq=101 sn=20
+20:07:01.755 INF Delivered batch. nReq=101 sn=20
+20:07:01.799 INF send metrics to agent. timestamp=1727438821799003710
+20:07:01.803 INF receive response and modify the config timestamp=1727438821803729581
+20:07:01.849 INF Handling PREPREPARE. nReq=101 senderID=0 sn=21
+20:07:01.860 INF Committed entry. latency=0 nReq=101 sn=21
+20:07:01.861 INF Delivered batch. nReq=101 sn=21
+20:07:01.944 INF Handling PREPREPARE. nReq=102 senderID=0 sn=22
+20:07:01.952 INF Committed entry. latency=0 nReq=102 sn=22
+20:07:01.952 INF Delivered batch. nReq=102 sn=22
+20:07:02.050 INF Handling PREPREPARE. nReq=101 senderID=0 sn=23
+20:07:02.062 INF Committed entry. latency=0 nReq=101 sn=23
+20:07:02.062 INF Delivered batch. nReq=101 sn=23
+20:07:02.151 INF Handling PREPREPARE. nReq=101 senderID=0 sn=24
+20:07:02.161 INF Committed entry. latency=0 nReq=101 sn=24
+20:07:02.162 INF Delivered batch. nReq=101 sn=24
+20:07:02.252 INF Handling PREPREPARE. nReq=100 senderID=0 sn=25
+20:07:02.262 INF Committed entry. latency=0 nReq=100 sn=25
+20:07:02.262 INF Delivered batch. nReq=100 sn=25
+20:07:02.298 INF collect metrics. times=5 timestamp=1727438822298450848
+20:07:02.352 INF Handling PREPREPARE. nReq=101 senderID=0 sn=26
+20:07:02.362 INF Committed entry. latency=0 nReq=101 sn=26
+20:07:02.362 INF Delivered batch. nReq=101 sn=26
+20:07:02.454 INF Handling PREPREPARE. nReq=101 senderID=0 sn=27
+20:07:02.463 INF Committed entry. latency=0 nReq=101 sn=27
+20:07:02.463 INF Delivered batch. nReq=101 sn=27
+20:07:02.554 INF Handling PREPREPARE. nReq=102 senderID=0 sn=28
+20:07:02.564 INF Committed entry. latency=0 nReq=102 sn=28
+20:07:02.564 INF Delivered batch. nReq=102 sn=28
+20:07:02.656 INF Handling PREPREPARE. nReq=101 senderID=0 sn=29
+20:07:02.666 INF Committed entry. latency=0 nReq=101 sn=29
+20:07:02.666 INF Delivered batch. nReq=101 sn=29
+20:07:02.757 INF Handling PREPREPARE. nReq=101 senderID=0 sn=30
+20:07:02.768 INF Committed entry. latency=0 nReq=101 sn=30
+20:07:02.768 INF Delivered batch. nReq=101 sn=30
+20:07:02.798 INF send metrics to agent. timestamp=1727438822798680363
+20:07:02.802 INF receive response and modify the config timestamp=1727438822802858671
+20:07:02.859 INF Handling PREPREPARE. nReq=100 senderID=0 sn=31
+20:07:02.869 INF Committed entry. latency=0 nReq=100 sn=31
+20:07:02.870 INF Delivered batch. nReq=100 sn=31
+20:07:02.959 INF Handling PREPREPARE. nReq=103 senderID=0 sn=32
+20:07:02.970 INF Committed entry. latency=0 nReq=103 sn=32
+20:07:02.970 INF Delivered batch. nReq=103 sn=32
+20:07:03.059 INF Handling PREPREPARE. nReq=99 senderID=0 sn=33
+20:07:03.069 INF Committed entry. latency=0 nReq=99 sn=33
+20:07:03.069 INF Delivered batch. nReq=99 sn=33
+20:07:03.160 INF Handling PREPREPARE. nReq=101 senderID=0 sn=34
+20:07:03.170 INF Committed entry. latency=0 nReq=101 sn=34
+20:07:03.171 INF Delivered batch. nReq=101 sn=34
+20:07:03.261 INF Handling PREPREPARE. nReq=101 senderID=0 sn=35
+20:07:03.271 INF Committed entry. latency=0 nReq=101 sn=35
+20:07:03.271 INF Delivered batch. nReq=101 sn=35
+20:07:03.298 INF collect metrics. times=6 timestamp=1727438823298689802
+20:07:03.361 INF Handling PREPREPARE. nReq=101 senderID=0 sn=36
+20:07:03.371 INF Committed entry. latency=0 nReq=101 sn=36
+20:07:03.372 INF Delivered batch. nReq=101 sn=36
+20:07:03.462 INF Handling PREPREPARE. nReq=101 senderID=0 sn=37
+20:07:03.472 INF Committed entry. latency=0 nReq=101 sn=37
+20:07:03.472 INF Delivered batch. nReq=101 sn=37
+20:07:03.563 INF Handling PREPREPARE. nReq=100 senderID=0 sn=38
+20:07:03.572 INF Committed entry. latency=0 nReq=100 sn=38
+20:07:03.573 INF Delivered batch. nReq=100 sn=38
+20:07:03.662 INF Handling PREPREPARE. nReq=100 senderID=0 sn=39
+20:07:03.672 INF Committed entry. latency=0 nReq=100 sn=39
+20:07:03.673 INF Delivered batch. nReq=100 sn=39
+20:07:03.764 INF Handling PREPREPARE. nReq=101 senderID=0 sn=40
+20:07:03.775 INF Committed entry. latency=0 nReq=101 sn=40
+20:07:03.775 INF Delivered batch. nReq=101 sn=40
+20:07:03.798 INF send metrics to agent. timestamp=1727438823798344617
+20:07:03.803 INF receive response and modify the config timestamp=1727438823803646318
+20:07:03.865 INF Handling PREPREPARE. nReq=100 senderID=0 sn=41
+20:07:03.875 INF Committed entry. latency=0 nReq=100 sn=41
+20:07:03.876 INF Delivered batch. nReq=100 sn=41
+20:07:03.966 INF Handling PREPREPARE. nReq=102 senderID=0 sn=42
+20:07:03.976 INF Committed entry. latency=0 nReq=102 sn=42
+20:07:03.977 INF Delivered batch. nReq=102 sn=42
+20:07:04.067 INF Handling PREPREPARE. nReq=101 senderID=0 sn=43
+20:07:04.076 INF Committed entry. latency=0 nReq=101 sn=43
+20:07:04.076 INF Delivered batch. nReq=101 sn=43
+20:07:04.167 INF Handling PREPREPARE. nReq=100 senderID=0 sn=44
+20:07:04.178 INF Committed entry. latency=0 nReq=100 sn=44
+20:07:04.178 INF Delivered batch. nReq=100 sn=44
+20:07:04.268 INF Handling PREPREPARE. nReq=101 senderID=0 sn=45
+20:07:04.279 INF Committed entry. latency=0 nReq=101 sn=45
+20:07:04.279 INF Delivered batch. nReq=101 sn=45
+20:07:04.298 INF collect metrics. times=7 timestamp=1727438824298719708
+20:07:04.369 INF Handling PREPREPARE. nReq=101 senderID=0 sn=46
+20:07:04.379 INF Committed entry. latency=0 nReq=101 sn=46
+20:07:04.380 INF Delivered batch. nReq=101 sn=46
+20:07:04.470 INF Handling PREPREPARE. nReq=101 senderID=0 sn=47
+20:07:04.481 INF Committed entry. latency=0 nReq=101 sn=47
+20:07:04.481 INF Delivered batch. nReq=101 sn=47
+20:07:04.571 INF Handling PREPREPARE. nReq=101 senderID=0 sn=48
+20:07:04.581 INF Committed entry. latency=0 nReq=101 sn=48
+20:07:04.581 INF Delivered batch. nReq=101 sn=48
+20:07:04.672 INF Handling PREPREPARE. nReq=101 senderID=0 sn=49
+20:07:04.683 INF Committed entry. latency=0 nReq=101 sn=49
+20:07:04.683 INF Delivered batch. nReq=101 sn=49
+20:07:04.772 INF Handling PREPREPARE. nReq=100 senderID=0 sn=50
+20:07:04.782 INF Committed entry. latency=0 nReq=100 sn=50
+20:07:04.782 INF Delivered batch. nReq=100 sn=50
+20:07:04.798 INF send metrics to agent. timestamp=1727438824798599435
+20:07:04.804 INF receive response and modify the config timestamp=1727438824804222095
+20:07:04.873 INF Handling PREPREPARE. nReq=102 senderID=0 sn=51
+20:07:04.884 INF Committed entry. latency=0 nReq=102 sn=51
+20:07:04.885 INF Delivered batch. nReq=102 sn=51
+20:07:04.974 INF Handling PREPREPARE. nReq=100 senderID=0 sn=52
+20:07:04.984 INF Committed entry. latency=0 nReq=100 sn=52
+20:07:04.984 INF Delivered batch. nReq=100 sn=52
+20:07:05.075 INF Handling PREPREPARE. nReq=101 senderID=0 sn=53
+20:07:05.084 INF Committed entry. latency=0 nReq=101 sn=53
+20:07:05.085 INF Delivered batch. nReq=101 sn=53
+20:07:05.177 INF Handling PREPREPARE. nReq=101 senderID=0 sn=54
+20:07:05.188 INF Committed entry. latency=0 nReq=101 sn=54
+20:07:05.188 INF Delivered batch. nReq=101 sn=54
+20:07:05.277 INF Handling PREPREPARE. nReq=100 senderID=0 sn=55
+20:07:05.286 INF Committed entry. latency=0 nReq=100 sn=55
+20:07:05.287 INF Delivered batch. nReq=100 sn=55
+20:07:05.298 INF collect metrics. times=8 timestamp=1727438825298685146
+20:07:05.377 INF Handling PREPREPARE. nReq=101 senderID=0 sn=56
+20:07:05.387 INF Committed entry. latency=0 nReq=101 sn=56
+20:07:05.388 INF Delivered batch. nReq=101 sn=56
+20:07:05.477 INF Handling PREPREPARE. nReq=102 senderID=0 sn=57
+20:07:05.487 INF Committed entry. latency=0 nReq=102 sn=57
+20:07:05.487 INF Delivered batch. nReq=102 sn=57
+20:07:05.578 INF Handling PREPREPARE. nReq=99 senderID=0 sn=58
+20:07:05.588 INF Committed entry. latency=0 nReq=99 sn=58
+20:07:05.588 INF Delivered batch. nReq=99 sn=58
+20:07:05.679 INF Handling PREPREPARE. nReq=101 senderID=0 sn=59
+20:07:05.689 INF Committed entry. latency=0 nReq=101 sn=59
+20:07:05.689 INF Delivered batch. nReq=101 sn=59
+20:07:05.779 INF Handling PREPREPARE. nReq=100 senderID=0 sn=60
+20:07:05.789 INF Committed entry. latency=0 nReq=100 sn=60
+20:07:05.789 INF Delivered batch. nReq=100 sn=60
+20:07:05.798 INF send metrics to agent. timestamp=1727438825798690039
+20:07:05.803 INF receive response and modify the config timestamp=1727438825803444646
+20:07:05.881 INF Handling PREPREPARE. nReq=101 senderID=0 sn=61
+20:07:05.892 INF Committed entry. latency=0 nReq=101 sn=61
+20:07:05.892 INF Delivered batch. nReq=101 sn=61
+20:07:05.981 INF Handling PREPREPARE. nReq=101 senderID=0 sn=62
+20:07:05.991 INF Committed entry. latency=0 nReq=101 sn=62
+20:07:05.991 INF Delivered batch. nReq=101 sn=62
+20:07:06.082 INF Handling PREPREPARE. nReq=102 senderID=0 sn=63
+20:07:06.091 INF Committed entry. latency=0 nReq=102 sn=63
+20:07:06.092 INF Delivered batch. nReq=102 sn=63
+20:07:06.183 INF Handling PREPREPARE. nReq=100 senderID=0 sn=64
+20:07:06.194 INF Committed entry. latency=0 nReq=100 sn=64
+20:07:06.194 INF Delivered batch. nReq=100 sn=64
+20:07:06.284 INF Handling PREPREPARE. nReq=100 senderID=0 sn=65
+20:07:06.294 INF Committed entry. latency=0 nReq=100 sn=65
+20:07:06.294 INF Delivered batch. nReq=100 sn=65
+20:07:06.299 INF collect metrics. times=9 timestamp=1727438826299147369
+20:07:06.383 INF Handling PREPREPARE. nReq=101 senderID=0 sn=66
+20:07:06.393 INF Committed entry. latency=0 nReq=101 sn=66
+20:07:06.394 INF Delivered batch. nReq=101 sn=66
+20:07:06.485 INF Handling PREPREPARE. nReq=101 senderID=0 sn=67
+20:07:06.495 INF Committed entry. latency=0 nReq=101 sn=67
+20:07:06.495 INF Delivered batch. nReq=101 sn=67
+20:07:06.585 INF Handling PREPREPARE. nReq=100 senderID=0 sn=68
+20:07:06.594 INF Committed entry. latency=0 nReq=100 sn=68
+20:07:06.595 INF Delivered batch. nReq=100 sn=68
+20:07:06.685 INF Handling PREPREPARE. nReq=101 senderID=0 sn=69
+20:07:06.695 INF Committed entry. latency=0 nReq=101 sn=69
+20:07:06.696 INF Delivered batch. nReq=101 sn=69
+20:07:06.786 INF Handling PREPREPARE. nReq=100 senderID=0 sn=70
+20:07:06.796 INF Committed entry. latency=0 nReq=100 sn=70
+20:07:06.796 INF Delivered batch. nReq=100 sn=70
+20:07:06.798 INF send metrics to agent. timestamp=1727438826798356212
+20:07:06.803 INF receive response and modify the config timestamp=1727438826803941500
+20:07:06.888 INF Handling PREPREPARE. nReq=101 senderID=0 sn=71
+20:07:06.899 INF Committed entry. latency=0 nReq=101 sn=71
+20:07:06.900 INF Delivered batch. nReq=101 sn=71
+20:07:06.987 INF Handling PREPREPARE. nReq=101 senderID=0 sn=72
+20:07:06.997 INF Committed entry. latency=0 nReq=101 sn=72
+20:07:06.997 INF Delivered batch. nReq=101 sn=72
+20:07:07.089 INF Handling PREPREPARE. nReq=101 senderID=0 sn=73
+20:07:07.098 INF Committed entry. latency=0 nReq=101 sn=73
+20:07:07.098 INF Delivered batch. nReq=101 sn=73
+20:07:07.190 INF Handling PREPREPARE. nReq=101 senderID=0 sn=74
+20:07:07.201 INF Committed entry. latency=0 nReq=101 sn=74
+20:07:07.201 INF Delivered batch. nReq=101 sn=74
+20:07:07.290 INF Handling PREPREPARE. nReq=100 senderID=0 sn=75
+20:07:07.298 INF collect metrics. times=10 timestamp=1727438827298341278
+20:07:07.301 INF Committed entry. latency=0 nReq=100 sn=75
+20:07:07.301 INF Delivered batch. nReq=100 sn=75
+20:07:07.391 INF Handling PREPREPARE. nReq=101 senderID=0 sn=76
+20:07:07.401 INF Committed entry. latency=0 nReq=101 sn=76
+20:07:07.401 INF Delivered batch. nReq=101 sn=76
+20:07:07.492 INF Handling PREPREPARE. nReq=101 senderID=0 sn=77
+20:07:07.503 INF Committed entry. latency=0 nReq=101 sn=77
+20:07:07.503 INF Delivered batch. nReq=101 sn=77
+20:07:07.592 INF Handling PREPREPARE. nReq=100 senderID=0 sn=78
+20:07:07.602 INF Committed entry. latency=0 nReq=100 sn=78
+20:07:07.602 INF Delivered batch. nReq=100 sn=78
+20:07:07.693 INF Handling PREPREPARE. nReq=102 senderID=0 sn=79
+20:07:07.704 INF Committed entry. latency=0 nReq=102 sn=79
+20:07:07.704 INF Delivered batch. nReq=102 sn=79
+20:07:07.793 INF Handling PREPREPARE. nReq=99 senderID=0 sn=80
+20:07:07.798 INF send metrics to agent. timestamp=1727438827798371513
+20:07:07.803 INF Committed entry. latency=0 nReq=99 sn=80
+20:07:07.803 INF Delivered batch. nReq=99 sn=80
+20:07:07.804 INF receive response and modify the config timestamp=1727438827804371133
+20:07:07.894 INF Handling PREPREPARE. nReq=101 senderID=0 sn=81
+20:07:07.904 INF Committed entry. latency=0 nReq=101 sn=81
+20:07:07.904 INF Delivered batch. nReq=101 sn=81
+20:07:07.995 INF Handling PREPREPARE. nReq=101 senderID=0 sn=82
+20:07:08.005 INF Committed entry. latency=0 nReq=101 sn=82
+20:07:08.005 INF Delivered batch. nReq=101 sn=82
+20:07:08.096 INF Handling PREPREPARE. nReq=101 senderID=0 sn=83
+20:07:08.106 INF Committed entry. latency=0 nReq=101 sn=83
+20:07:08.106 INF Delivered batch. nReq=101 sn=83
+20:07:08.197 INF Handling PREPREPARE. nReq=101 senderID=0 sn=84
+20:07:08.207 INF Committed entry. latency=0 nReq=101 sn=84
+20:07:08.208 INF Delivered batch. nReq=101 sn=84
+20:07:08.298 INF Handling PREPREPARE. nReq=101 senderID=0 sn=85
+20:07:08.301 INF collect metrics. times=11 timestamp=1727438828301438382
+20:07:08.308 INF Committed entry. latency=0 nReq=101 sn=85
+20:07:08.308 INF Delivered batch. nReq=101 sn=85
+20:07:08.398 INF Handling PREPREPARE. nReq=100 senderID=0 sn=86
+20:07:08.409 INF Committed entry. latency=0 nReq=100 sn=86
+20:07:08.409 INF Delivered batch. nReq=100 sn=86
+20:07:08.500 INF Handling PREPREPARE. nReq=102 senderID=0 sn=87
+20:07:08.510 INF Committed entry. latency=0 nReq=102 sn=87
+20:07:08.511 INF Delivered batch. nReq=102 sn=87
+20:07:08.601 INF Handling PREPREPARE. nReq=100 senderID=0 sn=88
+20:07:08.611 INF Committed entry. latency=0 nReq=100 sn=88
+20:07:08.611 INF Delivered batch. nReq=100 sn=88
+20:07:08.701 INF Handling PREPREPARE. nReq=101 senderID=0 sn=89
+20:07:08.712 INF Committed entry. latency=0 nReq=101 sn=89
+20:07:08.713 INF Delivered batch. nReq=101 sn=89
+20:07:08.799 INF send metrics to agent. timestamp=1727438828799182718
+20:07:08.802 INF Handling PREPREPARE. nReq=101 senderID=0 sn=90
+20:07:08.803 INF receive response and modify the config timestamp=1727438828803841182
+20:07:08.813 INF Committed entry. latency=0 nReq=101 sn=90
+20:07:08.813 INF Delivered batch. nReq=101 sn=90
+20:07:08.903 INF Handling PREPREPARE. nReq=101 senderID=0 sn=91
+20:07:08.913 INF Committed entry. latency=0 nReq=101 sn=91
+20:07:08.913 INF Delivered batch. nReq=101 sn=91
+20:07:09.003 INF Handling PREPREPARE. nReq=100 senderID=0 sn=92
+20:07:09.013 INF Committed entry. latency=0 nReq=100 sn=92
+20:07:09.013 INF Delivered batch. nReq=100 sn=92
+20:07:09.104 INF Handling PREPREPARE. nReq=102 senderID=0 sn=93
+20:07:09.114 INF Committed entry. latency=0 nReq=102 sn=93
+20:07:09.114 INF Delivered batch. nReq=102 sn=93
+20:07:09.204 INF Handling PREPREPARE. nReq=100 senderID=0 sn=94
+20:07:09.214 INF Committed entry. latency=0 nReq=100 sn=94
+20:07:09.214 INF Delivered batch. nReq=100 sn=94
+20:07:09.298 INF collect metrics. times=12 timestamp=1727438829298517931
+20:07:09.312 INF Handling PREPREPARE. nReq=100 senderID=0 sn=95
+20:07:09.321 INF Committed entry. latency=0 nReq=100 sn=95
+20:07:09.322 INF Delivered batch. nReq=100 sn=95
+20:07:09.407 INF Handling PREPREPARE. nReq=102 senderID=0 sn=96
+20:07:09.417 INF Committed entry. latency=0 nReq=102 sn=96
+20:07:09.417 INF Delivered batch. nReq=102 sn=96
+20:07:09.505 INF Stopping profiler.
+20:07:09.505 INF Stopping Tracer. events=136 fileName=experiment-output/0000/slave-000/peer.trc
+==================
+WARNING: DATA RACE
+Read at 0x00c0008a14c8 by goroutine 109:
+  github.com/hyperledger-labs/mirbft/tracing.(*BufferedTrace).Stop()
+      /opt/gopath/src/github.com/hyperledger-labs/mirbft/tracing/bufferedtrace.go:237 +0x30e
+  github.com/hyperledger-labs/mirbft/tracing.(*BufferedTrace).StopOnSignal.func1()
+      /opt/gopath/src/github.com/hyperledger-labs/mirbft/tracing/bufferedtrace.go:298 +0x4e
+
+Previous write at 0x00c0008a14c8 by goroutine 108:
+  github.com/hyperledger-labs/mirbft/tracing.(*BufferedTrace).Event()
+      /opt/gopath/src/github.com/hyperledger-labs/mirbft/tracing/bufferedtrace.go:105 +0x2cd
+  github.com/hyperledger-labs/mirbft/profiling.StartCPUTracing.func1()
+      /opt/gopath/src/github.com/hyperledger-labs/mirbft/profiling/cpuusage.go:33 +0x95
+
+Goroutine 109 (running) created at:
+  github.com/hyperledger-labs/mirbft/tracing.(*BufferedTrace).StopOnSignal()
+      /opt/gopath/src/github.com/hyperledger-labs/mirbft/tracing/bufferedtrace.go:292 +0x178
+  main.setUpTracing()
+      /opt/gopath/src/github.com/hyperledger-labs/mirbft/cmd/orderingpeer/main.go:422 +0xf5
+  main.main()
+      /opt/gopath/src/github.com/hyperledger-labs/mirbft/cmd/orderingpeer/main.go:114 +0x9e4
+  runtime.deferreturn()
+      /home/ubuntu/go/src/runtime/panic.go:476 +0x32
+  main.main()
+      /opt/gopath/src/github.com/hyperledger-labs/mirbft/cmd/orderingpeer/main.go:82 +0x56c
+
+Goroutine 108 (running) created at:
+  github.com/hyperledger-labs/mirbft/profiling.StartCPUTracing()
+      /opt/gopath/src/github.com/hyperledger-labs/mirbft/profiling/cpuusage.go:30 +0xb9
+  main.setUpTracing()
+      /opt/gopath/src/github.com/hyperledger-labs/mirbft/cmd/orderingpeer/main.go:414 +0x85
+  main.main()
+      /opt/gopath/src/github.com/hyperledger-labs/mirbft/cmd/orderingpeer/main.go:114 +0x9e4
+  runtime.deferreturn()
+      /home/ubuntu/go/src/runtime/panic.go:476 +0x32
+  main.main()
+      /opt/gopath/src/github.com/hyperledger-labs/mirbft/cmd/orderingpeer/main.go:82 +0x56c
+==================
+20:07:09.508 INF Trace data written.
+20:07:09.508 INF Handling PREPREPARE. nReq=100 senderID=0 sn=97
+20:07:09.519 INF Committed entry. latency=0 nReq=100 sn=97
+20:07:09.520 INF Delivered batch. nReq=100 sn=97
+20:07:09.540 INF Profile data written. filename=experiment-output/0000/slave-000/prof.block name=block
+20:07:09.545 INF Profile data written. filename=experiment-output/0000/slave-000/prof.mutex name=mutex
+20:07:09.608 INF Handling PREPREPARE. nReq=102 senderID=0 sn=98
+20:07:09.619 INF Committed entry. latency=0 nReq=102 sn=98
+20:07:09.619 INF Delivered batch. nReq=102 sn=98
+20:07:09.677 INF Connection terminated. error="rpc error: code = Canceled desc = context canceled" address=127.0.0.1:50050
+20:07:09.677 INF Connection terminated. error="rpc error: code = Canceled desc = context canceled" address=127.0.0.1:50070
+20:07:09.677 INF Connection terminated. error="rpc error: code = Canceled desc = context canceled" address=127.0.0.1:50030
+20:07:09.677 INF Connection terminated. error="rpc error: code = Canceled desc = context canceled" address=127.0.0.1:49928
+20:07:09.677 INF Connection terminated. error="rpc error: code = Canceled desc = context canceled" address=127.0.0.1:50044
+20:07:09.677 INF Connection terminated. error="rpc error: code = Canceled desc = context canceled" address=127.0.0.1:49944
+20:07:09.680 INF Connection terminated. error="rpc error: code = Canceled desc = context canceled" address=127.0.0.1:50022
+20:07:09.680 INF Connection terminated. error="rpc error: code = Canceled desc = context canceled" address=127.0.0.1:50034
+20:07:09.680 INF Connection terminated. error="rpc error: code = Canceled desc = context canceled" address=127.0.0.1:50018
+20:07:09.680 INF Connection terminated. error="rpc error: code = Canceled desc = context canceled" address=127.0.0.1:49984
+20:07:09.680 INF Connection terminated. error="rpc error: code = Canceled desc = context canceled" address=127.0.0.1:50014
+20:07:09.680 INF Connection terminated. error="rpc error: code = Canceled desc = context canceled" address=127.0.0.1:49906
+20:07:09.699 INF Profile data written. filename=experiment-output/0000/slave-000/prof.cpu name=cpu

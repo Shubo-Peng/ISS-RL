@@ -1,0 +1,203 @@
+{"level":"debug","Logging":"info","time":"2024-09-27T20:05:54+08:00","message":"Config"}
+{"level":"debug","UseTLS":false,"time":"2024-09-27T20:05:54+08:00","message":"Config"}
+{"level":"debug","CACertFile":"tls-data/ca.pem","time":"2024-09-27T20:05:54+08:00","message":"Config"}
+{"level":"debug","KeyFile":"tls-data/auth.key","time":"2024-09-27T20:05:54+08:00","message":"Config"}
+{"level":"debug","CertFile":"tls-data/auth.pem","time":"2024-09-27T20:05:54+08:00","message":"Config"}
+{"level":"debug","PriorityConnections":2,"time":"2024-09-27T20:05:54+08:00","message":"Config"}
+{"level":"debug","BasicConnections":4,"time":"2024-09-27T20:05:54+08:00","message":"Config"}
+{"level":"debug","TestConnections":false,"time":"2024-09-27T20:05:54+08:00","message":"Config"}
+{"level":"debug","ExcessConnections":1,"time":"2024-09-27T20:05:54+08:00","message":"Config"}
+{"level":"debug","ConnectionTestMsgs":4,"time":"2024-09-27T20:05:54+08:00","message":"Config"}
+{"level":"debug","ConnectionTestPayload":131072,"time":"2024-09-27T20:05:54+08:00","message":"Config"}
+{"level":"debug","OutMessageBufsize":1024,"time":"2024-09-27T20:05:54+08:00","message":"Config"}
+{"level":"debug","OutMessageBufsize":1,"time":"2024-09-27T20:05:54+08:00","message":"Config"}
+{"level":"debug","ThroughputCap":131072000,"time":"2024-09-27T20:05:54+08:00","message":"Config"}
+{"level":"debug","StragglerTolerance":1000,"time":"2024-09-27T20:05:54+08:00","message":"Config"}
+{"level":"debug","BatchSizeIncrement":256,"time":"2024-09-27T20:05:54+08:00","message":"Config"}
+{"level":"debug","Orderer":"Pbft","time":"2024-09-27T20:05:54+08:00","message":"Config"}
+{"level":"debug","Manager":"Mir","time":"2024-09-27T20:05:54+08:00","message":"Config"}
+{"level":"debug","Failures":0,"time":"2024-09-27T20:05:54+08:00","message":"Config"}
+{"level":"debug","CrashTiming":"EpochStart","time":"2024-09-27T20:05:54+08:00","message":"Config"}
+{"level":"debug","CheckpointInterval":256,"time":"2024-09-27T20:05:54+08:00","message":"Config"}
+{"level":"debug","WatermarkWindowSize":256,"time":"2024-09-27T20:05:54+08:00","message":"Config"}
+{"level":"debug","EpochLength":256,"time":"2024-09-27T20:05:54+08:00","message":"Config"}
+{"level":"debug","SegmentLength":256,"time":"2024-09-27T20:05:54+08:00","message":"Config"}
+{"level":"debug","WaitForCheckpoints":true,"time":"2024-09-27T20:05:54+08:00","message":"Config"}
+{"level":"debug","ClientWatermarkWindowSize":4194304,"time":"2024-09-27T20:05:54+08:00","message":"Config"}
+{"level":"debug","ClientRequestBacklogSize":4194304,"time":"2024-09-27T20:05:54+08:00","message":"Config"}
+{"level":"debug","RandomSeed":28256,"time":"2024-09-27T20:05:54+08:00","message":"Config"}
+{"level":"debug","NodeToLeaderRatio":1,"time":"2024-09-27T20:05:54+08:00","message":"Config"}
+{"level":"debug","LeaderPolicy":"Single","time":"2024-09-27T20:05:54+08:00","message":"Config"}
+{"level":"debug","DefaultLeaderBan":2,"time":"2024-09-27T20:05:54+08:00","message":"Config"}
+{"level":"debug","NumBuckets":16,"time":"2024-09-27T20:05:54+08:00","message":"Config"}
+{"level":"debug","BatchSize":1000,"time":"2024-09-27T20:05:54+08:00","message":"Config"}
+{"level":"debug","BatchTimeoutMs":1000,"time":"2024-09-27T20:05:54+08:00","message":"Config"}
+{"level":"debug","DisabledViewChange":false,"time":"2024-09-27T20:05:54+08:00","message":"Config"}
+{"level":"debug","ViewChangeTimeout":60000,"time":"2024-09-27T20:05:54+08:00","message":"Config"}
+{"level":"debug","ClientTraceSampling":10,"time":"2024-09-27T20:05:54+08:00","message":"Config"}
+{"level":"debug","EventBufferSize":2097152,"time":"2024-09-27T20:05:54+08:00","message":"Config"}
+{"level":"debug","TraceSampling":1,"time":"2024-09-27T20:05:54+08:00","message":"Config"}
+{"level":"debug","ClientsPerProcess":1,"time":"2024-09-27T20:05:54+08:00","message":"Config"}
+{"level":"debug","RequestsPerClient":2400000,"time":"2024-09-27T20:05:54+08:00","message":"Config"}
+{"level":"debug","ClientRunTime":1200000,"time":"2024-09-27T20:05:54+08:00","message":"Config"}
+{"level":"debug","RequestRate":1000,"time":"2024-09-27T20:05:54+08:00","message":"Config"}
+{"level":"debug","HardRequestRateLimit":false,"time":"2024-09-27T20:05:54+08:00","message":"Config"}
+{"level":"debug","RequestPayloadSize":200,"time":"2024-09-27T20:05:54+08:00","message":"Config"}
+{"level":"debug","SignRequests":true,"time":"2024-09-27T20:05:54+08:00","message":"Config"}
+{"level":"debug","ClientPrivKeyFile":"tls-data/client-ecdsa-256.key","time":"2024-09-27T20:05:54+08:00","message":"Config"}
+{"level":"debug","ClientPubKeyFile":"tls-data/client-ecdsa-256.pem","time":"2024-09-27T20:05:54+08:00","message":"Config"}
+{"level":"debug","PrecomputeRequests":false,"time":"2024-09-27T20:05:54+08:00","message":"Config"}
+{"level":"debug","RequestHandlerThreads":32,"time":"2024-09-27T20:05:54+08:00","message":"Config"}
+{"level":"debug","RequestInputChannelBuffer":8192,"time":"2024-09-27T20:05:54+08:00","message":"Config"}
+{"level":"debug","BatchVerifier":"external","time":"2024-09-27T20:05:54+08:00","message":"Config"}
+20:05:54.822 INF Registered with discovery server. numPeers=4 ownID=2
+20:05:54.822 INF Profiling enabled.
+20:05:54.822 INF Setting up profiling.
+20:05:54.822 INF Started Profiler: CPU
+20:05:54.822 INF Started Profiler: BLOCK
+20:05:54.822 INF Started Profiler: MUTEX
+20:05:54.822 INF Profiler will stop on signal. exit=true
+20:05:54.823 INF Tracing will stop on signal. exit=false
+20:05:54.823 INF Started tracing. traceFile=experiment-output/0000/slave-004/peer.trc
+20:05:54.824 INF Listening for connections. port=10022 useTLS=false
+20:05:54.824 INF Connecting to peer. addr=127.0.0.1:10033 basicConns=4 priorityConns=2
+20:05:54.824 INF Connecting to peer. addr=127.0.0.1:10011 basicConns=4 priorityConns=2
+20:05:54.825 INF Connecting to peer. addr=127.0.0.1:10022 basicConns=4 priorityConns=2
+20:05:54.825 INF Connecting to peer. addr=127.0.0.1:10000 basicConns=4 priorityConns=2
+20:05:54.832 INF Incoming connection for protocol messages. addr=127.0.0.1:40552
+20:05:54.834 INF Incoming connection for protocol messages. addr=127.0.0.1:40562
+20:05:54.835 INF Incoming connection for protocol messages. addr=127.0.0.1:40558
+20:05:54.838 INF Incoming connection for protocol messages. addr=127.0.0.1:40600
+20:05:54.838 INF Incoming connection for protocol messages. addr=127.0.0.1:40590
+20:05:54.840 INF Incoming connection for protocol messages. addr=127.0.0.1:40652
+20:05:54.840 INF Incoming connection for protocol messages. addr=127.0.0.1:40642
+20:05:54.842 INF Incoming connection for protocol messages. addr=127.0.0.1:40654
+20:05:54.842 INF Incoming connection for protocol messages. addr=127.0.0.1:40586
+20:05:54.843 INF Incoming connection for protocol messages. addr=127.0.0.1:40630
+20:05:54.845 INF Incoming connection for protocol messages. addr=127.0.0.1:40604
+20:05:54.845 INF Incoming connection for protocol messages. addr=127.0.0.1:40674
+20:05:54.846 INF Incoming connection for protocol messages. addr=127.0.0.1:40622
+20:05:54.846 INF Incoming connection for protocol messages. addr=127.0.0.1:40664
+20:05:54.847 INF Incoming connection for protocol messages. addr=127.0.0.1:40638
+20:05:54.847 INF Incoming connection for protocol messages. addr=127.0.0.1:40668
+20:05:54.847 INF Incoming connection for protocol messages. addr=127.0.0.1:40574
+20:05:54.847 INF Incoming connection for protocol messages. addr=127.0.0.1:40684
+20:05:54.847 INF Incoming connection for protocol messages. addr=127.0.0.1:40606
+20:05:54.848 INF Incoming connection for protocol messages. addr=127.0.0.1:40584
+20:05:54.848 INF Incoming connection for protocol messages. addr=127.0.0.1:40678
+20:05:54.850 INF Connected to all peers.
+20:05:54.850 INF Incoming connection for protocol messages. addr=127.0.0.1:40696
+20:05:54.850 INF Incoming connection for protocol messages. addr=127.0.0.1:40710
+20:05:54.850 INF Incoming connection for protocol messages. addr=127.0.0.1:40688
+20:05:54.854 INF All peers finished connecting. Starting ISS.
+20:05:54.854 INF PbftOrderer received a new segment: [0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43 44 45 46 47 48 49 50 51 52 53 54 55 56 57 58 59 60 61 62 63 64 65 66 67 68 69 70 71 72 73 74 75 76 77 78 79 80 81 82 83 84 85 86 87 88 89 90 91 92 93 94 95 96 97 98 99 100 101 102 103 104 105 106 107 108 109 110 111 112 113 114 115 116 117 118 119 120 121 122 123 124 125 126 127 128 129 130 131 132 133 134 135 136 137 138 139 140 141 142 143 144 145 146 147 148 149 150 151 152 153 154 155 156 157 158 159 160 161 162 163 164 165 166 167 168 169 170 171 172 173 174 175 176 177 178 179 180 181 182 183 184 185 186 187 188 189 190 191 192 193 194 195 196 197 198 199 200 201 202 203 204 205 206 207 208 209 210 211 212 213 214 215 216 217 218 219 220 221 222 223 224 225 226 227 228 229 230 231 232 233 234 235 236 237 238 239 240 241 242 243 244 245 246 247 248 249 250 251 252 253 254 255] first leader=0 firstSN=0 lastSN=255 len=256 length=256 segId=0
+20:05:54.874 INF Starting new view. segID=0 timeout=60000 view=0
+20:05:54.874 INF Starting PBFT instance. first=0 last=255 segID=0
+20:05:54.875 INF Starting serialized message processing. segID=0
+20:05:55.882 INF Handling PREPREPARE. nReq=0 senderID=0 sn=0
+20:05:55.886 INF Committed entry. latency=0 nReq=0 sn=0
+20:05:55.886 INF Delivered batch. nReq=0 sn=0
+20:05:56.877 INF Handling PREPREPARE. nReq=0 senderID=0 sn=1
+20:05:56.880 INF Committed entry. latency=0 nReq=0 sn=1
+20:05:56.880 INF Delivered batch. nReq=0 sn=1
+20:05:56.918 INF Incoming connection for requests. addr=127.0.0.1:40726
+20:05:57.880 INF Handling PREPREPARE. nReq=9 senderID=0 sn=2
+20:05:57.888 INF Committed entry. latency=0 nReq=9 sn=2
+20:05:57.888 INF Delivered batch. nReq=9 sn=2
+20:05:58.880 INF Handling PREPREPARE. nReq=10 senderID=0 sn=3
+20:05:58.884 INF Committed entry. latency=0 nReq=10 sn=3
+20:05:58.885 INF Delivered batch. nReq=10 sn=3
+20:05:59.880 INF Handling PREPREPARE. nReq=10 senderID=0 sn=4
+20:05:59.884 INF Committed entry. latency=0 nReq=10 sn=4
+20:05:59.885 INF Delivered batch. nReq=10 sn=4
+20:06:00.858 INF collect metrics. times=2 timestamp=1727438760858903446
+20:06:00.880 INF Handling PREPREPARE. nReq=10 senderID=0 sn=5
+20:06:00.883 INF Committed entry. latency=0 nReq=10 sn=5
+20:06:00.884 INF Delivered batch. nReq=10 sn=5
+20:06:01.358 INF send metrics to agent. timestamp=1727438761358885234
+20:06:01.379 INF receive response and modify the config timestamp=1727438761379915648
+20:06:01.859 INF collect metrics. times=3 timestamp=1727438761859272898
+==================
+WARNING: DATA RACE
+Read at 0x0000012d99f0 by goroutine 547:
+  main.main.func1()
+      /opt/gopath/src/github.com/hyperledger-labs/mirbft/cmd/orderingpeer/main.go:298 +0xacb
+
+Previous write at 0x0000012d99f0 by goroutine 548:
+  main.main.func1.1()
+      /opt/gopath/src/github.com/hyperledger-labs/mirbft/cmd/orderingpeer/main.go:272 +0x5e4
+
+Goroutine 547 (running) created at:
+  main.main()
+      /opt/gopath/src/github.com/hyperledger-labs/mirbft/cmd/orderingpeer/main.go:214 +0x17dd
+  runtime.deferreturn()
+      /home/ubuntu/go/src/runtime/panic.go:476 +0x32
+  main.main()
+      /opt/gopath/src/github.com/hyperledger-labs/mirbft/cmd/orderingpeer/main.go:166 +0xed8
+  runtime.deferreturn()
+      /home/ubuntu/go/src/runtime/panic.go:476 +0x32
+  main.main()
+      /opt/gopath/src/github.com/hyperledger-labs/mirbft/cmd/orderingpeer/main.go:82 +0x56c
+
+Goroutine 548 (running) created at:
+  main.main.func1()
+      /opt/gopath/src/github.com/hyperledger-labs/mirbft/cmd/orderingpeer/main.go:256 +0x4ee
+==================
+==================
+WARNING: DATA RACE
+Read at 0x0000012d99f8 by goroutine 547:
+  main.main.func1()
+      /opt/gopath/src/github.com/hyperledger-labs/mirbft/cmd/orderingpeer/main.go:298 +0xafa
+
+Previous write at 0x0000012d99f8 by goroutine 548:
+  main.main.func1.1()
+      /opt/gopath/src/github.com/hyperledger-labs/mirbft/cmd/orderingpeer/main.go:273 +0x89
+
+Goroutine 547 (running) created at:
+  main.main()
+      /opt/gopath/src/github.com/hyperledger-labs/mirbft/cmd/orderingpeer/main.go:214 +0x17dd
+  runtime.deferreturn()
+      /home/ubuntu/go/src/runtime/panic.go:476 +0x32
+  main.main()
+      /opt/gopath/src/github.com/hyperledger-labs/mirbft/cmd/orderingpeer/main.go:166 +0xed8
+  runtime.deferreturn()
+      /home/ubuntu/go/src/runtime/panic.go:476 +0x32
+  main.main()
+      /opt/gopath/src/github.com/hyperledger-labs/mirbft/cmd/orderingpeer/main.go:82 +0x56c
+
+Goroutine 548 (running) created at:
+  main.main.func1()
+      /opt/gopath/src/github.com/hyperledger-labs/mirbft/cmd/orderingpeer/main.go:256 +0x4ee
+==================
+20:06:01.883 INF Handling PREPREPARE. nReq=10 senderID=0 sn=6
+20:06:01.887 INF Committed entry. latency=0 nReq=10 sn=6
+20:06:01.888 INF Delivered batch. nReq=10 sn=6
+20:06:02.358 INF send metrics to agent. timestamp=1727438762358650375
+20:06:02.365 INF receive response and modify the config timestamp=1727438762364998051
+20:06:02.683 INF Handling PREPREPARE. nReq=8 senderID=0 sn=7
+20:06:02.688 INF Committed entry. latency=0 nReq=8 sn=7
+20:06:02.688 INF Delivered batch. nReq=8 sn=7
+20:06:02.859 INF collect metrics. times=4 timestamp=1727438762859145832
+20:06:03.359 INF send metrics to agent. timestamp=1727438763359545630
+20:06:03.363 INF receive response and modify the config timestamp=1727438763363030283
+20:06:03.485 INF Handling PREPREPARE. nReq=8 senderID=0 sn=8
+20:06:03.489 INF Committed entry. latency=0 nReq=8 sn=8
+20:06:03.489 INF Delivered batch. nReq=8 sn=8
+20:06:03.858 INF collect metrics. times=5 timestamp=1727438763858638552
+20:06:04.286 INF Handling PREPREPARE. nReq=8 senderID=0 sn=9
+20:06:04.289 INF Committed entry. latency=0 nReq=8 sn=9
+20:06:04.289 INF Delivered batch. nReq=8 sn=9
+20:06:04.359 INF send metrics to agent. timestamp=1727438764359643907
+20:06:04.363 INF receive response and modify the config timestamp=1727438764363567652
+20:06:04.859 INF collect metrics. times=6 timestamp=1727438764859413188
+20:06:05.087 INF Handling PREPREPARE. nReq=8 senderID=0 sn=10
+20:06:05.090 INF Committed entry. latency=0 nReq=8 sn=10
+20:06:05.090 INF Delivered batch. nReq=8 sn=10
+20:06:05.359 INF send metrics to agent. timestamp=1727438765359347047
+20:06:05.363 INF receive response and modify the config timestamp=1727438765363895009
+20:06:05.858 INF collect metrics. times=7 timestamp=1727438765858846032
+20:06:05.888 INF Handling PREPREPARE. nReq=8 senderID=0 sn=11
+20:06:05.892 INF Committed entry. latency=0 nReq=8 sn=11
+20:06:05.892 INF Delivered batch. nReq=8 sn=11
+20:06:06.358 INF send metrics to agent. timestamp=1727438766358942570
+20:06:06.360 FTL cannot send metrics. error="rpc error: code = Unavailable desc = connection error: desc = \"transport: Error while dialing: dial tcp 127.0.0.1:32767: connect: connection refused\""

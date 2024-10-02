@@ -1,0 +1,1556 @@
+20:05:56.915 INF Connecting to orderer. addrStr=127.0.0.1:10033 peerId=3
+20:05:56.915 INF Connecting to orderer. addrStr=127.0.0.1:10022 peerId=2
+20:05:56.915 INF Connecting to orderer. addrStr=127.0.0.1:10011 peerId=1
+20:05:56.915 INF Connecting to orderer. addrStr=127.0.0.1:10000 peerId=0
+20:05:56.918 INF Connected to orderer. addrStr=127.0.0.1:10022 id=2
+20:05:56.918 INF Connected to orderer. addrStr=127.0.0.1:10000 id=0
+20:05:56.918 INF Connected to orderer. addrStr=127.0.0.1:10011 id=1
+20:05:56.918 INF Connected to orderer. addrStr=127.0.0.1:10033 id=3
+20:05:56.920 INF Connected to orderers.
+20:05:56.920 INF Updating bucket assignment. epoch=0
+20:05:56.921 INF Resubmitted Requests. epoch=0 n=0
+20:05:56.928 INF Setting up client timeout. clientRunTime=1200000
+20:05:56.929 INF Starting to submit requests. numRequests=2400000
+20:05:57.889 INF Request finished (out of order). clSeqNr=0
+20:05:57.889 INF Request delivered (in order). clSeqNr=0
+20:05:57.889 INF Request finished (out of order). clSeqNr=1
+20:05:57.889 INF Request delivered (in order). clSeqNr=1
+20:05:57.889 INF Request finished (out of order). clSeqNr=2
+20:05:57.890 INF Request delivered (in order). clSeqNr=2
+20:05:57.890 INF Request finished (out of order). clSeqNr=3
+20:05:57.890 INF Request delivered (in order). clSeqNr=3
+20:05:57.890 INF Request finished (out of order). clSeqNr=4
+20:05:57.890 INF Request delivered (in order). clSeqNr=4
+20:05:57.891 INF Request finished (out of order). clSeqNr=5
+20:05:57.891 INF Request delivered (in order). clSeqNr=5
+20:05:57.891 INF Request finished (out of order). clSeqNr=6
+20:05:57.891 INF Request delivered (in order). clSeqNr=6
+20:05:57.891 INF Request finished (out of order). clSeqNr=7
+20:05:57.891 INF Request delivered (in order). clSeqNr=7
+20:05:57.892 INF Request finished (out of order). clSeqNr=8
+20:05:57.892 INF Request delivered (in order). clSeqNr=8
+20:05:58.885 INF Request finished (out of order). clSeqNr=16
+20:05:58.885 INF Request finished (out of order). clSeqNr=17
+20:05:58.886 INF Request finished (out of order). clSeqNr=18
+20:05:58.886 INF Request finished (out of order). clSeqNr=9
+20:05:58.886 INF Request delivered (in order). clSeqNr=9
+20:05:58.886 INF Request finished (out of order). clSeqNr=10
+20:05:58.886 INF Request delivered (in order). clSeqNr=10
+20:05:58.886 INF Request finished (out of order). clSeqNr=11
+20:05:58.886 INF Request delivered (in order). clSeqNr=11
+20:05:58.887 INF Request finished (out of order). clSeqNr=12
+20:05:58.887 INF Request delivered (in order). clSeqNr=12
+20:05:58.887 INF Request finished (out of order). clSeqNr=13
+20:05:58.887 INF Request delivered (in order). clSeqNr=13
+20:05:58.887 INF Request finished (out of order). clSeqNr=14
+20:05:58.887 INF Request delivered (in order). clSeqNr=14
+20:05:58.888 INF Request finished (out of order). clSeqNr=15
+20:05:58.888 INF Request delivered (in order). clSeqNr=15
+20:05:58.888 INF Request delivered (in order). clSeqNr=16
+20:05:58.888 INF Request delivered (in order). clSeqNr=17
+20:05:58.888 INF Request delivered (in order). clSeqNr=18
+20:05:59.885 INF Request finished (out of order). clSeqNr=19
+20:05:59.886 INF Request delivered (in order). clSeqNr=19
+20:05:59.886 INF Request finished (out of order). clSeqNr=20
+20:05:59.886 INF Request delivered (in order). clSeqNr=20
+20:05:59.886 INF Request finished (out of order). clSeqNr=21
+20:05:59.887 INF Request delivered (in order). clSeqNr=21
+20:05:59.887 INF Request finished (out of order). clSeqNr=22
+20:05:59.887 INF Request delivered (in order). clSeqNr=22
+20:05:59.887 INF Request finished (out of order). clSeqNr=23
+20:05:59.887 INF Request delivered (in order). clSeqNr=23
+20:05:59.888 INF Request finished (out of order). clSeqNr=24
+20:05:59.888 INF Request delivered (in order). clSeqNr=24
+20:05:59.888 INF Request finished (out of order). clSeqNr=25
+20:05:59.888 INF Request delivered (in order). clSeqNr=25
+20:05:59.888 INF Request finished (out of order). clSeqNr=26
+20:05:59.889 INF Request delivered (in order). clSeqNr=26
+20:05:59.889 INF Request finished (out of order). clSeqNr=27
+20:05:59.889 INF Request delivered (in order). clSeqNr=27
+20:05:59.889 INF Request finished (out of order). clSeqNr=28
+20:05:59.889 INF Request delivered (in order). clSeqNr=28
+20:06:00.882 INF Request finished (out of order). clSeqNr=32
+20:06:00.882 INF Request finished (out of order). clSeqNr=33
+20:06:00.883 INF Request finished (out of order). clSeqNr=34
+20:06:00.883 INF Request finished (out of order). clSeqNr=35
+20:06:00.883 INF Request finished (out of order). clSeqNr=36
+20:06:00.883 INF Request finished (out of order). clSeqNr=37
+20:06:00.883 INF Request finished (out of order). clSeqNr=38
+20:06:00.883 INF Request finished (out of order). clSeqNr=29
+20:06:00.883 INF Request delivered (in order). clSeqNr=29
+20:06:00.883 INF Request finished (out of order). clSeqNr=30
+20:06:00.883 INF Request delivered (in order). clSeqNr=30
+20:06:00.883 INF Request finished (out of order). clSeqNr=31
+20:06:00.883 INF Request delivered (in order). clSeqNr=31
+20:06:00.883 INF Request delivered (in order). clSeqNr=32
+20:06:00.883 INF Request delivered (in order). clSeqNr=33
+20:06:00.883 INF Request delivered (in order). clSeqNr=34
+20:06:00.883 INF Request delivered (in order). clSeqNr=35
+20:06:00.883 INF Request delivered (in order). clSeqNr=36
+20:06:00.883 INF Request delivered (in order). clSeqNr=37
+20:06:00.883 INF Request delivered (in order). clSeqNr=38
+20:06:01.888 INF Request finished (out of order). clSeqNr=48
+20:06:01.889 INF Request finished (out of order). clSeqNr=39
+20:06:01.889 INF Request delivered (in order). clSeqNr=39
+20:06:01.889 INF Request finished (out of order). clSeqNr=40
+20:06:01.889 INF Request delivered (in order). clSeqNr=40
+20:06:01.889 INF Request finished (out of order). clSeqNr=41
+20:06:01.889 INF Request delivered (in order). clSeqNr=41
+20:06:01.890 INF Request finished (out of order). clSeqNr=42
+20:06:01.890 INF Request delivered (in order). clSeqNr=42
+20:06:01.890 INF Request finished (out of order). clSeqNr=43
+20:06:01.890 INF Request delivered (in order). clSeqNr=43
+20:06:01.890 INF Request finished (out of order). clSeqNr=44
+20:06:01.890 INF Request delivered (in order). clSeqNr=44
+20:06:01.891 INF Request finished (out of order). clSeqNr=45
+20:06:01.891 INF Request delivered (in order). clSeqNr=45
+20:06:01.891 INF Request finished (out of order). clSeqNr=46
+20:06:01.891 INF Request delivered (in order). clSeqNr=46
+20:06:01.891 INF Request finished (out of order). clSeqNr=47
+20:06:01.891 INF Request delivered (in order). clSeqNr=47
+20:06:01.891 INF Request delivered (in order). clSeqNr=48
+20:06:02.689 INF Request finished (out of order). clSeqNr=49
+20:06:02.689 INF Request delivered (in order). clSeqNr=49
+20:06:02.689 INF Request finished (out of order). clSeqNr=50
+20:06:02.689 INF Request delivered (in order). clSeqNr=50
+20:06:02.690 INF Request finished (out of order). clSeqNr=51
+20:06:02.690 INF Request delivered (in order). clSeqNr=51
+20:06:02.690 INF Request finished (out of order). clSeqNr=52
+20:06:02.690 INF Request delivered (in order). clSeqNr=52
+20:06:02.690 INF Request finished (out of order). clSeqNr=53
+20:06:02.691 INF Request delivered (in order). clSeqNr=53
+20:06:02.691 INF Request finished (out of order). clSeqNr=54
+20:06:02.691 INF Request delivered (in order). clSeqNr=54
+20:06:02.691 INF Request finished (out of order). clSeqNr=55
+20:06:02.691 INF Request delivered (in order). clSeqNr=55
+20:06:02.692 INF Request finished (out of order). clSeqNr=56
+20:06:02.692 INF Request delivered (in order). clSeqNr=56
+20:06:03.490 INF Request finished (out of order). clSeqNr=64
+20:06:03.491 INF Request finished (out of order). clSeqNr=57
+20:06:03.491 INF Request delivered (in order). clSeqNr=57
+20:06:03.491 INF Request finished (out of order). clSeqNr=58
+20:06:03.491 INF Request delivered (in order). clSeqNr=58
+20:06:03.491 INF Request finished (out of order). clSeqNr=59
+20:06:03.491 INF Request delivered (in order). clSeqNr=59
+20:06:03.492 INF Request finished (out of order). clSeqNr=60
+20:06:03.492 INF Request delivered (in order). clSeqNr=60
+20:06:03.492 INF Request finished (out of order). clSeqNr=61
+20:06:03.492 INF Request delivered (in order). clSeqNr=61
+20:06:03.492 INF Request finished (out of order). clSeqNr=62
+20:06:03.492 INF Request delivered (in order). clSeqNr=62
+20:06:03.493 INF Request finished (out of order). clSeqNr=63
+20:06:03.493 INF Request delivered (in order). clSeqNr=63
+20:06:03.493 INF Request delivered (in order). clSeqNr=64
+20:06:04.290 INF Request finished (out of order). clSeqNr=65
+20:06:04.291 INF Request delivered (in order). clSeqNr=65
+20:06:04.291 INF Request finished (out of order). clSeqNr=66
+20:06:04.291 INF Request delivered (in order). clSeqNr=66
+20:06:04.291 INF Request finished (out of order). clSeqNr=67
+20:06:04.291 INF Request delivered (in order). clSeqNr=67
+20:06:04.291 INF Request finished (out of order). clSeqNr=68
+20:06:04.292 INF Request delivered (in order). clSeqNr=68
+20:06:04.292 INF Request finished (out of order). clSeqNr=69
+20:06:04.292 INF Request delivered (in order). clSeqNr=69
+20:06:04.292 INF Request finished (out of order). clSeqNr=70
+20:06:04.292 INF Request delivered (in order). clSeqNr=70
+20:06:04.292 INF Request finished (out of order). clSeqNr=71
+20:06:04.292 INF Request delivered (in order). clSeqNr=71
+20:06:04.293 INF Request finished (out of order). clSeqNr=72
+20:06:04.293 INF Request delivered (in order). clSeqNr=72
+20:06:05.090 INF Request finished (out of order). clSeqNr=80
+20:06:05.091 INF Request finished (out of order). clSeqNr=73
+20:06:05.091 INF Request delivered (in order). clSeqNr=73
+20:06:05.091 INF Request finished (out of order). clSeqNr=74
+20:06:05.091 INF Request delivered (in order). clSeqNr=74
+20:06:05.091 INF Request finished (out of order). clSeqNr=75
+20:06:05.092 INF Request delivered (in order). clSeqNr=75
+20:06:05.092 INF Request finished (out of order). clSeqNr=76
+20:06:05.092 INF Request delivered (in order). clSeqNr=76
+20:06:05.092 INF Request finished (out of order). clSeqNr=77
+20:06:05.092 INF Request delivered (in order). clSeqNr=77
+20:06:05.092 INF Request finished (out of order). clSeqNr=78
+20:06:05.092 INF Request delivered (in order). clSeqNr=78
+20:06:05.093 INF Request finished (out of order). clSeqNr=79
+20:06:05.093 INF Request delivered (in order). clSeqNr=79
+20:06:05.093 INF Request delivered (in order). clSeqNr=80
+20:06:05.893 INF Request finished (out of order). clSeqNr=81
+20:06:05.893 INF Request delivered (in order). clSeqNr=81
+20:06:05.894 INF Request finished (out of order). clSeqNr=82
+20:06:05.894 INF Request delivered (in order). clSeqNr=82
+20:06:05.894 INF Request finished (out of order). clSeqNr=83
+20:06:05.894 INF Request delivered (in order). clSeqNr=83
+20:06:05.894 INF Request finished (out of order). clSeqNr=84
+20:06:05.894 INF Request delivered (in order). clSeqNr=84
+20:06:05.894 INF Request finished (out of order). clSeqNr=85
+20:06:05.895 INF Request delivered (in order). clSeqNr=85
+20:06:05.895 INF Request finished (out of order). clSeqNr=86
+20:06:05.895 INF Request delivered (in order). clSeqNr=86
+20:06:05.895 INF Request finished (out of order). clSeqNr=87
+20:06:05.895 INF Request delivered (in order). clSeqNr=87
+20:06:05.895 INF Request finished (out of order). clSeqNr=88
+20:06:05.896 INF Request delivered (in order). clSeqNr=88
+20:06:06.376 INF Bucket assignment stream ended. error="rpc error: code = Unavailable desc = error reading from server: EOF"
+20:06:06.376 INF Response handler done. error="rpc error: code = Unavailable desc = error reading from server: EOF" peerId=1
+20:06:06.377 INF Bucket assignment stream ended. error="rpc error: code = Unavailable desc = error reading from server: EOF"
+20:06:06.377 INF Response handler done. error="rpc error: code = Unavailable desc = error reading from server: EOF" peerId=3
+20:06:06.377 INF Response handler done. error="rpc error: code = Unavailable desc = error reading from server: EOF" peerId=0
+20:06:06.377 INF Response handler done. error="rpc error: code = Unavailable desc = error reading from server: EOF" peerId=2
+20:06:06.377 INF Bucket assignment stream ended. error="rpc error: code = Unavailable desc = error reading from server: EOF"
+20:06:06.377 INF Bucket assignment stream ended. error="rpc error: code = Unavailable desc = error reading from server: EOF"
+20:06:06.430 ERR Failed sending request to ordering peer. error=EOF clSeqNr=94 ordererId=0
+20:06:06.430 ERR Failed sending request to ordering peer. error=EOF clSeqNr=94 ordererId=0
+20:06:06.430 ERR Failed sending request to ordering peer. error=EOF clSeqNr=94 ordererId=0
+20:06:06.530 ERR Failed sending request to ordering peer. error=EOF clSeqNr=95 ordererId=0
+20:06:06.530 ERR Failed sending request to ordering peer. error=EOF clSeqNr=95 ordererId=0
+20:06:06.530 ERR Failed sending request to ordering peer. error=EOF clSeqNr=95 ordererId=0
+20:06:06.629 ERR Failed sending request to ordering peer. error=EOF clSeqNr=96 ordererId=0
+20:06:06.629 ERR Failed sending request to ordering peer. error=EOF clSeqNr=96 ordererId=0
+20:06:06.629 ERR Failed sending request to ordering peer. error=EOF clSeqNr=96 ordererId=0
+20:06:06.729 ERR Failed sending request to ordering peer. error=EOF clSeqNr=97 ordererId=0
+20:06:06.729 ERR Failed sending request to ordering peer. error=EOF clSeqNr=97 ordererId=0
+20:06:06.729 ERR Failed sending request to ordering peer. error=EOF clSeqNr=97 ordererId=0
+20:06:06.829 ERR Failed sending request to ordering peer. error=EOF clSeqNr=98 ordererId=0
+20:06:06.829 ERR Failed sending request to ordering peer. error=EOF clSeqNr=98 ordererId=0
+20:06:06.829 ERR Failed sending request to ordering peer. error=EOF clSeqNr=98 ordererId=0
+20:06:06.929 ERR Failed sending request to ordering peer. error=EOF clSeqNr=99 ordererId=0
+20:06:06.930 ERR Failed sending request to ordering peer. error=EOF clSeqNr=99 ordererId=0
+20:06:06.930 ERR Failed sending request to ordering peer. error=EOF clSeqNr=99 ordererId=0
+20:06:07.029 ERR Failed sending request to ordering peer. error=EOF clSeqNr=100 ordererId=0
+20:06:07.030 ERR Failed sending request to ordering peer. error=EOF clSeqNr=100 ordererId=0
+20:06:07.030 ERR Failed sending request to ordering peer. error=EOF clSeqNr=100 ordererId=0
+20:06:07.129 ERR Failed sending request to ordering peer. error=EOF clSeqNr=101 ordererId=0
+20:06:07.129 ERR Failed sending request to ordering peer. error=EOF clSeqNr=101 ordererId=0
+20:06:07.129 ERR Failed sending request to ordering peer. error=EOF clSeqNr=101 ordererId=0
+20:06:07.229 ERR Failed sending request to ordering peer. error=EOF clSeqNr=102 ordererId=0
+20:06:07.230 ERR Failed sending request to ordering peer. error=EOF clSeqNr=102 ordererId=0
+20:06:07.230 ERR Failed sending request to ordering peer. error=EOF clSeqNr=102 ordererId=0
+20:06:07.329 ERR Failed sending request to ordering peer. error=EOF clSeqNr=103 ordererId=0
+20:06:07.329 ERR Failed sending request to ordering peer. error=EOF clSeqNr=103 ordererId=0
+20:06:07.330 ERR Failed sending request to ordering peer. error=EOF clSeqNr=103 ordererId=0
+20:06:07.429 ERR Failed sending request to ordering peer. error=EOF clSeqNr=104 ordererId=0
+20:06:07.430 ERR Failed sending request to ordering peer. error=EOF clSeqNr=104 ordererId=0
+20:06:07.430 ERR Failed sending request to ordering peer. error=EOF clSeqNr=104 ordererId=0
+20:06:07.529 ERR Failed sending request to ordering peer. error=EOF clSeqNr=105 ordererId=0
+20:06:07.529 ERR Failed sending request to ordering peer. error=EOF clSeqNr=105 ordererId=0
+20:06:07.529 ERR Failed sending request to ordering peer. error=EOF clSeqNr=105 ordererId=0
+20:06:07.629 ERR Failed sending request to ordering peer. error=EOF clSeqNr=106 ordererId=0
+20:06:07.629 ERR Failed sending request to ordering peer. error=EOF clSeqNr=106 ordererId=0
+20:06:07.630 ERR Failed sending request to ordering peer. error=EOF clSeqNr=106 ordererId=0
+20:06:07.729 ERR Failed sending request to ordering peer. error=EOF clSeqNr=107 ordererId=0
+20:06:07.730 ERR Failed sending request to ordering peer. error=EOF clSeqNr=107 ordererId=0
+20:06:07.730 ERR Failed sending request to ordering peer. error=EOF clSeqNr=107 ordererId=0
+20:06:07.829 ERR Failed sending request to ordering peer. error=EOF clSeqNr=108 ordererId=0
+20:06:07.830 ERR Failed sending request to ordering peer. error=EOF clSeqNr=108 ordererId=0
+20:06:07.830 ERR Failed sending request to ordering peer. error=EOF clSeqNr=108 ordererId=0
+20:06:07.929 ERR Failed sending request to ordering peer. error=EOF clSeqNr=109 ordererId=0
+20:06:07.930 ERR Failed sending request to ordering peer. error=EOF clSeqNr=109 ordererId=0
+20:06:07.930 ERR Failed sending request to ordering peer. error=EOF clSeqNr=109 ordererId=0
+20:06:08.029 ERR Failed sending request to ordering peer. error=EOF clSeqNr=110 ordererId=0
+20:06:08.029 ERR Failed sending request to ordering peer. error=EOF clSeqNr=110 ordererId=0
+20:06:08.029 ERR Failed sending request to ordering peer. error=EOF clSeqNr=110 ordererId=0
+20:06:08.129 ERR Failed sending request to ordering peer. error=EOF clSeqNr=111 ordererId=0
+20:06:08.130 ERR Failed sending request to ordering peer. error=EOF clSeqNr=111 ordererId=0
+20:06:08.130 ERR Failed sending request to ordering peer. error=EOF clSeqNr=111 ordererId=0
+20:06:08.229 ERR Failed sending request to ordering peer. error=EOF clSeqNr=112 ordererId=0
+20:06:08.229 ERR Failed sending request to ordering peer. error=EOF clSeqNr=112 ordererId=0
+20:06:08.230 ERR Failed sending request to ordering peer. error=EOF clSeqNr=112 ordererId=0
+20:06:08.329 ERR Failed sending request to ordering peer. error=EOF clSeqNr=113 ordererId=0
+20:06:08.330 ERR Failed sending request to ordering peer. error=EOF clSeqNr=113 ordererId=0
+20:06:08.330 ERR Failed sending request to ordering peer. error=EOF clSeqNr=113 ordererId=0
+20:06:08.429 ERR Failed sending request to ordering peer. error=EOF clSeqNr=114 ordererId=0
+20:06:08.429 ERR Failed sending request to ordering peer. error=EOF clSeqNr=114 ordererId=0
+20:06:08.429 ERR Failed sending request to ordering peer. error=EOF clSeqNr=114 ordererId=0
+20:06:08.529 ERR Failed sending request to ordering peer. error=EOF clSeqNr=115 ordererId=0
+20:06:08.530 ERR Failed sending request to ordering peer. error=EOF clSeqNr=115 ordererId=0
+20:06:08.530 ERR Failed sending request to ordering peer. error=EOF clSeqNr=115 ordererId=0
+20:06:08.629 ERR Failed sending request to ordering peer. error=EOF clSeqNr=116 ordererId=0
+20:06:08.629 ERR Failed sending request to ordering peer. error=EOF clSeqNr=116 ordererId=0
+20:06:08.629 ERR Failed sending request to ordering peer. error=EOF clSeqNr=116 ordererId=0
+20:06:08.729 ERR Failed sending request to ordering peer. error=EOF clSeqNr=117 ordererId=0
+20:06:08.730 ERR Failed sending request to ordering peer. error=EOF clSeqNr=117 ordererId=0
+20:06:08.730 ERR Failed sending request to ordering peer. error=EOF clSeqNr=117 ordererId=0
+20:06:08.829 ERR Failed sending request to ordering peer. error=EOF clSeqNr=118 ordererId=0
+20:06:08.829 ERR Failed sending request to ordering peer. error=EOF clSeqNr=118 ordererId=0
+20:06:08.830 ERR Failed sending request to ordering peer. error=EOF clSeqNr=118 ordererId=0
+20:06:08.929 ERR Failed sending request to ordering peer. error=EOF clSeqNr=119 ordererId=0
+20:06:08.930 ERR Failed sending request to ordering peer. error=EOF clSeqNr=119 ordererId=0
+20:06:08.930 ERR Failed sending request to ordering peer. error=EOF clSeqNr=119 ordererId=0
+20:06:09.029 ERR Failed sending request to ordering peer. error=EOF clSeqNr=120 ordererId=0
+20:06:09.030 ERR Failed sending request to ordering peer. error=EOF clSeqNr=120 ordererId=0
+20:06:09.030 ERR Failed sending request to ordering peer. error=EOF clSeqNr=120 ordererId=0
+20:06:09.129 ERR Failed sending request to ordering peer. error=EOF clSeqNr=121 ordererId=0
+20:06:09.130 ERR Failed sending request to ordering peer. error=EOF clSeqNr=121 ordererId=0
+20:06:09.130 ERR Failed sending request to ordering peer. error=EOF clSeqNr=121 ordererId=0
+20:06:09.229 ERR Failed sending request to ordering peer. error=EOF clSeqNr=122 ordererId=0
+20:06:09.229 ERR Failed sending request to ordering peer. error=EOF clSeqNr=122 ordererId=0
+20:06:09.229 ERR Failed sending request to ordering peer. error=EOF clSeqNr=122 ordererId=0
+20:06:09.329 ERR Failed sending request to ordering peer. error=EOF clSeqNr=123 ordererId=0
+20:06:09.329 ERR Failed sending request to ordering peer. error=EOF clSeqNr=123 ordererId=0
+20:06:09.329 ERR Failed sending request to ordering peer. error=EOF clSeqNr=123 ordererId=0
+20:06:09.429 ERR Failed sending request to ordering peer. error=EOF clSeqNr=124 ordererId=0
+20:06:09.430 ERR Failed sending request to ordering peer. error=EOF clSeqNr=124 ordererId=0
+20:06:09.430 ERR Failed sending request to ordering peer. error=EOF clSeqNr=124 ordererId=0
+20:06:09.529 ERR Failed sending request to ordering peer. error=EOF clSeqNr=125 ordererId=0
+20:06:09.529 ERR Failed sending request to ordering peer. error=EOF clSeqNr=125 ordererId=0
+20:06:09.529 ERR Failed sending request to ordering peer. error=EOF clSeqNr=125 ordererId=0
+20:06:09.629 ERR Failed sending request to ordering peer. error=EOF clSeqNr=126 ordererId=0
+20:06:09.629 ERR Failed sending request to ordering peer. error=EOF clSeqNr=126 ordererId=0
+20:06:09.630 ERR Failed sending request to ordering peer. error=EOF clSeqNr=126 ordererId=0
+20:06:09.729 ERR Failed sending request to ordering peer. error=EOF clSeqNr=127 ordererId=0
+20:06:09.729 ERR Failed sending request to ordering peer. error=EOF clSeqNr=127 ordererId=0
+20:06:09.730 ERR Failed sending request to ordering peer. error=EOF clSeqNr=127 ordererId=0
+20:06:09.829 ERR Failed sending request to ordering peer. error=EOF clSeqNr=128 ordererId=0
+20:06:09.829 ERR Failed sending request to ordering peer. error=EOF clSeqNr=128 ordererId=0
+20:06:09.830 ERR Failed sending request to ordering peer. error=EOF clSeqNr=128 ordererId=0
+20:06:09.929 ERR Failed sending request to ordering peer. error=EOF clSeqNr=129 ordererId=0
+20:06:09.929 ERR Failed sending request to ordering peer. error=EOF clSeqNr=129 ordererId=0
+20:06:09.929 ERR Failed sending request to ordering peer. error=EOF clSeqNr=129 ordererId=0
+20:06:10.029 ERR Failed sending request to ordering peer. error=EOF clSeqNr=130 ordererId=0
+20:06:10.029 ERR Failed sending request to ordering peer. error=EOF clSeqNr=130 ordererId=0
+20:06:10.029 ERR Failed sending request to ordering peer. error=EOF clSeqNr=130 ordererId=0
+20:06:10.129 ERR Failed sending request to ordering peer. error=EOF clSeqNr=131 ordererId=0
+20:06:10.129 ERR Failed sending request to ordering peer. error=EOF clSeqNr=131 ordererId=0
+20:06:10.129 ERR Failed sending request to ordering peer. error=EOF clSeqNr=131 ordererId=0
+20:06:10.229 ERR Failed sending request to ordering peer. error=EOF clSeqNr=132 ordererId=0
+20:06:10.229 ERR Failed sending request to ordering peer. error=EOF clSeqNr=132 ordererId=0
+20:06:10.229 ERR Failed sending request to ordering peer. error=EOF clSeqNr=132 ordererId=0
+20:06:10.329 ERR Failed sending request to ordering peer. error=EOF clSeqNr=133 ordererId=0
+20:06:10.329 ERR Failed sending request to ordering peer. error=EOF clSeqNr=133 ordererId=0
+20:06:10.329 ERR Failed sending request to ordering peer. error=EOF clSeqNr=133 ordererId=0
+20:06:10.429 ERR Failed sending request to ordering peer. error=EOF clSeqNr=134 ordererId=0
+20:06:10.430 ERR Failed sending request to ordering peer. error=EOF clSeqNr=134 ordererId=0
+20:06:10.430 ERR Failed sending request to ordering peer. error=EOF clSeqNr=134 ordererId=0
+20:06:10.529 ERR Failed sending request to ordering peer. error=EOF clSeqNr=135 ordererId=0
+20:06:10.529 ERR Failed sending request to ordering peer. error=EOF clSeqNr=135 ordererId=0
+20:06:10.529 ERR Failed sending request to ordering peer. error=EOF clSeqNr=135 ordererId=0
+20:06:10.629 ERR Failed sending request to ordering peer. error=EOF clSeqNr=136 ordererId=0
+20:06:10.630 ERR Failed sending request to ordering peer. error=EOF clSeqNr=136 ordererId=0
+20:06:10.630 ERR Failed sending request to ordering peer. error=EOF clSeqNr=136 ordererId=0
+20:06:10.729 ERR Failed sending request to ordering peer. error=EOF clSeqNr=137 ordererId=0
+20:06:10.730 ERR Failed sending request to ordering peer. error=EOF clSeqNr=137 ordererId=0
+20:06:10.730 ERR Failed sending request to ordering peer. error=EOF clSeqNr=137 ordererId=0
+20:06:10.829 ERR Failed sending request to ordering peer. error=EOF clSeqNr=138 ordererId=0
+20:06:10.829 ERR Failed sending request to ordering peer. error=EOF clSeqNr=138 ordererId=0
+20:06:10.830 ERR Failed sending request to ordering peer. error=EOF clSeqNr=138 ordererId=0
+20:06:10.929 ERR Failed sending request to ordering peer. error=EOF clSeqNr=139 ordererId=0
+20:06:10.929 ERR Failed sending request to ordering peer. error=EOF clSeqNr=139 ordererId=0
+20:06:10.930 ERR Failed sending request to ordering peer. error=EOF clSeqNr=139 ordererId=0
+20:06:11.028 ERR Failed sending request to ordering peer. error=EOF clSeqNr=140 ordererId=0
+20:06:11.029 ERR Failed sending request to ordering peer. error=EOF clSeqNr=140 ordererId=0
+20:06:11.029 ERR Failed sending request to ordering peer. error=EOF clSeqNr=140 ordererId=0
+20:06:11.128 ERR Failed sending request to ordering peer. error=EOF clSeqNr=141 ordererId=0
+20:06:11.129 ERR Failed sending request to ordering peer. error=EOF clSeqNr=141 ordererId=0
+20:06:11.129 ERR Failed sending request to ordering peer. error=EOF clSeqNr=141 ordererId=0
+20:06:11.229 ERR Failed sending request to ordering peer. error=EOF clSeqNr=142 ordererId=0
+20:06:11.229 ERR Failed sending request to ordering peer. error=EOF clSeqNr=142 ordererId=0
+20:06:11.229 ERR Failed sending request to ordering peer. error=EOF clSeqNr=142 ordererId=0
+20:06:11.330 ERR Failed sending request to ordering peer. error=EOF clSeqNr=143 ordererId=0
+20:06:11.330 ERR Failed sending request to ordering peer. error=EOF clSeqNr=143 ordererId=0
+20:06:11.330 ERR Failed sending request to ordering peer. error=EOF clSeqNr=143 ordererId=0
+20:06:11.429 ERR Failed sending request to ordering peer. error=EOF clSeqNr=144 ordererId=0
+20:06:11.429 ERR Failed sending request to ordering peer. error=EOF clSeqNr=144 ordererId=0
+20:06:11.429 ERR Failed sending request to ordering peer. error=EOF clSeqNr=144 ordererId=0
+20:06:11.529 ERR Failed sending request to ordering peer. error=EOF clSeqNr=145 ordererId=0
+20:06:11.529 ERR Failed sending request to ordering peer. error=EOF clSeqNr=145 ordererId=0
+20:06:11.529 ERR Failed sending request to ordering peer. error=EOF clSeqNr=145 ordererId=0
+20:06:11.629 ERR Failed sending request to ordering peer. error=EOF clSeqNr=146 ordererId=0
+20:06:11.630 ERR Failed sending request to ordering peer. error=EOF clSeqNr=146 ordererId=0
+20:06:11.630 ERR Failed sending request to ordering peer. error=EOF clSeqNr=146 ordererId=0
+20:06:11.729 ERR Failed sending request to ordering peer. error=EOF clSeqNr=147 ordererId=0
+20:06:11.729 ERR Failed sending request to ordering peer. error=EOF clSeqNr=147 ordererId=0
+20:06:11.729 ERR Failed sending request to ordering peer. error=EOF clSeqNr=147 ordererId=0
+20:06:11.829 ERR Failed sending request to ordering peer. error=EOF clSeqNr=148 ordererId=0
+20:06:11.830 ERR Failed sending request to ordering peer. error=EOF clSeqNr=148 ordererId=0
+20:06:11.830 ERR Failed sending request to ordering peer. error=EOF clSeqNr=148 ordererId=0
+20:06:11.929 ERR Failed sending request to ordering peer. error=EOF clSeqNr=149 ordererId=0
+20:06:11.929 ERR Failed sending request to ordering peer. error=EOF clSeqNr=149 ordererId=0
+20:06:11.929 ERR Failed sending request to ordering peer. error=EOF clSeqNr=149 ordererId=0
+20:06:12.029 ERR Failed sending request to ordering peer. error=EOF clSeqNr=150 ordererId=0
+20:06:12.030 ERR Failed sending request to ordering peer. error=EOF clSeqNr=150 ordererId=0
+20:06:12.030 ERR Failed sending request to ordering peer. error=EOF clSeqNr=150 ordererId=0
+20:06:12.129 ERR Failed sending request to ordering peer. error=EOF clSeqNr=151 ordererId=0
+20:06:12.130 ERR Failed sending request to ordering peer. error=EOF clSeqNr=151 ordererId=0
+20:06:12.130 ERR Failed sending request to ordering peer. error=EOF clSeqNr=151 ordererId=0
+20:06:12.229 ERR Failed sending request to ordering peer. error=EOF clSeqNr=152 ordererId=0
+20:06:12.229 ERR Failed sending request to ordering peer. error=EOF clSeqNr=152 ordererId=0
+20:06:12.230 ERR Failed sending request to ordering peer. error=EOF clSeqNr=152 ordererId=0
+20:06:12.329 ERR Failed sending request to ordering peer. error=EOF clSeqNr=153 ordererId=0
+20:06:12.330 ERR Failed sending request to ordering peer. error=EOF clSeqNr=153 ordererId=0
+20:06:12.330 ERR Failed sending request to ordering peer. error=EOF clSeqNr=153 ordererId=0
+20:06:12.429 ERR Failed sending request to ordering peer. error=EOF clSeqNr=154 ordererId=0
+20:06:12.429 ERR Failed sending request to ordering peer. error=EOF clSeqNr=154 ordererId=0
+20:06:12.429 ERR Failed sending request to ordering peer. error=EOF clSeqNr=154 ordererId=0
+20:06:12.529 ERR Failed sending request to ordering peer. error=EOF clSeqNr=155 ordererId=0
+20:06:12.529 ERR Failed sending request to ordering peer. error=EOF clSeqNr=155 ordererId=0
+20:06:12.529 ERR Failed sending request to ordering peer. error=EOF clSeqNr=155 ordererId=0
+20:06:12.629 ERR Failed sending request to ordering peer. error=EOF clSeqNr=156 ordererId=0
+20:06:12.629 ERR Failed sending request to ordering peer. error=EOF clSeqNr=156 ordererId=0
+20:06:12.629 ERR Failed sending request to ordering peer. error=EOF clSeqNr=156 ordererId=0
+20:06:12.729 ERR Failed sending request to ordering peer. error=EOF clSeqNr=157 ordererId=0
+20:06:12.729 ERR Failed sending request to ordering peer. error=EOF clSeqNr=157 ordererId=0
+20:06:12.729 ERR Failed sending request to ordering peer. error=EOF clSeqNr=157 ordererId=0
+20:06:12.829 ERR Failed sending request to ordering peer. error=EOF clSeqNr=158 ordererId=0
+20:06:12.829 ERR Failed sending request to ordering peer. error=EOF clSeqNr=158 ordererId=0
+20:06:12.829 ERR Failed sending request to ordering peer. error=EOF clSeqNr=158 ordererId=0
+20:06:12.929 ERR Failed sending request to ordering peer. error=EOF clSeqNr=159 ordererId=0
+20:06:12.930 ERR Failed sending request to ordering peer. error=EOF clSeqNr=159 ordererId=0
+20:06:12.930 ERR Failed sending request to ordering peer. error=EOF clSeqNr=159 ordererId=0
+20:06:13.029 ERR Failed sending request to ordering peer. error=EOF clSeqNr=160 ordererId=0
+20:06:13.029 ERR Failed sending request to ordering peer. error=EOF clSeqNr=160 ordererId=0
+20:06:13.029 ERR Failed sending request to ordering peer. error=EOF clSeqNr=160 ordererId=0
+20:06:13.129 ERR Failed sending request to ordering peer. error=EOF clSeqNr=161 ordererId=0
+20:06:13.129 ERR Failed sending request to ordering peer. error=EOF clSeqNr=161 ordererId=0
+20:06:13.130 ERR Failed sending request to ordering peer. error=EOF clSeqNr=161 ordererId=0
+20:06:13.229 ERR Failed sending request to ordering peer. error=EOF clSeqNr=162 ordererId=0
+20:06:13.230 ERR Failed sending request to ordering peer. error=EOF clSeqNr=162 ordererId=0
+20:06:13.230 ERR Failed sending request to ordering peer. error=EOF clSeqNr=162 ordererId=0
+20:06:13.329 ERR Failed sending request to ordering peer. error=EOF clSeqNr=163 ordererId=0
+20:06:13.329 ERR Failed sending request to ordering peer. error=EOF clSeqNr=163 ordererId=0
+20:06:13.329 ERR Failed sending request to ordering peer. error=EOF clSeqNr=163 ordererId=0
+20:06:13.429 ERR Failed sending request to ordering peer. error=EOF clSeqNr=164 ordererId=0
+20:06:13.429 ERR Failed sending request to ordering peer. error=EOF clSeqNr=164 ordererId=0
+20:06:13.429 ERR Failed sending request to ordering peer. error=EOF clSeqNr=164 ordererId=0
+20:06:13.529 ERR Failed sending request to ordering peer. error=EOF clSeqNr=165 ordererId=0
+20:06:13.529 ERR Failed sending request to ordering peer. error=EOF clSeqNr=165 ordererId=0
+20:06:13.530 ERR Failed sending request to ordering peer. error=EOF clSeqNr=165 ordererId=0
+20:06:13.629 ERR Failed sending request to ordering peer. error=EOF clSeqNr=166 ordererId=0
+20:06:13.630 ERR Failed sending request to ordering peer. error=EOF clSeqNr=166 ordererId=0
+20:06:13.630 ERR Failed sending request to ordering peer. error=EOF clSeqNr=166 ordererId=0
+20:06:13.729 ERR Failed sending request to ordering peer. error=EOF clSeqNr=167 ordererId=0
+20:06:13.729 ERR Failed sending request to ordering peer. error=EOF clSeqNr=167 ordererId=0
+20:06:13.729 ERR Failed sending request to ordering peer. error=EOF clSeqNr=167 ordererId=0
+20:06:13.829 ERR Failed sending request to ordering peer. error=EOF clSeqNr=168 ordererId=0
+20:06:13.829 ERR Failed sending request to ordering peer. error=EOF clSeqNr=168 ordererId=0
+20:06:13.830 ERR Failed sending request to ordering peer. error=EOF clSeqNr=168 ordererId=0
+20:06:13.929 ERR Failed sending request to ordering peer. error=EOF clSeqNr=169 ordererId=0
+20:06:13.929 ERR Failed sending request to ordering peer. error=EOF clSeqNr=169 ordererId=0
+20:06:13.930 ERR Failed sending request to ordering peer. error=EOF clSeqNr=169 ordererId=0
+20:06:14.029 ERR Failed sending request to ordering peer. error=EOF clSeqNr=170 ordererId=0
+20:06:14.030 ERR Failed sending request to ordering peer. error=EOF clSeqNr=170 ordererId=0
+20:06:14.030 ERR Failed sending request to ordering peer. error=EOF clSeqNr=170 ordererId=0
+20:06:14.129 ERR Failed sending request to ordering peer. error=EOF clSeqNr=171 ordererId=0
+20:06:14.130 ERR Failed sending request to ordering peer. error=EOF clSeqNr=171 ordererId=0
+20:06:14.130 ERR Failed sending request to ordering peer. error=EOF clSeqNr=171 ordererId=0
+20:06:14.229 ERR Failed sending request to ordering peer. error=EOF clSeqNr=172 ordererId=0
+20:06:14.230 ERR Failed sending request to ordering peer. error=EOF clSeqNr=172 ordererId=0
+20:06:14.230 ERR Failed sending request to ordering peer. error=EOF clSeqNr=172 ordererId=0
+20:06:14.329 ERR Failed sending request to ordering peer. error=EOF clSeqNr=173 ordererId=0
+20:06:14.329 ERR Failed sending request to ordering peer. error=EOF clSeqNr=173 ordererId=0
+20:06:14.330 ERR Failed sending request to ordering peer. error=EOF clSeqNr=173 ordererId=0
+20:06:14.430 ERR Failed sending request to ordering peer. error=EOF clSeqNr=174 ordererId=0
+20:06:14.430 ERR Failed sending request to ordering peer. error=EOF clSeqNr=174 ordererId=0
+20:06:14.430 ERR Failed sending request to ordering peer. error=EOF clSeqNr=174 ordererId=0
+20:06:14.529 ERR Failed sending request to ordering peer. error=EOF clSeqNr=175 ordererId=0
+20:06:14.529 ERR Failed sending request to ordering peer. error=EOF clSeqNr=175 ordererId=0
+20:06:14.529 ERR Failed sending request to ordering peer. error=EOF clSeqNr=175 ordererId=0
+20:06:14.629 ERR Failed sending request to ordering peer. error=EOF clSeqNr=176 ordererId=0
+20:06:14.629 ERR Failed sending request to ordering peer. error=EOF clSeqNr=176 ordererId=0
+20:06:14.629 ERR Failed sending request to ordering peer. error=EOF clSeqNr=176 ordererId=0
+20:06:14.729 ERR Failed sending request to ordering peer. error=EOF clSeqNr=177 ordererId=0
+20:06:14.729 ERR Failed sending request to ordering peer. error=EOF clSeqNr=177 ordererId=0
+20:06:14.729 ERR Failed sending request to ordering peer. error=EOF clSeqNr=177 ordererId=0
+20:06:14.829 ERR Failed sending request to ordering peer. error=EOF clSeqNr=178 ordererId=0
+20:06:14.829 ERR Failed sending request to ordering peer. error=EOF clSeqNr=178 ordererId=0
+20:06:14.830 ERR Failed sending request to ordering peer. error=EOF clSeqNr=178 ordererId=0
+20:06:14.929 ERR Failed sending request to ordering peer. error=EOF clSeqNr=179 ordererId=0
+20:06:14.929 ERR Failed sending request to ordering peer. error=EOF clSeqNr=179 ordererId=0
+20:06:14.930 ERR Failed sending request to ordering peer. error=EOF clSeqNr=179 ordererId=0
+20:06:15.029 ERR Failed sending request to ordering peer. error=EOF clSeqNr=180 ordererId=0
+20:06:15.030 ERR Failed sending request to ordering peer. error=EOF clSeqNr=180 ordererId=0
+20:06:15.030 ERR Failed sending request to ordering peer. error=EOF clSeqNr=180 ordererId=0
+20:06:15.129 ERR Failed sending request to ordering peer. error=EOF clSeqNr=181 ordererId=0
+20:06:15.130 ERR Failed sending request to ordering peer. error=EOF clSeqNr=181 ordererId=0
+20:06:15.130 ERR Failed sending request to ordering peer. error=EOF clSeqNr=181 ordererId=0
+20:06:15.229 ERR Failed sending request to ordering peer. error=EOF clSeqNr=182 ordererId=0
+20:06:15.230 ERR Failed sending request to ordering peer. error=EOF clSeqNr=182 ordererId=0
+20:06:15.230 ERR Failed sending request to ordering peer. error=EOF clSeqNr=182 ordererId=0
+20:06:15.329 ERR Failed sending request to ordering peer. error=EOF clSeqNr=183 ordererId=0
+20:06:15.329 ERR Failed sending request to ordering peer. error=EOF clSeqNr=183 ordererId=0
+20:06:15.329 ERR Failed sending request to ordering peer. error=EOF clSeqNr=183 ordererId=0
+20:06:15.429 ERR Failed sending request to ordering peer. error=EOF clSeqNr=184 ordererId=0
+20:06:15.429 ERR Failed sending request to ordering peer. error=EOF clSeqNr=184 ordererId=0
+20:06:15.429 ERR Failed sending request to ordering peer. error=EOF clSeqNr=184 ordererId=0
+20:06:15.529 ERR Failed sending request to ordering peer. error=EOF clSeqNr=185 ordererId=0
+20:06:15.530 ERR Failed sending request to ordering peer. error=EOF clSeqNr=185 ordererId=0
+20:06:15.530 ERR Failed sending request to ordering peer. error=EOF clSeqNr=185 ordererId=0
+20:06:15.629 ERR Failed sending request to ordering peer. error=EOF clSeqNr=186 ordererId=0
+20:06:15.629 ERR Failed sending request to ordering peer. error=EOF clSeqNr=186 ordererId=0
+20:06:15.629 ERR Failed sending request to ordering peer. error=EOF clSeqNr=186 ordererId=0
+20:06:15.729 ERR Failed sending request to ordering peer. error=EOF clSeqNr=187 ordererId=0
+20:06:15.729 ERR Failed sending request to ordering peer. error=EOF clSeqNr=187 ordererId=0
+20:06:15.729 ERR Failed sending request to ordering peer. error=EOF clSeqNr=187 ordererId=0
+20:06:15.829 ERR Failed sending request to ordering peer. error=EOF clSeqNr=188 ordererId=0
+20:06:15.830 ERR Failed sending request to ordering peer. error=EOF clSeqNr=188 ordererId=0
+20:06:15.830 ERR Failed sending request to ordering peer. error=EOF clSeqNr=188 ordererId=0
+20:06:15.929 ERR Failed sending request to ordering peer. error=EOF clSeqNr=189 ordererId=0
+20:06:15.929 ERR Failed sending request to ordering peer. error=EOF clSeqNr=189 ordererId=0
+20:06:15.929 ERR Failed sending request to ordering peer. error=EOF clSeqNr=189 ordererId=0
+20:06:16.029 ERR Failed sending request to ordering peer. error=EOF clSeqNr=190 ordererId=0
+20:06:16.029 ERR Failed sending request to ordering peer. error=EOF clSeqNr=190 ordererId=0
+20:06:16.030 ERR Failed sending request to ordering peer. error=EOF clSeqNr=190 ordererId=0
+20:06:16.129 ERR Failed sending request to ordering peer. error=EOF clSeqNr=191 ordererId=0
+20:06:16.130 ERR Failed sending request to ordering peer. error=EOF clSeqNr=191 ordererId=0
+20:06:16.130 ERR Failed sending request to ordering peer. error=EOF clSeqNr=191 ordererId=0
+20:06:16.230 ERR Failed sending request to ordering peer. error=EOF clSeqNr=192 ordererId=0
+20:06:16.230 ERR Failed sending request to ordering peer. error=EOF clSeqNr=192 ordererId=0
+20:06:16.230 ERR Failed sending request to ordering peer. error=EOF clSeqNr=192 ordererId=0
+20:06:16.329 ERR Failed sending request to ordering peer. error=EOF clSeqNr=193 ordererId=0
+20:06:16.330 ERR Failed sending request to ordering peer. error=EOF clSeqNr=193 ordererId=0
+20:06:16.330 ERR Failed sending request to ordering peer. error=EOF clSeqNr=193 ordererId=0
+20:06:16.429 ERR Failed sending request to ordering peer. error=EOF clSeqNr=194 ordererId=0
+20:06:16.429 ERR Failed sending request to ordering peer. error=EOF clSeqNr=194 ordererId=0
+20:06:16.430 ERR Failed sending request to ordering peer. error=EOF clSeqNr=194 ordererId=0
+20:06:16.529 ERR Failed sending request to ordering peer. error=EOF clSeqNr=195 ordererId=0
+20:06:16.530 ERR Failed sending request to ordering peer. error=EOF clSeqNr=195 ordererId=0
+20:06:16.530 ERR Failed sending request to ordering peer. error=EOF clSeqNr=195 ordererId=0
+20:06:16.628 ERR Failed sending request to ordering peer. error=EOF clSeqNr=196 ordererId=0
+20:06:16.629 ERR Failed sending request to ordering peer. error=EOF clSeqNr=196 ordererId=0
+20:06:16.629 ERR Failed sending request to ordering peer. error=EOF clSeqNr=196 ordererId=0
+20:06:16.729 ERR Failed sending request to ordering peer. error=EOF clSeqNr=197 ordererId=0
+20:06:16.729 ERR Failed sending request to ordering peer. error=EOF clSeqNr=197 ordererId=0
+20:06:16.729 ERR Failed sending request to ordering peer. error=EOF clSeqNr=197 ordererId=0
+20:06:16.829 ERR Failed sending request to ordering peer. error=EOF clSeqNr=198 ordererId=0
+20:06:16.830 ERR Failed sending request to ordering peer. error=EOF clSeqNr=198 ordererId=0
+20:06:16.830 ERR Failed sending request to ordering peer. error=EOF clSeqNr=198 ordererId=0
+20:06:16.929 ERR Failed sending request to ordering peer. error=EOF clSeqNr=199 ordererId=0
+20:06:16.929 ERR Failed sending request to ordering peer. error=EOF clSeqNr=199 ordererId=0
+20:06:16.929 ERR Failed sending request to ordering peer. error=EOF clSeqNr=199 ordererId=0
+20:06:17.029 ERR Failed sending request to ordering peer. error=EOF clSeqNr=200 ordererId=0
+20:06:17.030 ERR Failed sending request to ordering peer. error=EOF clSeqNr=200 ordererId=0
+20:06:17.030 ERR Failed sending request to ordering peer. error=EOF clSeqNr=200 ordererId=0
+20:06:17.129 ERR Failed sending request to ordering peer. error=EOF clSeqNr=201 ordererId=0
+20:06:17.130 ERR Failed sending request to ordering peer. error=EOF clSeqNr=201 ordererId=0
+20:06:17.130 ERR Failed sending request to ordering peer. error=EOF clSeqNr=201 ordererId=0
+20:06:17.229 ERR Failed sending request to ordering peer. error=EOF clSeqNr=202 ordererId=0
+20:06:17.230 ERR Failed sending request to ordering peer. error=EOF clSeqNr=202 ordererId=0
+20:06:17.230 ERR Failed sending request to ordering peer. error=EOF clSeqNr=202 ordererId=0
+20:06:17.329 ERR Failed sending request to ordering peer. error=EOF clSeqNr=203 ordererId=0
+20:06:17.329 ERR Failed sending request to ordering peer. error=EOF clSeqNr=203 ordererId=0
+20:06:17.329 ERR Failed sending request to ordering peer. error=EOF clSeqNr=203 ordererId=0
+20:06:17.429 ERR Failed sending request to ordering peer. error=EOF clSeqNr=204 ordererId=0
+20:06:17.429 ERR Failed sending request to ordering peer. error=EOF clSeqNr=204 ordererId=0
+20:06:17.429 ERR Failed sending request to ordering peer. error=EOF clSeqNr=204 ordererId=0
+20:06:17.529 ERR Failed sending request to ordering peer. error=EOF clSeqNr=205 ordererId=0
+20:06:17.529 ERR Failed sending request to ordering peer. error=EOF clSeqNr=205 ordererId=0
+20:06:17.530 ERR Failed sending request to ordering peer. error=EOF clSeqNr=205 ordererId=0
+20:06:17.629 ERR Failed sending request to ordering peer. error=EOF clSeqNr=206 ordererId=0
+20:06:17.630 ERR Failed sending request to ordering peer. error=EOF clSeqNr=206 ordererId=0
+20:06:17.630 ERR Failed sending request to ordering peer. error=EOF clSeqNr=206 ordererId=0
+20:06:17.728 ERR Failed sending request to ordering peer. error=EOF clSeqNr=207 ordererId=0
+20:06:17.729 ERR Failed sending request to ordering peer. error=EOF clSeqNr=207 ordererId=0
+20:06:17.729 ERR Failed sending request to ordering peer. error=EOF clSeqNr=207 ordererId=0
+20:06:17.829 ERR Failed sending request to ordering peer. error=EOF clSeqNr=208 ordererId=0
+20:06:17.829 ERR Failed sending request to ordering peer. error=EOF clSeqNr=208 ordererId=0
+20:06:17.829 ERR Failed sending request to ordering peer. error=EOF clSeqNr=208 ordererId=0
+20:06:17.929 ERR Failed sending request to ordering peer. error=EOF clSeqNr=209 ordererId=0
+20:06:17.930 ERR Failed sending request to ordering peer. error=EOF clSeqNr=209 ordererId=0
+20:06:17.930 ERR Failed sending request to ordering peer. error=EOF clSeqNr=209 ordererId=0
+20:06:18.029 ERR Failed sending request to ordering peer. error=EOF clSeqNr=210 ordererId=0
+20:06:18.029 ERR Failed sending request to ordering peer. error=EOF clSeqNr=210 ordererId=0
+20:06:18.029 ERR Failed sending request to ordering peer. error=EOF clSeqNr=210 ordererId=0
+20:06:18.129 ERR Failed sending request to ordering peer. error=EOF clSeqNr=211 ordererId=0
+20:06:18.129 ERR Failed sending request to ordering peer. error=EOF clSeqNr=211 ordererId=0
+20:06:18.130 ERR Failed sending request to ordering peer. error=EOF clSeqNr=211 ordererId=0
+20:06:18.229 ERR Failed sending request to ordering peer. error=EOF clSeqNr=212 ordererId=0
+20:06:18.229 ERR Failed sending request to ordering peer. error=EOF clSeqNr=212 ordererId=0
+20:06:18.229 ERR Failed sending request to ordering peer. error=EOF clSeqNr=212 ordererId=0
+20:06:18.329 ERR Failed sending request to ordering peer. error=EOF clSeqNr=213 ordererId=0
+20:06:18.329 ERR Failed sending request to ordering peer. error=EOF clSeqNr=213 ordererId=0
+20:06:18.329 ERR Failed sending request to ordering peer. error=EOF clSeqNr=213 ordererId=0
+20:06:18.429 ERR Failed sending request to ordering peer. error=EOF clSeqNr=214 ordererId=0
+20:06:18.430 ERR Failed sending request to ordering peer. error=EOF clSeqNr=214 ordererId=0
+20:06:18.430 ERR Failed sending request to ordering peer. error=EOF clSeqNr=214 ordererId=0
+20:06:18.529 ERR Failed sending request to ordering peer. error=EOF clSeqNr=215 ordererId=0
+20:06:18.530 ERR Failed sending request to ordering peer. error=EOF clSeqNr=215 ordererId=0
+20:06:18.530 ERR Failed sending request to ordering peer. error=EOF clSeqNr=215 ordererId=0
+20:06:18.629 ERR Failed sending request to ordering peer. error=EOF clSeqNr=216 ordererId=0
+20:06:18.629 ERR Failed sending request to ordering peer. error=EOF clSeqNr=216 ordererId=0
+20:06:18.629 ERR Failed sending request to ordering peer. error=EOF clSeqNr=216 ordererId=0
+20:06:18.729 ERR Failed sending request to ordering peer. error=EOF clSeqNr=217 ordererId=0
+20:06:18.730 ERR Failed sending request to ordering peer. error=EOF clSeqNr=217 ordererId=0
+20:06:18.730 ERR Failed sending request to ordering peer. error=EOF clSeqNr=217 ordererId=0
+20:06:18.829 ERR Failed sending request to ordering peer. error=EOF clSeqNr=218 ordererId=0
+20:06:18.829 ERR Failed sending request to ordering peer. error=EOF clSeqNr=218 ordererId=0
+20:06:18.829 ERR Failed sending request to ordering peer. error=EOF clSeqNr=218 ordererId=0
+20:06:18.929 ERR Failed sending request to ordering peer. error=EOF clSeqNr=219 ordererId=0
+20:06:18.929 ERR Failed sending request to ordering peer. error=EOF clSeqNr=219 ordererId=0
+20:06:18.929 ERR Failed sending request to ordering peer. error=EOF clSeqNr=219 ordererId=0
+20:06:19.029 ERR Failed sending request to ordering peer. error=EOF clSeqNr=220 ordererId=0
+20:06:19.030 ERR Failed sending request to ordering peer. error=EOF clSeqNr=220 ordererId=0
+20:06:19.030 ERR Failed sending request to ordering peer. error=EOF clSeqNr=220 ordererId=0
+20:06:19.129 ERR Failed sending request to ordering peer. error=EOF clSeqNr=221 ordererId=0
+20:06:19.129 ERR Failed sending request to ordering peer. error=EOF clSeqNr=221 ordererId=0
+20:06:19.129 ERR Failed sending request to ordering peer. error=EOF clSeqNr=221 ordererId=0
+20:06:19.229 ERR Failed sending request to ordering peer. error=EOF clSeqNr=222 ordererId=0
+20:06:19.229 ERR Failed sending request to ordering peer. error=EOF clSeqNr=222 ordererId=0
+20:06:19.229 ERR Failed sending request to ordering peer. error=EOF clSeqNr=222 ordererId=0
+20:06:19.329 ERR Failed sending request to ordering peer. error=EOF clSeqNr=223 ordererId=0
+20:06:19.329 ERR Failed sending request to ordering peer. error=EOF clSeqNr=223 ordererId=0
+20:06:19.329 ERR Failed sending request to ordering peer. error=EOF clSeqNr=223 ordererId=0
+20:06:19.429 ERR Failed sending request to ordering peer. error=EOF clSeqNr=224 ordererId=0
+20:06:19.429 ERR Failed sending request to ordering peer. error=EOF clSeqNr=224 ordererId=0
+20:06:19.429 ERR Failed sending request to ordering peer. error=EOF clSeqNr=224 ordererId=0
+20:06:19.529 ERR Failed sending request to ordering peer. error=EOF clSeqNr=225 ordererId=0
+20:06:19.529 ERR Failed sending request to ordering peer. error=EOF clSeqNr=225 ordererId=0
+20:06:19.529 ERR Failed sending request to ordering peer. error=EOF clSeqNr=225 ordererId=0
+20:06:19.629 ERR Failed sending request to ordering peer. error=EOF clSeqNr=226 ordererId=0
+20:06:19.629 ERR Failed sending request to ordering peer. error=EOF clSeqNr=226 ordererId=0
+20:06:19.629 ERR Failed sending request to ordering peer. error=EOF clSeqNr=226 ordererId=0
+20:06:19.729 ERR Failed sending request to ordering peer. error=EOF clSeqNr=227 ordererId=0
+20:06:19.729 ERR Failed sending request to ordering peer. error=EOF clSeqNr=227 ordererId=0
+20:06:19.730 ERR Failed sending request to ordering peer. error=EOF clSeqNr=227 ordererId=0
+20:06:19.829 ERR Failed sending request to ordering peer. error=EOF clSeqNr=228 ordererId=0
+20:06:19.830 ERR Failed sending request to ordering peer. error=EOF clSeqNr=228 ordererId=0
+20:06:19.830 ERR Failed sending request to ordering peer. error=EOF clSeqNr=228 ordererId=0
+20:06:19.929 ERR Failed sending request to ordering peer. error=EOF clSeqNr=229 ordererId=0
+20:06:19.930 ERR Failed sending request to ordering peer. error=EOF clSeqNr=229 ordererId=0
+20:06:19.930 ERR Failed sending request to ordering peer. error=EOF clSeqNr=229 ordererId=0
+20:06:20.029 ERR Failed sending request to ordering peer. error=EOF clSeqNr=230 ordererId=0
+20:06:20.029 ERR Failed sending request to ordering peer. error=EOF clSeqNr=230 ordererId=0
+20:06:20.029 ERR Failed sending request to ordering peer. error=EOF clSeqNr=230 ordererId=0
+20:06:20.129 ERR Failed sending request to ordering peer. error=EOF clSeqNr=231 ordererId=0
+20:06:20.129 ERR Failed sending request to ordering peer. error=EOF clSeqNr=231 ordererId=0
+20:06:20.130 ERR Failed sending request to ordering peer. error=EOF clSeqNr=231 ordererId=0
+20:06:20.229 ERR Failed sending request to ordering peer. error=EOF clSeqNr=232 ordererId=0
+20:06:20.229 ERR Failed sending request to ordering peer. error=EOF clSeqNr=232 ordererId=0
+20:06:20.229 ERR Failed sending request to ordering peer. error=EOF clSeqNr=232 ordererId=0
+20:06:20.329 ERR Failed sending request to ordering peer. error=EOF clSeqNr=233 ordererId=0
+20:06:20.329 ERR Failed sending request to ordering peer. error=EOF clSeqNr=233 ordererId=0
+20:06:20.329 ERR Failed sending request to ordering peer. error=EOF clSeqNr=233 ordererId=0
+20:06:20.429 ERR Failed sending request to ordering peer. error=EOF clSeqNr=234 ordererId=0
+20:06:20.429 ERR Failed sending request to ordering peer. error=EOF clSeqNr=234 ordererId=0
+20:06:20.429 ERR Failed sending request to ordering peer. error=EOF clSeqNr=234 ordererId=0
+20:06:20.529 ERR Failed sending request to ordering peer. error=EOF clSeqNr=235 ordererId=0
+20:06:20.529 ERR Failed sending request to ordering peer. error=EOF clSeqNr=235 ordererId=0
+20:06:20.529 ERR Failed sending request to ordering peer. error=EOF clSeqNr=235 ordererId=0
+20:06:20.629 ERR Failed sending request to ordering peer. error=EOF clSeqNr=236 ordererId=0
+20:06:20.629 ERR Failed sending request to ordering peer. error=EOF clSeqNr=236 ordererId=0
+20:06:20.630 ERR Failed sending request to ordering peer. error=EOF clSeqNr=236 ordererId=0
+20:06:20.729 ERR Failed sending request to ordering peer. error=EOF clSeqNr=237 ordererId=0
+20:06:20.729 ERR Failed sending request to ordering peer. error=EOF clSeqNr=237 ordererId=0
+20:06:20.730 ERR Failed sending request to ordering peer. error=EOF clSeqNr=237 ordererId=0
+20:06:20.829 ERR Failed sending request to ordering peer. error=EOF clSeqNr=238 ordererId=0
+20:06:20.830 ERR Failed sending request to ordering peer. error=EOF clSeqNr=238 ordererId=0
+20:06:20.830 ERR Failed sending request to ordering peer. error=EOF clSeqNr=238 ordererId=0
+20:06:20.929 ERR Failed sending request to ordering peer. error=EOF clSeqNr=239 ordererId=0
+20:06:20.929 ERR Failed sending request to ordering peer. error=EOF clSeqNr=239 ordererId=0
+20:06:20.929 ERR Failed sending request to ordering peer. error=EOF clSeqNr=239 ordererId=0
+20:06:21.029 ERR Failed sending request to ordering peer. error=EOF clSeqNr=240 ordererId=0
+20:06:21.029 ERR Failed sending request to ordering peer. error=EOF clSeqNr=240 ordererId=0
+20:06:21.029 ERR Failed sending request to ordering peer. error=EOF clSeqNr=240 ordererId=0
+20:06:21.130 ERR Failed sending request to ordering peer. error=EOF clSeqNr=241 ordererId=0
+20:06:21.130 ERR Failed sending request to ordering peer. error=EOF clSeqNr=241 ordererId=0
+20:06:21.130 ERR Failed sending request to ordering peer. error=EOF clSeqNr=241 ordererId=0
+20:06:21.229 ERR Failed sending request to ordering peer. error=EOF clSeqNr=242 ordererId=0
+20:06:21.229 ERR Failed sending request to ordering peer. error=EOF clSeqNr=242 ordererId=0
+20:06:21.230 ERR Failed sending request to ordering peer. error=EOF clSeqNr=242 ordererId=0
+20:06:21.329 ERR Failed sending request to ordering peer. error=EOF clSeqNr=243 ordererId=0
+20:06:21.329 ERR Failed sending request to ordering peer. error=EOF clSeqNr=243 ordererId=0
+20:06:21.329 ERR Failed sending request to ordering peer. error=EOF clSeqNr=243 ordererId=0
+20:06:21.429 ERR Failed sending request to ordering peer. error=EOF clSeqNr=244 ordererId=0
+20:06:21.430 ERR Failed sending request to ordering peer. error=EOF clSeqNr=244 ordererId=0
+20:06:21.430 ERR Failed sending request to ordering peer. error=EOF clSeqNr=244 ordererId=0
+20:06:21.529 ERR Failed sending request to ordering peer. error=EOF clSeqNr=245 ordererId=0
+20:06:21.530 ERR Failed sending request to ordering peer. error=EOF clSeqNr=245 ordererId=0
+20:06:21.530 ERR Failed sending request to ordering peer. error=EOF clSeqNr=245 ordererId=0
+20:06:21.629 ERR Failed sending request to ordering peer. error=EOF clSeqNr=246 ordererId=0
+20:06:21.629 ERR Failed sending request to ordering peer. error=EOF clSeqNr=246 ordererId=0
+20:06:21.629 ERR Failed sending request to ordering peer. error=EOF clSeqNr=246 ordererId=0
+20:06:21.729 ERR Failed sending request to ordering peer. error=EOF clSeqNr=247 ordererId=0
+20:06:21.729 ERR Failed sending request to ordering peer. error=EOF clSeqNr=247 ordererId=0
+20:06:21.729 ERR Failed sending request to ordering peer. error=EOF clSeqNr=247 ordererId=0
+20:06:21.829 ERR Failed sending request to ordering peer. error=EOF clSeqNr=248 ordererId=0
+20:06:21.829 ERR Failed sending request to ordering peer. error=EOF clSeqNr=248 ordererId=0
+20:06:21.830 ERR Failed sending request to ordering peer. error=EOF clSeqNr=248 ordererId=0
+20:06:21.929 ERR Failed sending request to ordering peer. error=EOF clSeqNr=249 ordererId=0
+20:06:21.930 ERR Failed sending request to ordering peer. error=EOF clSeqNr=249 ordererId=0
+20:06:21.930 ERR Failed sending request to ordering peer. error=EOF clSeqNr=249 ordererId=0
+20:06:22.028 ERR Failed sending request to ordering peer. error=EOF clSeqNr=250 ordererId=0
+20:06:22.029 ERR Failed sending request to ordering peer. error=EOF clSeqNr=250 ordererId=0
+20:06:22.029 ERR Failed sending request to ordering peer. error=EOF clSeqNr=250 ordererId=0
+20:06:22.129 ERR Failed sending request to ordering peer. error=EOF clSeqNr=251 ordererId=0
+20:06:22.130 ERR Failed sending request to ordering peer. error=EOF clSeqNr=251 ordererId=0
+20:06:22.130 ERR Failed sending request to ordering peer. error=EOF clSeqNr=251 ordererId=0
+20:06:22.228 ERR Failed sending request to ordering peer. error=EOF clSeqNr=252 ordererId=0
+20:06:22.229 ERR Failed sending request to ordering peer. error=EOF clSeqNr=252 ordererId=0
+20:06:22.229 ERR Failed sending request to ordering peer. error=EOF clSeqNr=252 ordererId=0
+20:06:22.329 ERR Failed sending request to ordering peer. error=EOF clSeqNr=253 ordererId=0
+20:06:22.329 ERR Failed sending request to ordering peer. error=EOF clSeqNr=253 ordererId=0
+20:06:22.329 ERR Failed sending request to ordering peer. error=EOF clSeqNr=253 ordererId=0
+20:06:22.429 ERR Failed sending request to ordering peer. error=EOF clSeqNr=254 ordererId=0
+20:06:22.429 ERR Failed sending request to ordering peer. error=EOF clSeqNr=254 ordererId=0
+20:06:22.429 ERR Failed sending request to ordering peer. error=EOF clSeqNr=254 ordererId=0
+20:06:22.529 ERR Failed sending request to ordering peer. error=EOF clSeqNr=255 ordererId=0
+20:06:22.529 ERR Failed sending request to ordering peer. error=EOF clSeqNr=255 ordererId=0
+20:06:22.530 ERR Failed sending request to ordering peer. error=EOF clSeqNr=255 ordererId=0
+20:06:22.629 ERR Failed sending request to ordering peer. error=EOF clSeqNr=256 ordererId=0
+20:06:22.630 ERR Failed sending request to ordering peer. error=EOF clSeqNr=256 ordererId=0
+20:06:22.630 ERR Failed sending request to ordering peer. error=EOF clSeqNr=256 ordererId=0
+20:06:22.729 ERR Failed sending request to ordering peer. error=EOF clSeqNr=257 ordererId=0
+20:06:22.730 ERR Failed sending request to ordering peer. error=EOF clSeqNr=257 ordererId=0
+20:06:22.730 ERR Failed sending request to ordering peer. error=EOF clSeqNr=257 ordererId=0
+20:06:22.829 ERR Failed sending request to ordering peer. error=EOF clSeqNr=258 ordererId=0
+20:06:22.829 ERR Failed sending request to ordering peer. error=EOF clSeqNr=258 ordererId=0
+20:06:22.829 ERR Failed sending request to ordering peer. error=EOF clSeqNr=258 ordererId=0
+20:06:22.929 ERR Failed sending request to ordering peer. error=EOF clSeqNr=259 ordererId=0
+20:06:22.929 ERR Failed sending request to ordering peer. error=EOF clSeqNr=259 ordererId=0
+20:06:22.929 ERR Failed sending request to ordering peer. error=EOF clSeqNr=259 ordererId=0
+20:06:23.029 ERR Failed sending request to ordering peer. error=EOF clSeqNr=260 ordererId=0
+20:06:23.029 ERR Failed sending request to ordering peer. error=EOF clSeqNr=260 ordererId=0
+20:06:23.030 ERR Failed sending request to ordering peer. error=EOF clSeqNr=260 ordererId=0
+20:06:23.129 ERR Failed sending request to ordering peer. error=EOF clSeqNr=261 ordererId=0
+20:06:23.130 ERR Failed sending request to ordering peer. error=EOF clSeqNr=261 ordererId=0
+20:06:23.130 ERR Failed sending request to ordering peer. error=EOF clSeqNr=261 ordererId=0
+20:06:23.229 ERR Failed sending request to ordering peer. error=EOF clSeqNr=262 ordererId=0
+20:06:23.230 ERR Failed sending request to ordering peer. error=EOF clSeqNr=262 ordererId=0
+20:06:23.230 ERR Failed sending request to ordering peer. error=EOF clSeqNr=262 ordererId=0
+20:06:23.328 ERR Failed sending request to ordering peer. error=EOF clSeqNr=263 ordererId=0
+20:06:23.329 ERR Failed sending request to ordering peer. error=EOF clSeqNr=263 ordererId=0
+20:06:23.329 ERR Failed sending request to ordering peer. error=EOF clSeqNr=263 ordererId=0
+20:06:23.429 ERR Failed sending request to ordering peer. error=EOF clSeqNr=264 ordererId=0
+20:06:23.429 ERR Failed sending request to ordering peer. error=EOF clSeqNr=264 ordererId=0
+20:06:23.429 ERR Failed sending request to ordering peer. error=EOF clSeqNr=264 ordererId=0
+20:06:23.529 ERR Failed sending request to ordering peer. error=EOF clSeqNr=265 ordererId=0
+20:06:23.529 ERR Failed sending request to ordering peer. error=EOF clSeqNr=265 ordererId=0
+20:06:23.529 ERR Failed sending request to ordering peer. error=EOF clSeqNr=265 ordererId=0
+20:06:23.629 ERR Failed sending request to ordering peer. error=EOF clSeqNr=266 ordererId=0
+20:06:23.630 ERR Failed sending request to ordering peer. error=EOF clSeqNr=266 ordererId=0
+20:06:23.630 ERR Failed sending request to ordering peer. error=EOF clSeqNr=266 ordererId=0
+20:06:23.729 ERR Failed sending request to ordering peer. error=EOF clSeqNr=267 ordererId=0
+20:06:23.729 ERR Failed sending request to ordering peer. error=EOF clSeqNr=267 ordererId=0
+20:06:23.729 ERR Failed sending request to ordering peer. error=EOF clSeqNr=267 ordererId=0
+20:06:23.829 ERR Failed sending request to ordering peer. error=EOF clSeqNr=268 ordererId=0
+20:06:23.829 ERR Failed sending request to ordering peer. error=EOF clSeqNr=268 ordererId=0
+20:06:23.829 ERR Failed sending request to ordering peer. error=EOF clSeqNr=268 ordererId=0
+20:06:23.929 ERR Failed sending request to ordering peer. error=EOF clSeqNr=269 ordererId=0
+20:06:23.930 ERR Failed sending request to ordering peer. error=EOF clSeqNr=269 ordererId=0
+20:06:23.930 ERR Failed sending request to ordering peer. error=EOF clSeqNr=269 ordererId=0
+20:06:24.029 ERR Failed sending request to ordering peer. error=EOF clSeqNr=270 ordererId=0
+20:06:24.029 ERR Failed sending request to ordering peer. error=EOF clSeqNr=270 ordererId=0
+20:06:24.029 ERR Failed sending request to ordering peer. error=EOF clSeqNr=270 ordererId=0
+20:06:24.129 ERR Failed sending request to ordering peer. error=EOF clSeqNr=271 ordererId=0
+20:06:24.129 ERR Failed sending request to ordering peer. error=EOF clSeqNr=271 ordererId=0
+20:06:24.130 ERR Failed sending request to ordering peer. error=EOF clSeqNr=271 ordererId=0
+20:06:24.229 ERR Failed sending request to ordering peer. error=EOF clSeqNr=272 ordererId=0
+20:06:24.229 ERR Failed sending request to ordering peer. error=EOF clSeqNr=272 ordererId=0
+20:06:24.229 ERR Failed sending request to ordering peer. error=EOF clSeqNr=272 ordererId=0
+20:06:24.329 ERR Failed sending request to ordering peer. error=EOF clSeqNr=273 ordererId=0
+20:06:24.329 ERR Failed sending request to ordering peer. error=EOF clSeqNr=273 ordererId=0
+20:06:24.329 ERR Failed sending request to ordering peer. error=EOF clSeqNr=273 ordererId=0
+20:06:24.429 ERR Failed sending request to ordering peer. error=EOF clSeqNr=274 ordererId=0
+20:06:24.430 ERR Failed sending request to ordering peer. error=EOF clSeqNr=274 ordererId=0
+20:06:24.430 ERR Failed sending request to ordering peer. error=EOF clSeqNr=274 ordererId=0
+20:06:24.529 ERR Failed sending request to ordering peer. error=EOF clSeqNr=275 ordererId=0
+20:06:24.529 ERR Failed sending request to ordering peer. error=EOF clSeqNr=275 ordererId=0
+20:06:24.530 ERR Failed sending request to ordering peer. error=EOF clSeqNr=275 ordererId=0
+20:06:24.629 ERR Failed sending request to ordering peer. error=EOF clSeqNr=276 ordererId=0
+20:06:24.630 ERR Failed sending request to ordering peer. error=EOF clSeqNr=276 ordererId=0
+20:06:24.630 ERR Failed sending request to ordering peer. error=EOF clSeqNr=276 ordererId=0
+20:06:24.729 ERR Failed sending request to ordering peer. error=EOF clSeqNr=277 ordererId=0
+20:06:24.730 ERR Failed sending request to ordering peer. error=EOF clSeqNr=277 ordererId=0
+20:06:24.730 ERR Failed sending request to ordering peer. error=EOF clSeqNr=277 ordererId=0
+20:06:24.829 ERR Failed sending request to ordering peer. error=EOF clSeqNr=278 ordererId=0
+20:06:24.830 ERR Failed sending request to ordering peer. error=EOF clSeqNr=278 ordererId=0
+20:06:24.830 ERR Failed sending request to ordering peer. error=EOF clSeqNr=278 ordererId=0
+20:06:24.929 ERR Failed sending request to ordering peer. error=EOF clSeqNr=279 ordererId=0
+20:06:24.929 ERR Failed sending request to ordering peer. error=EOF clSeqNr=279 ordererId=0
+20:06:24.929 ERR Failed sending request to ordering peer. error=EOF clSeqNr=279 ordererId=0
+20:06:25.029 ERR Failed sending request to ordering peer. error=EOF clSeqNr=280 ordererId=0
+20:06:25.029 ERR Failed sending request to ordering peer. error=EOF clSeqNr=280 ordererId=0
+20:06:25.029 ERR Failed sending request to ordering peer. error=EOF clSeqNr=280 ordererId=0
+20:06:25.129 ERR Failed sending request to ordering peer. error=EOF clSeqNr=281 ordererId=0
+20:06:25.129 ERR Failed sending request to ordering peer. error=EOF clSeqNr=281 ordererId=0
+20:06:25.129 ERR Failed sending request to ordering peer. error=EOF clSeqNr=281 ordererId=0
+20:06:25.229 ERR Failed sending request to ordering peer. error=EOF clSeqNr=282 ordererId=0
+20:06:25.230 ERR Failed sending request to ordering peer. error=EOF clSeqNr=282 ordererId=0
+20:06:25.230 ERR Failed sending request to ordering peer. error=EOF clSeqNr=282 ordererId=0
+20:06:25.329 ERR Failed sending request to ordering peer. error=EOF clSeqNr=283 ordererId=0
+20:06:25.329 ERR Failed sending request to ordering peer. error=EOF clSeqNr=283 ordererId=0
+20:06:25.330 ERR Failed sending request to ordering peer. error=EOF clSeqNr=283 ordererId=0
+20:06:25.429 ERR Failed sending request to ordering peer. error=EOF clSeqNr=284 ordererId=0
+20:06:25.430 ERR Failed sending request to ordering peer. error=EOF clSeqNr=284 ordererId=0
+20:06:25.430 ERR Failed sending request to ordering peer. error=EOF clSeqNr=284 ordererId=0
+20:06:25.529 ERR Failed sending request to ordering peer. error=EOF clSeqNr=285 ordererId=0
+20:06:25.529 ERR Failed sending request to ordering peer. error=EOF clSeqNr=285 ordererId=0
+20:06:25.529 ERR Failed sending request to ordering peer. error=EOF clSeqNr=285 ordererId=0
+20:06:25.629 ERR Failed sending request to ordering peer. error=EOF clSeqNr=286 ordererId=0
+20:06:25.629 ERR Failed sending request to ordering peer. error=EOF clSeqNr=286 ordererId=0
+20:06:25.629 ERR Failed sending request to ordering peer. error=EOF clSeqNr=286 ordererId=0
+20:06:25.729 ERR Failed sending request to ordering peer. error=EOF clSeqNr=287 ordererId=0
+20:06:25.729 ERR Failed sending request to ordering peer. error=EOF clSeqNr=287 ordererId=0
+20:06:25.729 ERR Failed sending request to ordering peer. error=EOF clSeqNr=287 ordererId=0
+20:06:25.829 ERR Failed sending request to ordering peer. error=EOF clSeqNr=288 ordererId=0
+20:06:25.829 ERR Failed sending request to ordering peer. error=EOF clSeqNr=288 ordererId=0
+20:06:25.829 ERR Failed sending request to ordering peer. error=EOF clSeqNr=288 ordererId=0
+20:06:25.929 ERR Failed sending request to ordering peer. error=EOF clSeqNr=289 ordererId=0
+20:06:25.929 ERR Failed sending request to ordering peer. error=EOF clSeqNr=289 ordererId=0
+20:06:25.929 ERR Failed sending request to ordering peer. error=EOF clSeqNr=289 ordererId=0
+20:06:26.029 ERR Failed sending request to ordering peer. error=EOF clSeqNr=290 ordererId=0
+20:06:26.030 ERR Failed sending request to ordering peer. error=EOF clSeqNr=290 ordererId=0
+20:06:26.030 ERR Failed sending request to ordering peer. error=EOF clSeqNr=290 ordererId=0
+20:06:26.130 ERR Failed sending request to ordering peer. error=EOF clSeqNr=291 ordererId=0
+20:06:26.130 ERR Failed sending request to ordering peer. error=EOF clSeqNr=291 ordererId=0
+20:06:26.130 ERR Failed sending request to ordering peer. error=EOF clSeqNr=291 ordererId=0
+20:06:26.229 ERR Failed sending request to ordering peer. error=EOF clSeqNr=292 ordererId=0
+20:06:26.229 ERR Failed sending request to ordering peer. error=EOF clSeqNr=292 ordererId=0
+20:06:26.230 ERR Failed sending request to ordering peer. error=EOF clSeqNr=292 ordererId=0
+20:06:26.329 ERR Failed sending request to ordering peer. error=EOF clSeqNr=293 ordererId=0
+20:06:26.329 ERR Failed sending request to ordering peer. error=EOF clSeqNr=293 ordererId=0
+20:06:26.329 ERR Failed sending request to ordering peer. error=EOF clSeqNr=293 ordererId=0
+20:06:26.429 ERR Failed sending request to ordering peer. error=EOF clSeqNr=294 ordererId=0
+20:06:26.429 ERR Failed sending request to ordering peer. error=EOF clSeqNr=294 ordererId=0
+20:06:26.430 ERR Failed sending request to ordering peer. error=EOF clSeqNr=294 ordererId=0
+20:06:26.529 ERR Failed sending request to ordering peer. error=EOF clSeqNr=295 ordererId=0
+20:06:26.529 ERR Failed sending request to ordering peer. error=EOF clSeqNr=295 ordererId=0
+20:06:26.529 ERR Failed sending request to ordering peer. error=EOF clSeqNr=295 ordererId=0
+20:06:26.629 ERR Failed sending request to ordering peer. error=EOF clSeqNr=296 ordererId=0
+20:06:26.630 ERR Failed sending request to ordering peer. error=EOF clSeqNr=296 ordererId=0
+20:06:26.630 ERR Failed sending request to ordering peer. error=EOF clSeqNr=296 ordererId=0
+20:06:26.729 ERR Failed sending request to ordering peer. error=EOF clSeqNr=297 ordererId=0
+20:06:26.729 ERR Failed sending request to ordering peer. error=EOF clSeqNr=297 ordererId=0
+20:06:26.730 ERR Failed sending request to ordering peer. error=EOF clSeqNr=297 ordererId=0
+20:06:26.829 ERR Failed sending request to ordering peer. error=EOF clSeqNr=298 ordererId=0
+20:06:26.829 ERR Failed sending request to ordering peer. error=EOF clSeqNr=298 ordererId=0
+20:06:26.830 ERR Failed sending request to ordering peer. error=EOF clSeqNr=298 ordererId=0
+20:06:26.929 ERR Failed sending request to ordering peer. error=EOF clSeqNr=299 ordererId=0
+20:06:26.929 ERR Failed sending request to ordering peer. error=EOF clSeqNr=299 ordererId=0
+20:06:26.929 ERR Failed sending request to ordering peer. error=EOF clSeqNr=299 ordererId=0
+20:06:27.029 INF Change request size.
+20:06:27.029 ERR Failed sending request to ordering peer. error=EOF clSeqNr=300 ordererId=0
+20:06:27.029 ERR Failed sending request to ordering peer. error=EOF clSeqNr=300 ordererId=0
+20:06:27.030 ERR Failed sending request to ordering peer. error=EOF clSeqNr=300 ordererId=0
+20:06:27.129 ERR Failed sending request to ordering peer. error=EOF clSeqNr=301 ordererId=0
+20:06:27.129 ERR Failed sending request to ordering peer. error=EOF clSeqNr=301 ordererId=0
+20:06:27.130 ERR Failed sending request to ordering peer. error=EOF clSeqNr=301 ordererId=0
+20:06:27.229 ERR Failed sending request to ordering peer. error=EOF clSeqNr=302 ordererId=0
+20:06:27.229 ERR Failed sending request to ordering peer. error=EOF clSeqNr=302 ordererId=0
+20:06:27.229 ERR Failed sending request to ordering peer. error=EOF clSeqNr=302 ordererId=0
+20:06:27.329 ERR Failed sending request to ordering peer. error=EOF clSeqNr=303 ordererId=0
+20:06:27.329 ERR Failed sending request to ordering peer. error=EOF clSeqNr=303 ordererId=0
+20:06:27.330 ERR Failed sending request to ordering peer. error=EOF clSeqNr=303 ordererId=0
+20:06:27.429 ERR Failed sending request to ordering peer. error=EOF clSeqNr=304 ordererId=0
+20:06:27.430 ERR Failed sending request to ordering peer. error=EOF clSeqNr=304 ordererId=0
+20:06:27.430 ERR Failed sending request to ordering peer. error=EOF clSeqNr=304 ordererId=0
+20:06:27.530 ERR Failed sending request to ordering peer. error=EOF clSeqNr=305 ordererId=0
+20:06:27.530 ERR Failed sending request to ordering peer. error=EOF clSeqNr=305 ordererId=0
+20:06:27.530 ERR Failed sending request to ordering peer. error=EOF clSeqNr=305 ordererId=0
+20:06:27.629 ERR Failed sending request to ordering peer. error=EOF clSeqNr=306 ordererId=0
+20:06:27.629 ERR Failed sending request to ordering peer. error=EOF clSeqNr=306 ordererId=0
+20:06:27.630 ERR Failed sending request to ordering peer. error=EOF clSeqNr=306 ordererId=0
+20:06:27.730 ERR Failed sending request to ordering peer. error=EOF clSeqNr=307 ordererId=0
+20:06:27.730 ERR Failed sending request to ordering peer. error=EOF clSeqNr=307 ordererId=0
+20:06:27.730 ERR Failed sending request to ordering peer. error=EOF clSeqNr=307 ordererId=0
+20:06:27.829 ERR Failed sending request to ordering peer. error=EOF clSeqNr=308 ordererId=0
+20:06:27.829 ERR Failed sending request to ordering peer. error=EOF clSeqNr=308 ordererId=0
+20:06:27.829 ERR Failed sending request to ordering peer. error=EOF clSeqNr=308 ordererId=0
+20:06:27.929 ERR Failed sending request to ordering peer. error=EOF clSeqNr=309 ordererId=0
+20:06:27.930 ERR Failed sending request to ordering peer. error=EOF clSeqNr=309 ordererId=0
+20:06:27.930 ERR Failed sending request to ordering peer. error=EOF clSeqNr=309 ordererId=0
+20:06:28.028 ERR Failed sending request to ordering peer. error=EOF clSeqNr=310 ordererId=0
+20:06:28.029 ERR Failed sending request to ordering peer. error=EOF clSeqNr=310 ordererId=0
+20:06:28.029 ERR Failed sending request to ordering peer. error=EOF clSeqNr=310 ordererId=0
+20:06:28.129 ERR Failed sending request to ordering peer. error=EOF clSeqNr=311 ordererId=0
+20:06:28.129 ERR Failed sending request to ordering peer. error=EOF clSeqNr=311 ordererId=0
+20:06:28.129 ERR Failed sending request to ordering peer. error=EOF clSeqNr=311 ordererId=0
+20:06:28.230 ERR Failed sending request to ordering peer. error=EOF clSeqNr=312 ordererId=0
+20:06:28.230 ERR Failed sending request to ordering peer. error=EOF clSeqNr=312 ordererId=0
+20:06:28.230 ERR Failed sending request to ordering peer. error=EOF clSeqNr=312 ordererId=0
+20:06:28.329 ERR Failed sending request to ordering peer. error=EOF clSeqNr=313 ordererId=0
+20:06:28.329 ERR Failed sending request to ordering peer. error=EOF clSeqNr=313 ordererId=0
+20:06:28.329 ERR Failed sending request to ordering peer. error=EOF clSeqNr=313 ordererId=0
+20:06:28.429 ERR Failed sending request to ordering peer. error=EOF clSeqNr=314 ordererId=0
+20:06:28.429 ERR Failed sending request to ordering peer. error=EOF clSeqNr=314 ordererId=0
+20:06:28.430 ERR Failed sending request to ordering peer. error=EOF clSeqNr=314 ordererId=0
+20:06:28.530 ERR Failed sending request to ordering peer. error=EOF clSeqNr=315 ordererId=0
+20:06:28.530 ERR Failed sending request to ordering peer. error=EOF clSeqNr=315 ordererId=0
+20:06:28.530 ERR Failed sending request to ordering peer. error=EOF clSeqNr=315 ordererId=0
+20:06:28.629 ERR Failed sending request to ordering peer. error=EOF clSeqNr=316 ordererId=0
+20:06:28.630 ERR Failed sending request to ordering peer. error=EOF clSeqNr=316 ordererId=0
+20:06:28.630 ERR Failed sending request to ordering peer. error=EOF clSeqNr=316 ordererId=0
+20:06:28.729 ERR Failed sending request to ordering peer. error=EOF clSeqNr=317 ordererId=0
+20:06:28.730 ERR Failed sending request to ordering peer. error=EOF clSeqNr=317 ordererId=0
+20:06:28.730 ERR Failed sending request to ordering peer. error=EOF clSeqNr=317 ordererId=0
+20:06:28.829 ERR Failed sending request to ordering peer. error=EOF clSeqNr=318 ordererId=0
+20:06:28.829 ERR Failed sending request to ordering peer. error=EOF clSeqNr=318 ordererId=0
+20:06:28.830 ERR Failed sending request to ordering peer. error=EOF clSeqNr=318 ordererId=0
+20:06:28.929 ERR Failed sending request to ordering peer. error=EOF clSeqNr=319 ordererId=0
+20:06:28.930 ERR Failed sending request to ordering peer. error=EOF clSeqNr=319 ordererId=0
+20:06:28.930 ERR Failed sending request to ordering peer. error=EOF clSeqNr=319 ordererId=0
+20:06:29.029 ERR Failed sending request to ordering peer. error=EOF clSeqNr=320 ordererId=0
+20:06:29.030 ERR Failed sending request to ordering peer. error=EOF clSeqNr=320 ordererId=0
+20:06:29.030 ERR Failed sending request to ordering peer. error=EOF clSeqNr=320 ordererId=0
+20:06:29.129 ERR Failed sending request to ordering peer. error=EOF clSeqNr=321 ordererId=0
+20:06:29.129 ERR Failed sending request to ordering peer. error=EOF clSeqNr=321 ordererId=0
+20:06:29.129 ERR Failed sending request to ordering peer. error=EOF clSeqNr=321 ordererId=0
+20:06:29.229 ERR Failed sending request to ordering peer. error=EOF clSeqNr=322 ordererId=0
+20:06:29.230 ERR Failed sending request to ordering peer. error=EOF clSeqNr=322 ordererId=0
+20:06:29.230 ERR Failed sending request to ordering peer. error=EOF clSeqNr=322 ordererId=0
+20:06:29.330 ERR Failed sending request to ordering peer. error=EOF clSeqNr=323 ordererId=0
+20:06:29.330 ERR Failed sending request to ordering peer. error=EOF clSeqNr=323 ordererId=0
+20:06:29.330 ERR Failed sending request to ordering peer. error=EOF clSeqNr=323 ordererId=0
+20:06:29.429 ERR Failed sending request to ordering peer. error=EOF clSeqNr=324 ordererId=0
+20:06:29.429 ERR Failed sending request to ordering peer. error=EOF clSeqNr=324 ordererId=0
+20:06:29.429 ERR Failed sending request to ordering peer. error=EOF clSeqNr=324 ordererId=0
+20:06:29.529 ERR Failed sending request to ordering peer. error=EOF clSeqNr=325 ordererId=0
+20:06:29.530 ERR Failed sending request to ordering peer. error=EOF clSeqNr=325 ordererId=0
+20:06:29.530 ERR Failed sending request to ordering peer. error=EOF clSeqNr=325 ordererId=0
+20:06:29.629 ERR Failed sending request to ordering peer. error=EOF clSeqNr=326 ordererId=0
+20:06:29.629 ERR Failed sending request to ordering peer. error=EOF clSeqNr=326 ordererId=0
+20:06:29.629 ERR Failed sending request to ordering peer. error=EOF clSeqNr=326 ordererId=0
+20:06:29.730 ERR Failed sending request to ordering peer. error=EOF clSeqNr=327 ordererId=0
+20:06:29.730 ERR Failed sending request to ordering peer. error=EOF clSeqNr=327 ordererId=0
+20:06:29.730 ERR Failed sending request to ordering peer. error=EOF clSeqNr=327 ordererId=0
+20:06:29.830 ERR Failed sending request to ordering peer. error=EOF clSeqNr=328 ordererId=0
+20:06:29.830 ERR Failed sending request to ordering peer. error=EOF clSeqNr=328 ordererId=0
+20:06:29.830 ERR Failed sending request to ordering peer. error=EOF clSeqNr=328 ordererId=0
+20:06:29.929 ERR Failed sending request to ordering peer. error=EOF clSeqNr=329 ordererId=0
+20:06:29.929 ERR Failed sending request to ordering peer. error=EOF clSeqNr=329 ordererId=0
+20:06:29.929 ERR Failed sending request to ordering peer. error=EOF clSeqNr=329 ordererId=0
+20:06:30.029 ERR Failed sending request to ordering peer. error=EOF clSeqNr=330 ordererId=0
+20:06:30.029 ERR Failed sending request to ordering peer. error=EOF clSeqNr=330 ordererId=0
+20:06:30.030 ERR Failed sending request to ordering peer. error=EOF clSeqNr=330 ordererId=0
+20:06:30.129 ERR Failed sending request to ordering peer. error=EOF clSeqNr=331 ordererId=0
+20:06:30.130 ERR Failed sending request to ordering peer. error=EOF clSeqNr=331 ordererId=0
+20:06:30.130 ERR Failed sending request to ordering peer. error=EOF clSeqNr=331 ordererId=0
+20:06:30.229 ERR Failed sending request to ordering peer. error=EOF clSeqNr=332 ordererId=0
+20:06:30.230 ERR Failed sending request to ordering peer. error=EOF clSeqNr=332 ordererId=0
+20:06:30.230 ERR Failed sending request to ordering peer. error=EOF clSeqNr=332 ordererId=0
+20:06:30.329 ERR Failed sending request to ordering peer. error=EOF clSeqNr=333 ordererId=0
+20:06:30.329 ERR Failed sending request to ordering peer. error=EOF clSeqNr=333 ordererId=0
+20:06:30.329 ERR Failed sending request to ordering peer. error=EOF clSeqNr=333 ordererId=0
+20:06:30.429 ERR Failed sending request to ordering peer. error=EOF clSeqNr=334 ordererId=0
+20:06:30.429 ERR Failed sending request to ordering peer. error=EOF clSeqNr=334 ordererId=0
+20:06:30.430 ERR Failed sending request to ordering peer. error=EOF clSeqNr=334 ordererId=0
+20:06:30.529 ERR Failed sending request to ordering peer. error=EOF clSeqNr=335 ordererId=0
+20:06:30.530 ERR Failed sending request to ordering peer. error=EOF clSeqNr=335 ordererId=0
+20:06:30.530 ERR Failed sending request to ordering peer. error=EOF clSeqNr=335 ordererId=0
+20:06:30.629 ERR Failed sending request to ordering peer. error=EOF clSeqNr=336 ordererId=0
+20:06:30.630 ERR Failed sending request to ordering peer. error=EOF clSeqNr=336 ordererId=0
+20:06:30.630 ERR Failed sending request to ordering peer. error=EOF clSeqNr=336 ordererId=0
+20:06:30.729 ERR Failed sending request to ordering peer. error=EOF clSeqNr=337 ordererId=0
+20:06:30.729 ERR Failed sending request to ordering peer. error=EOF clSeqNr=337 ordererId=0
+20:06:30.729 ERR Failed sending request to ordering peer. error=EOF clSeqNr=337 ordererId=0
+20:06:30.829 ERR Failed sending request to ordering peer. error=EOF clSeqNr=338 ordererId=0
+20:06:30.829 ERR Failed sending request to ordering peer. error=EOF clSeqNr=338 ordererId=0
+20:06:30.829 ERR Failed sending request to ordering peer. error=EOF clSeqNr=338 ordererId=0
+20:06:30.929 ERR Failed sending request to ordering peer. error=EOF clSeqNr=339 ordererId=0
+20:06:30.929 ERR Failed sending request to ordering peer. error=EOF clSeqNr=339 ordererId=0
+20:06:30.930 ERR Failed sending request to ordering peer. error=EOF clSeqNr=339 ordererId=0
+20:06:31.030 ERR Failed sending request to ordering peer. error=EOF clSeqNr=340 ordererId=0
+20:06:31.030 ERR Failed sending request to ordering peer. error=EOF clSeqNr=340 ordererId=0
+20:06:31.030 ERR Failed sending request to ordering peer. error=EOF clSeqNr=340 ordererId=0
+20:06:31.129 ERR Failed sending request to ordering peer. error=EOF clSeqNr=341 ordererId=0
+20:06:31.130 ERR Failed sending request to ordering peer. error=EOF clSeqNr=341 ordererId=0
+20:06:31.130 ERR Failed sending request to ordering peer. error=EOF clSeqNr=341 ordererId=0
+20:06:31.230 ERR Failed sending request to ordering peer. error=EOF clSeqNr=342 ordererId=0
+20:06:31.230 ERR Failed sending request to ordering peer. error=EOF clSeqNr=342 ordererId=0
+20:06:31.230 ERR Failed sending request to ordering peer. error=EOF clSeqNr=342 ordererId=0
+20:06:31.330 ERR Failed sending request to ordering peer. error=EOF clSeqNr=343 ordererId=0
+20:06:31.330 ERR Failed sending request to ordering peer. error=EOF clSeqNr=343 ordererId=0
+20:06:31.330 ERR Failed sending request to ordering peer. error=EOF clSeqNr=343 ordererId=0
+20:06:31.429 ERR Failed sending request to ordering peer. error=EOF clSeqNr=344 ordererId=0
+20:06:31.430 ERR Failed sending request to ordering peer. error=EOF clSeqNr=344 ordererId=0
+20:06:31.430 ERR Failed sending request to ordering peer. error=EOF clSeqNr=344 ordererId=0
+20:06:31.530 ERR Failed sending request to ordering peer. error=EOF clSeqNr=345 ordererId=0
+20:06:31.530 ERR Failed sending request to ordering peer. error=EOF clSeqNr=345 ordererId=0
+20:06:31.530 ERR Failed sending request to ordering peer. error=EOF clSeqNr=345 ordererId=0
+20:06:31.629 ERR Failed sending request to ordering peer. error=EOF clSeqNr=346 ordererId=0
+20:06:31.629 ERR Failed sending request to ordering peer. error=EOF clSeqNr=346 ordererId=0
+20:06:31.629 ERR Failed sending request to ordering peer. error=EOF clSeqNr=346 ordererId=0
+20:06:31.729 ERR Failed sending request to ordering peer. error=EOF clSeqNr=347 ordererId=0
+20:06:31.729 ERR Failed sending request to ordering peer. error=EOF clSeqNr=347 ordererId=0
+20:06:31.729 ERR Failed sending request to ordering peer. error=EOF clSeqNr=347 ordererId=0
+20:06:31.829 ERR Failed sending request to ordering peer. error=EOF clSeqNr=348 ordererId=0
+20:06:31.830 ERR Failed sending request to ordering peer. error=EOF clSeqNr=348 ordererId=0
+20:06:31.830 ERR Failed sending request to ordering peer. error=EOF clSeqNr=348 ordererId=0
+20:06:31.929 ERR Failed sending request to ordering peer. error=EOF clSeqNr=349 ordererId=0
+20:06:31.930 ERR Failed sending request to ordering peer. error=EOF clSeqNr=349 ordererId=0
+20:06:31.930 ERR Failed sending request to ordering peer. error=EOF clSeqNr=349 ordererId=0
+20:06:32.028 ERR Failed sending request to ordering peer. error=EOF clSeqNr=350 ordererId=0
+20:06:32.029 ERR Failed sending request to ordering peer. error=EOF clSeqNr=350 ordererId=0
+20:06:32.029 ERR Failed sending request to ordering peer. error=EOF clSeqNr=350 ordererId=0
+20:06:32.129 ERR Failed sending request to ordering peer. error=EOF clSeqNr=351 ordererId=0
+20:06:32.129 ERR Failed sending request to ordering peer. error=EOF clSeqNr=351 ordererId=0
+20:06:32.130 ERR Failed sending request to ordering peer. error=EOF clSeqNr=351 ordererId=0
+20:06:32.229 ERR Failed sending request to ordering peer. error=EOF clSeqNr=352 ordererId=0
+20:06:32.229 ERR Failed sending request to ordering peer. error=EOF clSeqNr=352 ordererId=0
+20:06:32.229 ERR Failed sending request to ordering peer. error=EOF clSeqNr=352 ordererId=0
+20:06:32.329 ERR Failed sending request to ordering peer. error=EOF clSeqNr=353 ordererId=0
+20:06:32.329 ERR Failed sending request to ordering peer. error=EOF clSeqNr=353 ordererId=0
+20:06:32.330 ERR Failed sending request to ordering peer. error=EOF clSeqNr=353 ordererId=0
+20:06:32.429 ERR Failed sending request to ordering peer. error=EOF clSeqNr=354 ordererId=0
+20:06:32.429 ERR Failed sending request to ordering peer. error=EOF clSeqNr=354 ordererId=0
+20:06:32.429 ERR Failed sending request to ordering peer. error=EOF clSeqNr=354 ordererId=0
+20:06:32.529 ERR Failed sending request to ordering peer. error=EOF clSeqNr=355 ordererId=0
+20:06:32.529 ERR Failed sending request to ordering peer. error=EOF clSeqNr=355 ordererId=0
+20:06:32.530 ERR Failed sending request to ordering peer. error=EOF clSeqNr=355 ordererId=0
+20:06:32.629 ERR Failed sending request to ordering peer. error=EOF clSeqNr=356 ordererId=0
+20:06:32.629 ERR Failed sending request to ordering peer. error=EOF clSeqNr=356 ordererId=0
+20:06:32.629 ERR Failed sending request to ordering peer. error=EOF clSeqNr=356 ordererId=0
+20:06:32.729 ERR Failed sending request to ordering peer. error=EOF clSeqNr=357 ordererId=0
+20:06:32.730 ERR Failed sending request to ordering peer. error=EOF clSeqNr=357 ordererId=0
+20:06:32.730 ERR Failed sending request to ordering peer. error=EOF clSeqNr=357 ordererId=0
+20:06:32.829 ERR Failed sending request to ordering peer. error=EOF clSeqNr=358 ordererId=0
+20:06:32.829 ERR Failed sending request to ordering peer. error=EOF clSeqNr=358 ordererId=0
+20:06:32.830 ERR Failed sending request to ordering peer. error=EOF clSeqNr=358 ordererId=0
+20:06:32.929 ERR Failed sending request to ordering peer. error=EOF clSeqNr=359 ordererId=0
+20:06:32.930 ERR Failed sending request to ordering peer. error=EOF clSeqNr=359 ordererId=0
+20:06:32.930 ERR Failed sending request to ordering peer. error=EOF clSeqNr=359 ordererId=0
+20:06:33.029 ERR Failed sending request to ordering peer. error=EOF clSeqNr=360 ordererId=0
+20:06:33.029 ERR Failed sending request to ordering peer. error=EOF clSeqNr=360 ordererId=0
+20:06:33.029 ERR Failed sending request to ordering peer. error=EOF clSeqNr=360 ordererId=0
+20:06:33.129 ERR Failed sending request to ordering peer. error=EOF clSeqNr=361 ordererId=0
+20:06:33.130 ERR Failed sending request to ordering peer. error=EOF clSeqNr=361 ordererId=0
+20:06:33.130 ERR Failed sending request to ordering peer. error=EOF clSeqNr=361 ordererId=0
+20:06:33.229 ERR Failed sending request to ordering peer. error=EOF clSeqNr=362 ordererId=0
+20:06:33.229 ERR Failed sending request to ordering peer. error=EOF clSeqNr=362 ordererId=0
+20:06:33.229 ERR Failed sending request to ordering peer. error=EOF clSeqNr=362 ordererId=0
+20:06:33.329 ERR Failed sending request to ordering peer. error=EOF clSeqNr=363 ordererId=0
+20:06:33.329 ERR Failed sending request to ordering peer. error=EOF clSeqNr=363 ordererId=0
+20:06:33.329 ERR Failed sending request to ordering peer. error=EOF clSeqNr=363 ordererId=0
+20:06:33.429 ERR Failed sending request to ordering peer. error=EOF clSeqNr=364 ordererId=0
+20:06:33.429 ERR Failed sending request to ordering peer. error=EOF clSeqNr=364 ordererId=0
+20:06:33.429 ERR Failed sending request to ordering peer. error=EOF clSeqNr=364 ordererId=0
+20:06:33.529 ERR Failed sending request to ordering peer. error=EOF clSeqNr=365 ordererId=0
+20:06:33.529 ERR Failed sending request to ordering peer. error=EOF clSeqNr=365 ordererId=0
+20:06:33.529 ERR Failed sending request to ordering peer. error=EOF clSeqNr=365 ordererId=0
+20:06:33.629 ERR Failed sending request to ordering peer. error=EOF clSeqNr=366 ordererId=0
+20:06:33.629 ERR Failed sending request to ordering peer. error=EOF clSeqNr=366 ordererId=0
+20:06:33.630 ERR Failed sending request to ordering peer. error=EOF clSeqNr=366 ordererId=0
+20:06:33.729 ERR Failed sending request to ordering peer. error=EOF clSeqNr=367 ordererId=0
+20:06:33.729 ERR Failed sending request to ordering peer. error=EOF clSeqNr=367 ordererId=0
+20:06:33.730 ERR Failed sending request to ordering peer. error=EOF clSeqNr=367 ordererId=0
+20:06:33.829 ERR Failed sending request to ordering peer. error=EOF clSeqNr=368 ordererId=0
+20:06:33.830 ERR Failed sending request to ordering peer. error=EOF clSeqNr=368 ordererId=0
+20:06:33.830 ERR Failed sending request to ordering peer. error=EOF clSeqNr=368 ordererId=0
+20:06:33.929 ERR Failed sending request to ordering peer. error=EOF clSeqNr=369 ordererId=0
+20:06:33.930 ERR Failed sending request to ordering peer. error=EOF clSeqNr=369 ordererId=0
+20:06:33.930 ERR Failed sending request to ordering peer. error=EOF clSeqNr=369 ordererId=0
+20:06:34.030 ERR Failed sending request to ordering peer. error=EOF clSeqNr=370 ordererId=0
+20:06:34.030 ERR Failed sending request to ordering peer. error=EOF clSeqNr=370 ordererId=0
+20:06:34.030 ERR Failed sending request to ordering peer. error=EOF clSeqNr=370 ordererId=0
+20:06:34.129 ERR Failed sending request to ordering peer. error=EOF clSeqNr=371 ordererId=0
+20:06:34.130 ERR Failed sending request to ordering peer. error=EOF clSeqNr=371 ordererId=0
+20:06:34.130 ERR Failed sending request to ordering peer. error=EOF clSeqNr=371 ordererId=0
+20:06:34.229 ERR Failed sending request to ordering peer. error=EOF clSeqNr=372 ordererId=0
+20:06:34.229 ERR Failed sending request to ordering peer. error=EOF clSeqNr=372 ordererId=0
+20:06:34.229 ERR Failed sending request to ordering peer. error=EOF clSeqNr=372 ordererId=0
+20:06:34.329 ERR Failed sending request to ordering peer. error=EOF clSeqNr=373 ordererId=0
+20:06:34.330 ERR Failed sending request to ordering peer. error=EOF clSeqNr=373 ordererId=0
+20:06:34.330 ERR Failed sending request to ordering peer. error=EOF clSeqNr=373 ordererId=0
+20:06:34.430 ERR Failed sending request to ordering peer. error=EOF clSeqNr=374 ordererId=0
+20:06:34.430 ERR Failed sending request to ordering peer. error=EOF clSeqNr=374 ordererId=0
+20:06:34.430 ERR Failed sending request to ordering peer. error=EOF clSeqNr=374 ordererId=0
+20:06:34.529 ERR Failed sending request to ordering peer. error=EOF clSeqNr=375 ordererId=0
+20:06:34.530 ERR Failed sending request to ordering peer. error=EOF clSeqNr=375 ordererId=0
+20:06:34.530 ERR Failed sending request to ordering peer. error=EOF clSeqNr=375 ordererId=0
+20:06:34.629 ERR Failed sending request to ordering peer. error=EOF clSeqNr=376 ordererId=0
+20:06:34.629 ERR Failed sending request to ordering peer. error=EOF clSeqNr=376 ordererId=0
+20:06:34.630 ERR Failed sending request to ordering peer. error=EOF clSeqNr=376 ordererId=0
+20:06:34.729 ERR Failed sending request to ordering peer. error=EOF clSeqNr=377 ordererId=0
+20:06:34.729 ERR Failed sending request to ordering peer. error=EOF clSeqNr=377 ordererId=0
+20:06:34.730 ERR Failed sending request to ordering peer. error=EOF clSeqNr=377 ordererId=0
+20:06:34.829 ERR Failed sending request to ordering peer. error=EOF clSeqNr=378 ordererId=0
+20:06:34.830 ERR Failed sending request to ordering peer. error=EOF clSeqNr=378 ordererId=0
+20:06:34.830 ERR Failed sending request to ordering peer. error=EOF clSeqNr=378 ordererId=0
+20:06:34.929 ERR Failed sending request to ordering peer. error=EOF clSeqNr=379 ordererId=0
+20:06:34.929 ERR Failed sending request to ordering peer. error=EOF clSeqNr=379 ordererId=0
+20:06:34.929 ERR Failed sending request to ordering peer. error=EOF clSeqNr=379 ordererId=0
+20:06:35.030 ERR Failed sending request to ordering peer. error=EOF clSeqNr=380 ordererId=0
+20:06:35.030 ERR Failed sending request to ordering peer. error=EOF clSeqNr=380 ordererId=0
+20:06:35.030 ERR Failed sending request to ordering peer. error=EOF clSeqNr=380 ordererId=0
+20:06:35.129 ERR Failed sending request to ordering peer. error=EOF clSeqNr=381 ordererId=0
+20:06:35.129 ERR Failed sending request to ordering peer. error=EOF clSeqNr=381 ordererId=0
+20:06:35.129 ERR Failed sending request to ordering peer. error=EOF clSeqNr=381 ordererId=0
+20:06:35.229 ERR Failed sending request to ordering peer. error=EOF clSeqNr=382 ordererId=0
+20:06:35.230 ERR Failed sending request to ordering peer. error=EOF clSeqNr=382 ordererId=0
+20:06:35.230 ERR Failed sending request to ordering peer. error=EOF clSeqNr=382 ordererId=0
+20:06:35.329 ERR Failed sending request to ordering peer. error=EOF clSeqNr=383 ordererId=0
+20:06:35.329 ERR Failed sending request to ordering peer. error=EOF clSeqNr=383 ordererId=0
+20:06:35.330 ERR Failed sending request to ordering peer. error=EOF clSeqNr=383 ordererId=0
+20:06:35.429 ERR Failed sending request to ordering peer. error=EOF clSeqNr=384 ordererId=0
+20:06:35.429 ERR Failed sending request to ordering peer. error=EOF clSeqNr=384 ordererId=0
+20:06:35.429 ERR Failed sending request to ordering peer. error=EOF clSeqNr=384 ordererId=0
+20:06:35.529 ERR Failed sending request to ordering peer. error=EOF clSeqNr=385 ordererId=0
+20:06:35.529 ERR Failed sending request to ordering peer. error=EOF clSeqNr=385 ordererId=0
+20:06:35.529 ERR Failed sending request to ordering peer. error=EOF clSeqNr=385 ordererId=0
+20:06:35.629 ERR Failed sending request to ordering peer. error=EOF clSeqNr=386 ordererId=0
+20:06:35.630 ERR Failed sending request to ordering peer. error=EOF clSeqNr=386 ordererId=0
+20:06:35.630 ERR Failed sending request to ordering peer. error=EOF clSeqNr=386 ordererId=0
+20:06:35.729 ERR Failed sending request to ordering peer. error=EOF clSeqNr=387 ordererId=0
+20:06:35.729 ERR Failed sending request to ordering peer. error=EOF clSeqNr=387 ordererId=0
+20:06:35.729 ERR Failed sending request to ordering peer. error=EOF clSeqNr=387 ordererId=0
+20:06:35.829 ERR Failed sending request to ordering peer. error=EOF clSeqNr=388 ordererId=0
+20:06:35.829 ERR Failed sending request to ordering peer. error=EOF clSeqNr=388 ordererId=0
+20:06:35.829 ERR Failed sending request to ordering peer. error=EOF clSeqNr=388 ordererId=0
+20:06:35.929 ERR Failed sending request to ordering peer. error=EOF clSeqNr=389 ordererId=0
+20:06:35.929 ERR Failed sending request to ordering peer. error=EOF clSeqNr=389 ordererId=0
+20:06:35.930 ERR Failed sending request to ordering peer. error=EOF clSeqNr=389 ordererId=0
+20:06:36.030 ERR Failed sending request to ordering peer. error=EOF clSeqNr=390 ordererId=0
+20:06:36.030 ERR Failed sending request to ordering peer. error=EOF clSeqNr=390 ordererId=0
+20:06:36.030 ERR Failed sending request to ordering peer. error=EOF clSeqNr=390 ordererId=0
+20:06:36.129 ERR Failed sending request to ordering peer. error=EOF clSeqNr=391 ordererId=0
+20:06:36.129 ERR Failed sending request to ordering peer. error=EOF clSeqNr=391 ordererId=0
+20:06:36.129 ERR Failed sending request to ordering peer. error=EOF clSeqNr=391 ordererId=0
+20:06:36.229 ERR Failed sending request to ordering peer. error=EOF clSeqNr=392 ordererId=0
+20:06:36.229 ERR Failed sending request to ordering peer. error=EOF clSeqNr=392 ordererId=0
+20:06:36.229 ERR Failed sending request to ordering peer. error=EOF clSeqNr=392 ordererId=0
+20:06:36.329 ERR Failed sending request to ordering peer. error=EOF clSeqNr=393 ordererId=0
+20:06:36.329 ERR Failed sending request to ordering peer. error=EOF clSeqNr=393 ordererId=0
+20:06:36.329 ERR Failed sending request to ordering peer. error=EOF clSeqNr=393 ordererId=0
+20:06:36.429 ERR Failed sending request to ordering peer. error=EOF clSeqNr=394 ordererId=0
+20:06:36.429 ERR Failed sending request to ordering peer. error=EOF clSeqNr=394 ordererId=0
+20:06:36.430 ERR Failed sending request to ordering peer. error=EOF clSeqNr=394 ordererId=0
+20:06:36.529 ERR Failed sending request to ordering peer. error=EOF clSeqNr=395 ordererId=0
+20:06:36.530 ERR Failed sending request to ordering peer. error=EOF clSeqNr=395 ordererId=0
+20:06:36.530 ERR Failed sending request to ordering peer. error=EOF clSeqNr=395 ordererId=0
+20:06:36.629 ERR Failed sending request to ordering peer. error=EOF clSeqNr=396 ordererId=0
+20:06:36.629 ERR Failed sending request to ordering peer. error=EOF clSeqNr=396 ordererId=0
+20:06:36.629 ERR Failed sending request to ordering peer. error=EOF clSeqNr=396 ordererId=0
+20:06:36.729 ERR Failed sending request to ordering peer. error=EOF clSeqNr=397 ordererId=0
+20:06:36.730 ERR Failed sending request to ordering peer. error=EOF clSeqNr=397 ordererId=0
+20:06:36.730 ERR Failed sending request to ordering peer. error=EOF clSeqNr=397 ordererId=0
+20:06:36.829 ERR Failed sending request to ordering peer. error=EOF clSeqNr=398 ordererId=0
+20:06:36.829 ERR Failed sending request to ordering peer. error=EOF clSeqNr=398 ordererId=0
+20:06:36.829 ERR Failed sending request to ordering peer. error=EOF clSeqNr=398 ordererId=0
+20:06:36.929 ERR Failed sending request to ordering peer. error=EOF clSeqNr=399 ordererId=0
+20:06:36.929 ERR Failed sending request to ordering peer. error=EOF clSeqNr=399 ordererId=0
+20:06:36.930 ERR Failed sending request to ordering peer. error=EOF clSeqNr=399 ordererId=0
+20:06:37.029 ERR Failed sending request to ordering peer. error=EOF clSeqNr=400 ordererId=0
+20:06:37.029 ERR Failed sending request to ordering peer. error=EOF clSeqNr=400 ordererId=0
+20:06:37.029 ERR Failed sending request to ordering peer. error=EOF clSeqNr=400 ordererId=0
+20:06:37.129 ERR Failed sending request to ordering peer. error=EOF clSeqNr=401 ordererId=0
+20:06:37.129 ERR Failed sending request to ordering peer. error=EOF clSeqNr=401 ordererId=0
+20:06:37.130 ERR Failed sending request to ordering peer. error=EOF clSeqNr=401 ordererId=0
+20:06:37.229 ERR Failed sending request to ordering peer. error=EOF clSeqNr=402 ordererId=0
+20:06:37.230 ERR Failed sending request to ordering peer. error=EOF clSeqNr=402 ordererId=0
+20:06:37.230 ERR Failed sending request to ordering peer. error=EOF clSeqNr=402 ordererId=0
+20:06:37.329 ERR Failed sending request to ordering peer. error=EOF clSeqNr=403 ordererId=0
+20:06:37.329 ERR Failed sending request to ordering peer. error=EOF clSeqNr=403 ordererId=0
+20:06:37.329 ERR Failed sending request to ordering peer. error=EOF clSeqNr=403 ordererId=0
+20:06:37.429 ERR Failed sending request to ordering peer. error=EOF clSeqNr=404 ordererId=0
+20:06:37.430 ERR Failed sending request to ordering peer. error=EOF clSeqNr=404 ordererId=0
+20:06:37.430 ERR Failed sending request to ordering peer. error=EOF clSeqNr=404 ordererId=0
+20:06:37.529 ERR Failed sending request to ordering peer. error=EOF clSeqNr=405 ordererId=0
+20:06:37.530 ERR Failed sending request to ordering peer. error=EOF clSeqNr=405 ordererId=0
+20:06:37.530 ERR Failed sending request to ordering peer. error=EOF clSeqNr=405 ordererId=0
+20:06:37.629 ERR Failed sending request to ordering peer. error=EOF clSeqNr=406 ordererId=0
+20:06:37.629 ERR Failed sending request to ordering peer. error=EOF clSeqNr=406 ordererId=0
+20:06:37.629 ERR Failed sending request to ordering peer. error=EOF clSeqNr=406 ordererId=0
+20:06:37.729 ERR Failed sending request to ordering peer. error=EOF clSeqNr=407 ordererId=0
+20:06:37.729 ERR Failed sending request to ordering peer. error=EOF clSeqNr=407 ordererId=0
+20:06:37.729 ERR Failed sending request to ordering peer. error=EOF clSeqNr=407 ordererId=0
+20:06:37.829 ERR Failed sending request to ordering peer. error=EOF clSeqNr=408 ordererId=0
+20:06:37.829 ERR Failed sending request to ordering peer. error=EOF clSeqNr=408 ordererId=0
+20:06:37.830 ERR Failed sending request to ordering peer. error=EOF clSeqNr=408 ordererId=0
+20:06:37.930 ERR Failed sending request to ordering peer. error=EOF clSeqNr=409 ordererId=0
+20:06:37.930 ERR Failed sending request to ordering peer. error=EOF clSeqNr=409 ordererId=0
+20:06:37.930 ERR Failed sending request to ordering peer. error=EOF clSeqNr=409 ordererId=0
+20:06:38.029 ERR Failed sending request to ordering peer. error=EOF clSeqNr=410 ordererId=0
+20:06:38.030 ERR Failed sending request to ordering peer. error=EOF clSeqNr=410 ordererId=0
+20:06:38.030 ERR Failed sending request to ordering peer. error=EOF clSeqNr=410 ordererId=0
+20:06:38.129 ERR Failed sending request to ordering peer. error=EOF clSeqNr=411 ordererId=0
+20:06:38.129 ERR Failed sending request to ordering peer. error=EOF clSeqNr=411 ordererId=0
+20:06:38.129 ERR Failed sending request to ordering peer. error=EOF clSeqNr=411 ordererId=0
+20:06:38.229 ERR Failed sending request to ordering peer. error=EOF clSeqNr=412 ordererId=0
+20:06:38.230 ERR Failed sending request to ordering peer. error=EOF clSeqNr=412 ordererId=0
+20:06:38.230 ERR Failed sending request to ordering peer. error=EOF clSeqNr=412 ordererId=0
+20:06:38.329 ERR Failed sending request to ordering peer. error=EOF clSeqNr=413 ordererId=0
+20:06:38.329 ERR Failed sending request to ordering peer. error=EOF clSeqNr=413 ordererId=0
+20:06:38.329 ERR Failed sending request to ordering peer. error=EOF clSeqNr=413 ordererId=0
+20:06:38.429 ERR Failed sending request to ordering peer. error=EOF clSeqNr=414 ordererId=0
+20:06:38.429 ERR Failed sending request to ordering peer. error=EOF clSeqNr=414 ordererId=0
+20:06:38.430 ERR Failed sending request to ordering peer. error=EOF clSeqNr=414 ordererId=0
+20:06:38.529 ERR Failed sending request to ordering peer. error=EOF clSeqNr=415 ordererId=0
+20:06:38.530 ERR Failed sending request to ordering peer. error=EOF clSeqNr=415 ordererId=0
+20:06:38.530 ERR Failed sending request to ordering peer. error=EOF clSeqNr=415 ordererId=0
+20:06:38.629 ERR Failed sending request to ordering peer. error=EOF clSeqNr=416 ordererId=0
+20:06:38.629 ERR Failed sending request to ordering peer. error=EOF clSeqNr=416 ordererId=0
+20:06:38.629 ERR Failed sending request to ordering peer. error=EOF clSeqNr=416 ordererId=0
+20:06:38.729 ERR Failed sending request to ordering peer. error=EOF clSeqNr=417 ordererId=0
+20:06:38.729 ERR Failed sending request to ordering peer. error=EOF clSeqNr=417 ordererId=0
+20:06:38.729 ERR Failed sending request to ordering peer. error=EOF clSeqNr=417 ordererId=0
+20:06:38.829 ERR Failed sending request to ordering peer. error=EOF clSeqNr=418 ordererId=0
+20:06:38.829 ERR Failed sending request to ordering peer. error=EOF clSeqNr=418 ordererId=0
+20:06:38.829 ERR Failed sending request to ordering peer. error=EOF clSeqNr=418 ordererId=0
+20:06:38.929 ERR Failed sending request to ordering peer. error=EOF clSeqNr=419 ordererId=0
+20:06:38.929 ERR Failed sending request to ordering peer. error=EOF clSeqNr=419 ordererId=0
+20:06:38.929 ERR Failed sending request to ordering peer. error=EOF clSeqNr=419 ordererId=0
+20:06:39.029 ERR Failed sending request to ordering peer. error=EOF clSeqNr=420 ordererId=0
+20:06:39.030 ERR Failed sending request to ordering peer. error=EOF clSeqNr=420 ordererId=0
+20:06:39.030 ERR Failed sending request to ordering peer. error=EOF clSeqNr=420 ordererId=0
+20:06:39.129 ERR Failed sending request to ordering peer. error=EOF clSeqNr=421 ordererId=0
+20:06:39.129 ERR Failed sending request to ordering peer. error=EOF clSeqNr=421 ordererId=0
+20:06:39.130 ERR Failed sending request to ordering peer. error=EOF clSeqNr=421 ordererId=0
+20:06:39.229 ERR Failed sending request to ordering peer. error=EOF clSeqNr=422 ordererId=0
+20:06:39.229 ERR Failed sending request to ordering peer. error=EOF clSeqNr=422 ordererId=0
+20:06:39.229 ERR Failed sending request to ordering peer. error=EOF clSeqNr=422 ordererId=0
+20:06:39.329 ERR Failed sending request to ordering peer. error=EOF clSeqNr=423 ordererId=0
+20:06:39.330 ERR Failed sending request to ordering peer. error=EOF clSeqNr=423 ordererId=0
+20:06:39.330 ERR Failed sending request to ordering peer. error=EOF clSeqNr=423 ordererId=0
+20:06:39.429 ERR Failed sending request to ordering peer. error=EOF clSeqNr=424 ordererId=0
+20:06:39.429 ERR Failed sending request to ordering peer. error=EOF clSeqNr=424 ordererId=0
+20:06:39.430 ERR Failed sending request to ordering peer. error=EOF clSeqNr=424 ordererId=0
+20:06:39.529 ERR Failed sending request to ordering peer. error=EOF clSeqNr=425 ordererId=0
+20:06:39.529 ERR Failed sending request to ordering peer. error=EOF clSeqNr=425 ordererId=0
+20:06:39.529 ERR Failed sending request to ordering peer. error=EOF clSeqNr=425 ordererId=0
+20:06:39.629 ERR Failed sending request to ordering peer. error=EOF clSeqNr=426 ordererId=0
+20:06:39.630 ERR Failed sending request to ordering peer. error=EOF clSeqNr=426 ordererId=0
+20:06:39.630 ERR Failed sending request to ordering peer. error=EOF clSeqNr=426 ordererId=0
+20:06:39.729 ERR Failed sending request to ordering peer. error=EOF clSeqNr=427 ordererId=0
+20:06:39.730 ERR Failed sending request to ordering peer. error=EOF clSeqNr=427 ordererId=0
+20:06:39.730 ERR Failed sending request to ordering peer. error=EOF clSeqNr=427 ordererId=0
+20:06:39.829 ERR Failed sending request to ordering peer. error=EOF clSeqNr=428 ordererId=0
+20:06:39.829 ERR Failed sending request to ordering peer. error=EOF clSeqNr=428 ordererId=0
+20:06:39.829 ERR Failed sending request to ordering peer. error=EOF clSeqNr=428 ordererId=0
+20:06:39.929 ERR Failed sending request to ordering peer. error=EOF clSeqNr=429 ordererId=0
+20:06:39.929 ERR Failed sending request to ordering peer. error=EOF clSeqNr=429 ordererId=0
+20:06:39.929 ERR Failed sending request to ordering peer. error=EOF clSeqNr=429 ordererId=0
+20:06:40.029 ERR Failed sending request to ordering peer. error=EOF clSeqNr=430 ordererId=0
+20:06:40.029 ERR Failed sending request to ordering peer. error=EOF clSeqNr=430 ordererId=0
+20:06:40.030 ERR Failed sending request to ordering peer. error=EOF clSeqNr=430 ordererId=0
+20:06:40.129 ERR Failed sending request to ordering peer. error=EOF clSeqNr=431 ordererId=0
+20:06:40.130 ERR Failed sending request to ordering peer. error=EOF clSeqNr=431 ordererId=0
+20:06:40.130 ERR Failed sending request to ordering peer. error=EOF clSeqNr=431 ordererId=0
+20:06:40.229 ERR Failed sending request to ordering peer. error=EOF clSeqNr=432 ordererId=0
+20:06:40.229 ERR Failed sending request to ordering peer. error=EOF clSeqNr=432 ordererId=0
+20:06:40.229 ERR Failed sending request to ordering peer. error=EOF clSeqNr=432 ordererId=0
+20:06:40.329 ERR Failed sending request to ordering peer. error=EOF clSeqNr=433 ordererId=0
+20:06:40.329 ERR Failed sending request to ordering peer. error=EOF clSeqNr=433 ordererId=0
+20:06:40.330 ERR Failed sending request to ordering peer. error=EOF clSeqNr=433 ordererId=0
+20:06:40.430 ERR Failed sending request to ordering peer. error=EOF clSeqNr=434 ordererId=0
+20:06:40.430 ERR Failed sending request to ordering peer. error=EOF clSeqNr=434 ordererId=0
+20:06:40.430 ERR Failed sending request to ordering peer. error=EOF clSeqNr=434 ordererId=0
+20:06:40.529 ERR Failed sending request to ordering peer. error=EOF clSeqNr=435 ordererId=0
+20:06:40.529 ERR Failed sending request to ordering peer. error=EOF clSeqNr=435 ordererId=0
+20:06:40.530 ERR Failed sending request to ordering peer. error=EOF clSeqNr=435 ordererId=0
+20:06:40.629 ERR Failed sending request to ordering peer. error=EOF clSeqNr=436 ordererId=0
+20:06:40.629 ERR Failed sending request to ordering peer. error=EOF clSeqNr=436 ordererId=0
+20:06:40.630 ERR Failed sending request to ordering peer. error=EOF clSeqNr=436 ordererId=0
+20:06:40.729 ERR Failed sending request to ordering peer. error=EOF clSeqNr=437 ordererId=0
+20:06:40.729 ERR Failed sending request to ordering peer. error=EOF clSeqNr=437 ordererId=0
+20:06:40.729 ERR Failed sending request to ordering peer. error=EOF clSeqNr=437 ordererId=0
+20:06:40.829 ERR Failed sending request to ordering peer. error=EOF clSeqNr=438 ordererId=0
+20:06:40.829 ERR Failed sending request to ordering peer. error=EOF clSeqNr=438 ordererId=0
+20:06:40.829 ERR Failed sending request to ordering peer. error=EOF clSeqNr=438 ordererId=0
+20:06:40.929 ERR Failed sending request to ordering peer. error=EOF clSeqNr=439 ordererId=0
+20:06:40.930 ERR Failed sending request to ordering peer. error=EOF clSeqNr=439 ordererId=0
+20:06:40.930 ERR Failed sending request to ordering peer. error=EOF clSeqNr=439 ordererId=0
+20:06:41.028 ERR Failed sending request to ordering peer. error=EOF clSeqNr=440 ordererId=0
+20:06:41.029 ERR Failed sending request to ordering peer. error=EOF clSeqNr=440 ordererId=0
+20:06:41.029 ERR Failed sending request to ordering peer. error=EOF clSeqNr=440 ordererId=0
+20:06:41.129 ERR Failed sending request to ordering peer. error=EOF clSeqNr=441 ordererId=0
+20:06:41.129 ERR Failed sending request to ordering peer. error=EOF clSeqNr=441 ordererId=0
+20:06:41.130 ERR Failed sending request to ordering peer. error=EOF clSeqNr=441 ordererId=0
+20:06:41.229 ERR Failed sending request to ordering peer. error=EOF clSeqNr=442 ordererId=0
+20:06:41.229 ERR Failed sending request to ordering peer. error=EOF clSeqNr=442 ordererId=0
+20:06:41.229 ERR Failed sending request to ordering peer. error=EOF clSeqNr=442 ordererId=0
+20:06:41.330 ERR Failed sending request to ordering peer. error=EOF clSeqNr=443 ordererId=0
+20:06:41.330 ERR Failed sending request to ordering peer. error=EOF clSeqNr=443 ordererId=0
+20:06:41.330 ERR Failed sending request to ordering peer. error=EOF clSeqNr=443 ordererId=0
+20:06:41.429 ERR Failed sending request to ordering peer. error=EOF clSeqNr=444 ordererId=0
+20:06:41.430 ERR Failed sending request to ordering peer. error=EOF clSeqNr=444 ordererId=0
+20:06:41.430 ERR Failed sending request to ordering peer. error=EOF clSeqNr=444 ordererId=0
+20:06:41.529 ERR Failed sending request to ordering peer. error=EOF clSeqNr=445 ordererId=0
+20:06:41.530 ERR Failed sending request to ordering peer. error=EOF clSeqNr=445 ordererId=0
+20:06:41.530 ERR Failed sending request to ordering peer. error=EOF clSeqNr=445 ordererId=0
+20:06:41.629 ERR Failed sending request to ordering peer. error=EOF clSeqNr=446 ordererId=0
+20:06:41.629 ERR Failed sending request to ordering peer. error=EOF clSeqNr=446 ordererId=0
+20:06:41.630 ERR Failed sending request to ordering peer. error=EOF clSeqNr=446 ordererId=0
+20:06:41.729 ERR Failed sending request to ordering peer. error=EOF clSeqNr=447 ordererId=0
+20:06:41.729 ERR Failed sending request to ordering peer. error=EOF clSeqNr=447 ordererId=0
+20:06:41.729 ERR Failed sending request to ordering peer. error=EOF clSeqNr=447 ordererId=0
+20:06:41.830 ERR Failed sending request to ordering peer. error=EOF clSeqNr=448 ordererId=0
+20:06:41.830 ERR Failed sending request to ordering peer. error=EOF clSeqNr=448 ordererId=0
+20:06:41.830 ERR Failed sending request to ordering peer. error=EOF clSeqNr=448 ordererId=0
+20:06:41.929 ERR Failed sending request to ordering peer. error=EOF clSeqNr=449 ordererId=0
+20:06:41.929 ERR Failed sending request to ordering peer. error=EOF clSeqNr=449 ordererId=0
+20:06:41.930 ERR Failed sending request to ordering peer. error=EOF clSeqNr=449 ordererId=0
+20:06:42.029 ERR Failed sending request to ordering peer. error=EOF clSeqNr=450 ordererId=0
+20:06:42.029 ERR Failed sending request to ordering peer. error=EOF clSeqNr=450 ordererId=0
+20:06:42.029 ERR Failed sending request to ordering peer. error=EOF clSeqNr=450 ordererId=0
+20:06:42.129 ERR Failed sending request to ordering peer. error=EOF clSeqNr=451 ordererId=0
+20:06:42.129 ERR Failed sending request to ordering peer. error=EOF clSeqNr=451 ordererId=0
+20:06:42.130 ERR Failed sending request to ordering peer. error=EOF clSeqNr=451 ordererId=0
+20:06:42.229 ERR Failed sending request to ordering peer. error=EOF clSeqNr=452 ordererId=0
+20:06:42.229 ERR Failed sending request to ordering peer. error=EOF clSeqNr=452 ordererId=0
+20:06:42.229 ERR Failed sending request to ordering peer. error=EOF clSeqNr=452 ordererId=0
+20:06:42.329 ERR Failed sending request to ordering peer. error=EOF clSeqNr=453 ordererId=0
+20:06:42.330 ERR Failed sending request to ordering peer. error=EOF clSeqNr=453 ordererId=0
+20:06:42.330 ERR Failed sending request to ordering peer. error=EOF clSeqNr=453 ordererId=0
+20:06:42.429 ERR Failed sending request to ordering peer. error=EOF clSeqNr=454 ordererId=0
+20:06:42.430 ERR Failed sending request to ordering peer. error=EOF clSeqNr=454 ordererId=0
+20:06:42.430 ERR Failed sending request to ordering peer. error=EOF clSeqNr=454 ordererId=0
+20:06:42.529 ERR Failed sending request to ordering peer. error=EOF clSeqNr=455 ordererId=0
+20:06:42.529 ERR Failed sending request to ordering peer. error=EOF clSeqNr=455 ordererId=0
+20:06:42.529 ERR Failed sending request to ordering peer. error=EOF clSeqNr=455 ordererId=0
+20:06:42.629 ERR Failed sending request to ordering peer. error=EOF clSeqNr=456 ordererId=0
+20:06:42.629 ERR Failed sending request to ordering peer. error=EOF clSeqNr=456 ordererId=0
+20:06:42.630 ERR Failed sending request to ordering peer. error=EOF clSeqNr=456 ordererId=0
+20:06:42.729 ERR Failed sending request to ordering peer. error=EOF clSeqNr=457 ordererId=0
+20:06:42.729 ERR Failed sending request to ordering peer. error=EOF clSeqNr=457 ordererId=0
+20:06:42.729 ERR Failed sending request to ordering peer. error=EOF clSeqNr=457 ordererId=0
+20:06:42.829 ERR Failed sending request to ordering peer. error=EOF clSeqNr=458 ordererId=0
+20:06:42.830 ERR Failed sending request to ordering peer. error=EOF clSeqNr=458 ordererId=0
+20:06:42.830 ERR Failed sending request to ordering peer. error=EOF clSeqNr=458 ordererId=0
+20:06:42.929 ERR Failed sending request to ordering peer. error=EOF clSeqNr=459 ordererId=0
+20:06:42.930 ERR Failed sending request to ordering peer. error=EOF clSeqNr=459 ordererId=0
+20:06:42.930 ERR Failed sending request to ordering peer. error=EOF clSeqNr=459 ordererId=0
+20:06:43.029 ERR Failed sending request to ordering peer. error=EOF clSeqNr=460 ordererId=0
+20:06:43.030 ERR Failed sending request to ordering peer. error=EOF clSeqNr=460 ordererId=0
+20:06:43.030 ERR Failed sending request to ordering peer. error=EOF clSeqNr=460 ordererId=0
+20:06:43.130 ERR Failed sending request to ordering peer. error=EOF clSeqNr=461 ordererId=0
+20:06:43.130 ERR Failed sending request to ordering peer. error=EOF clSeqNr=461 ordererId=0
+20:06:43.130 ERR Failed sending request to ordering peer. error=EOF clSeqNr=461 ordererId=0
+20:06:43.229 ERR Failed sending request to ordering peer. error=EOF clSeqNr=462 ordererId=0
+20:06:43.229 ERR Failed sending request to ordering peer. error=EOF clSeqNr=462 ordererId=0
+20:06:43.230 ERR Failed sending request to ordering peer. error=EOF clSeqNr=462 ordererId=0
+20:06:43.330 ERR Failed sending request to ordering peer. error=EOF clSeqNr=463 ordererId=0
+20:06:43.330 ERR Failed sending request to ordering peer. error=EOF clSeqNr=463 ordererId=0
+20:06:43.330 ERR Failed sending request to ordering peer. error=EOF clSeqNr=463 ordererId=0
+20:06:43.429 ERR Failed sending request to ordering peer. error=EOF clSeqNr=464 ordererId=0
+20:06:43.429 ERR Failed sending request to ordering peer. error=EOF clSeqNr=464 ordererId=0
+20:06:43.430 ERR Failed sending request to ordering peer. error=EOF clSeqNr=464 ordererId=0
+20:06:43.529 ERR Failed sending request to ordering peer. error=EOF clSeqNr=465 ordererId=0
+20:06:43.529 ERR Failed sending request to ordering peer. error=EOF clSeqNr=465 ordererId=0
+20:06:43.530 ERR Failed sending request to ordering peer. error=EOF clSeqNr=465 ordererId=0
+20:06:43.630 ERR Failed sending request to ordering peer. error=EOF clSeqNr=466 ordererId=0
+20:06:43.630 ERR Failed sending request to ordering peer. error=EOF clSeqNr=466 ordererId=0
+20:06:43.630 ERR Failed sending request to ordering peer. error=EOF clSeqNr=466 ordererId=0
+20:06:43.729 ERR Failed sending request to ordering peer. error=EOF clSeqNr=467 ordererId=0
+20:06:43.729 ERR Failed sending request to ordering peer. error=EOF clSeqNr=467 ordererId=0
+20:06:43.729 ERR Failed sending request to ordering peer. error=EOF clSeqNr=467 ordererId=0
+20:06:43.829 ERR Failed sending request to ordering peer. error=EOF clSeqNr=468 ordererId=0
+20:06:43.830 ERR Failed sending request to ordering peer. error=EOF clSeqNr=468 ordererId=0
+20:06:43.830 ERR Failed sending request to ordering peer. error=EOF clSeqNr=468 ordererId=0
+20:06:43.930 ERR Failed sending request to ordering peer. error=EOF clSeqNr=469 ordererId=0
+20:06:43.930 ERR Failed sending request to ordering peer. error=EOF clSeqNr=469 ordererId=0
+20:06:43.930 ERR Failed sending request to ordering peer. error=EOF clSeqNr=469 ordererId=0
+20:06:44.029 ERR Failed sending request to ordering peer. error=EOF clSeqNr=470 ordererId=0
+20:06:44.029 ERR Failed sending request to ordering peer. error=EOF clSeqNr=470 ordererId=0
+20:06:44.030 ERR Failed sending request to ordering peer. error=EOF clSeqNr=470 ordererId=0
+20:06:44.129 ERR Failed sending request to ordering peer. error=EOF clSeqNr=471 ordererId=0
+20:06:44.130 ERR Failed sending request to ordering peer. error=EOF clSeqNr=471 ordererId=0
+20:06:44.130 ERR Failed sending request to ordering peer. error=EOF clSeqNr=471 ordererId=0
+20:06:44.229 ERR Failed sending request to ordering peer. error=EOF clSeqNr=472 ordererId=0
+20:06:44.229 ERR Failed sending request to ordering peer. error=EOF clSeqNr=472 ordererId=0
+20:06:44.229 ERR Failed sending request to ordering peer. error=EOF clSeqNr=472 ordererId=0
+20:06:44.330 ERR Failed sending request to ordering peer. error=EOF clSeqNr=473 ordererId=0
+20:06:44.330 ERR Failed sending request to ordering peer. error=EOF clSeqNr=473 ordererId=0
+20:06:44.330 ERR Failed sending request to ordering peer. error=EOF clSeqNr=473 ordererId=0
+20:06:44.429 ERR Failed sending request to ordering peer. error=EOF clSeqNr=474 ordererId=0
+20:06:44.430 ERR Failed sending request to ordering peer. error=EOF clSeqNr=474 ordererId=0
+20:06:44.430 ERR Failed sending request to ordering peer. error=EOF clSeqNr=474 ordererId=0
+20:06:44.529 ERR Failed sending request to ordering peer. error=EOF clSeqNr=475 ordererId=0
+20:06:44.529 ERR Failed sending request to ordering peer. error=EOF clSeqNr=475 ordererId=0
+20:06:44.530 ERR Failed sending request to ordering peer. error=EOF clSeqNr=475 ordererId=0
+20:06:44.629 ERR Failed sending request to ordering peer. error=EOF clSeqNr=476 ordererId=0
+20:06:44.630 ERR Failed sending request to ordering peer. error=EOF clSeqNr=476 ordererId=0
+20:06:44.630 ERR Failed sending request to ordering peer. error=EOF clSeqNr=476 ordererId=0
+20:06:44.729 ERR Failed sending request to ordering peer. error=EOF clSeqNr=477 ordererId=0
+20:06:44.729 ERR Failed sending request to ordering peer. error=EOF clSeqNr=477 ordererId=0
+20:06:44.729 ERR Failed sending request to ordering peer. error=EOF clSeqNr=477 ordererId=0
+20:06:44.829 ERR Failed sending request to ordering peer. error=EOF clSeqNr=478 ordererId=0
+20:06:44.830 ERR Failed sending request to ordering peer. error=EOF clSeqNr=478 ordererId=0
+20:06:44.830 ERR Failed sending request to ordering peer. error=EOF clSeqNr=478 ordererId=0
+20:06:44.929 ERR Failed sending request to ordering peer. error=EOF clSeqNr=479 ordererId=0
+20:06:44.929 ERR Failed sending request to ordering peer. error=EOF clSeqNr=479 ordererId=0
+20:06:44.929 ERR Failed sending request to ordering peer. error=EOF clSeqNr=479 ordererId=0
+20:06:45.030 ERR Failed sending request to ordering peer. error=EOF clSeqNr=480 ordererId=0
+20:06:45.030 ERR Failed sending request to ordering peer. error=EOF clSeqNr=480 ordererId=0
+20:06:45.030 ERR Failed sending request to ordering peer. error=EOF clSeqNr=480 ordererId=0
+20:06:45.129 ERR Failed sending request to ordering peer. error=EOF clSeqNr=481 ordererId=0
+20:06:45.130 ERR Failed sending request to ordering peer. error=EOF clSeqNr=481 ordererId=0
+20:06:45.130 ERR Failed sending request to ordering peer. error=EOF clSeqNr=481 ordererId=0
+20:06:45.229 ERR Failed sending request to ordering peer. error=EOF clSeqNr=482 ordererId=0
+20:06:45.229 ERR Failed sending request to ordering peer. error=EOF clSeqNr=482 ordererId=0
+20:06:45.229 ERR Failed sending request to ordering peer. error=EOF clSeqNr=482 ordererId=0
+20:06:45.329 ERR Failed sending request to ordering peer. error=EOF clSeqNr=483 ordererId=0
+20:06:45.329 ERR Failed sending request to ordering peer. error=EOF clSeqNr=483 ordererId=0
+20:06:45.329 ERR Failed sending request to ordering peer. error=EOF clSeqNr=483 ordererId=0
+20:06:45.430 ERR Failed sending request to ordering peer. error=EOF clSeqNr=484 ordererId=0
+20:06:45.430 ERR Failed sending request to ordering peer. error=EOF clSeqNr=484 ordererId=0
+20:06:45.430 ERR Failed sending request to ordering peer. error=EOF clSeqNr=484 ordererId=0
+20:06:45.529 ERR Failed sending request to ordering peer. error=EOF clSeqNr=485 ordererId=0
+20:06:45.530 ERR Failed sending request to ordering peer. error=EOF clSeqNr=485 ordererId=0
+20:06:45.530 ERR Failed sending request to ordering peer. error=EOF clSeqNr=485 ordererId=0
+20:06:45.629 ERR Failed sending request to ordering peer. error=EOF clSeqNr=486 ordererId=0
+20:06:45.629 ERR Failed sending request to ordering peer. error=EOF clSeqNr=486 ordererId=0
+20:06:45.629 ERR Failed sending request to ordering peer. error=EOF clSeqNr=486 ordererId=0
+20:06:45.729 ERR Failed sending request to ordering peer. error=EOF clSeqNr=487 ordererId=0
+20:06:45.729 ERR Failed sending request to ordering peer. error=EOF clSeqNr=487 ordererId=0
+20:06:45.729 ERR Failed sending request to ordering peer. error=EOF clSeqNr=487 ordererId=0
+20:06:45.829 ERR Failed sending request to ordering peer. error=EOF clSeqNr=488 ordererId=0
+20:06:45.830 ERR Failed sending request to ordering peer. error=EOF clSeqNr=488 ordererId=0
+20:06:45.830 ERR Failed sending request to ordering peer. error=EOF clSeqNr=488 ordererId=0
+20:06:45.929 ERR Failed sending request to ordering peer. error=EOF clSeqNr=489 ordererId=0
+20:06:45.929 ERR Failed sending request to ordering peer. error=EOF clSeqNr=489 ordererId=0
+20:06:45.929 ERR Failed sending request to ordering peer. error=EOF clSeqNr=489 ordererId=0
+20:06:46.030 ERR Failed sending request to ordering peer. error=EOF clSeqNr=490 ordererId=0
+20:06:46.030 ERR Failed sending request to ordering peer. error=EOF clSeqNr=490 ordererId=0
+20:06:46.030 ERR Failed sending request to ordering peer. error=EOF clSeqNr=490 ordererId=0
+20:06:46.129 ERR Failed sending request to ordering peer. error=EOF clSeqNr=491 ordererId=0
+20:06:46.129 ERR Failed sending request to ordering peer. error=EOF clSeqNr=491 ordererId=0
+20:06:46.130 ERR Failed sending request to ordering peer. error=EOF clSeqNr=491 ordererId=0
+20:06:46.229 ERR Failed sending request to ordering peer. error=EOF clSeqNr=492 ordererId=0
+20:06:46.229 ERR Failed sending request to ordering peer. error=EOF clSeqNr=492 ordererId=0
+20:06:46.229 ERR Failed sending request to ordering peer. error=EOF clSeqNr=492 ordererId=0
+20:06:46.329 ERR Failed sending request to ordering peer. error=EOF clSeqNr=493 ordererId=0
+20:06:46.330 ERR Failed sending request to ordering peer. error=EOF clSeqNr=493 ordererId=0
+20:06:46.330 ERR Failed sending request to ordering peer. error=EOF clSeqNr=493 ordererId=0
+20:06:46.429 ERR Failed sending request to ordering peer. error=EOF clSeqNr=494 ordererId=0
+20:06:46.430 ERR Failed sending request to ordering peer. error=EOF clSeqNr=494 ordererId=0
+20:06:46.430 ERR Failed sending request to ordering peer. error=EOF clSeqNr=494 ordererId=0
+20:06:46.529 ERR Failed sending request to ordering peer. error=EOF clSeqNr=495 ordererId=0
+20:06:46.529 ERR Failed sending request to ordering peer. error=EOF clSeqNr=495 ordererId=0
+20:06:46.529 ERR Failed sending request to ordering peer. error=EOF clSeqNr=495 ordererId=0
+20:06:46.629 ERR Failed sending request to ordering peer. error=EOF clSeqNr=496 ordererId=0
+20:06:46.629 ERR Failed sending request to ordering peer. error=EOF clSeqNr=496 ordererId=0
+20:06:46.629 ERR Failed sending request to ordering peer. error=EOF clSeqNr=496 ordererId=0
+20:06:46.729 ERR Failed sending request to ordering peer. error=EOF clSeqNr=497 ordererId=0
+20:06:46.729 ERR Failed sending request to ordering peer. error=EOF clSeqNr=497 ordererId=0
+20:06:46.729 ERR Failed sending request to ordering peer. error=EOF clSeqNr=497 ordererId=0
+20:06:46.828 ERR Failed sending request to ordering peer. error=EOF clSeqNr=498 ordererId=0
+20:06:46.828 ERR Failed sending request to ordering peer. error=EOF clSeqNr=498 ordererId=0
+20:06:46.828 ERR Failed sending request to ordering peer. error=EOF clSeqNr=498 ordererId=0
+20:06:46.928 ERR Failed sending request to ordering peer. error=EOF clSeqNr=499 ordererId=0
+20:06:46.928 ERR Failed sending request to ordering peer. error=EOF clSeqNr=499 ordererId=0
+20:06:46.929 ERR Failed sending request to ordering peer. error=EOF clSeqNr=499 ordererId=0
+20:06:47.029 ERR Failed sending request to ordering peer. error=EOF clSeqNr=500 ordererId=0
+20:06:47.030 ERR Failed sending request to ordering peer. error=EOF clSeqNr=500 ordererId=0
+20:06:47.030 ERR Failed sending request to ordering peer. error=EOF clSeqNr=500 ordererId=0
+20:06:47.130 ERR Failed sending request to ordering peer. error=EOF clSeqNr=501 ordererId=0
+20:06:47.130 ERR Failed sending request to ordering peer. error=EOF clSeqNr=501 ordererId=0
+20:06:47.130 ERR Failed sending request to ordering peer. error=EOF clSeqNr=501 ordererId=0
+20:06:47.229 ERR Failed sending request to ordering peer. error=EOF clSeqNr=502 ordererId=0
+20:06:47.229 ERR Failed sending request to ordering peer. error=EOF clSeqNr=502 ordererId=0
+20:06:47.229 ERR Failed sending request to ordering peer. error=EOF clSeqNr=502 ordererId=0
+20:06:47.329 ERR Failed sending request to ordering peer. error=EOF clSeqNr=503 ordererId=0
+20:06:47.329 ERR Failed sending request to ordering peer. error=EOF clSeqNr=503 ordererId=0
+20:06:47.330 ERR Failed sending request to ordering peer. error=EOF clSeqNr=503 ordererId=0
+20:06:47.429 ERR Failed sending request to ordering peer. error=EOF clSeqNr=504 ordererId=0
+20:06:47.429 ERR Failed sending request to ordering peer. error=EOF clSeqNr=504 ordererId=0
+20:06:47.430 ERR Failed sending request to ordering peer. error=EOF clSeqNr=504 ordererId=0
+20:06:47.529 ERR Failed sending request to ordering peer. error=EOF clSeqNr=505 ordererId=0
+20:06:47.530 ERR Failed sending request to ordering peer. error=EOF clSeqNr=505 ordererId=0
+20:06:47.530 ERR Failed sending request to ordering peer. error=EOF clSeqNr=505 ordererId=0
+20:06:47.629 ERR Failed sending request to ordering peer. error=EOF clSeqNr=506 ordererId=0
+20:06:47.629 ERR Failed sending request to ordering peer. error=EOF clSeqNr=506 ordererId=0
+20:06:47.629 ERR Failed sending request to ordering peer. error=EOF clSeqNr=506 ordererId=0
+20:06:47.730 ERR Failed sending request to ordering peer. error=EOF clSeqNr=507 ordererId=0
+20:06:47.730 ERR Failed sending request to ordering peer. error=EOF clSeqNr=507 ordererId=0
+20:06:47.730 ERR Failed sending request to ordering peer. error=EOF clSeqNr=507 ordererId=0
+20:06:47.829 ERR Failed sending request to ordering peer. error=EOF clSeqNr=508 ordererId=0
+20:06:47.830 ERR Failed sending request to ordering peer. error=EOF clSeqNr=508 ordererId=0
+20:06:47.830 ERR Failed sending request to ordering peer. error=EOF clSeqNr=508 ordererId=0
+20:06:47.930 ERR Failed sending request to ordering peer. error=EOF clSeqNr=509 ordererId=0
+20:06:47.930 ERR Failed sending request to ordering peer. error=EOF clSeqNr=509 ordererId=0
+20:06:47.930 ERR Failed sending request to ordering peer. error=EOF clSeqNr=509 ordererId=0
+20:06:48.029 ERR Failed sending request to ordering peer. error=EOF clSeqNr=510 ordererId=0
+20:06:48.029 ERR Failed sending request to ordering peer. error=EOF clSeqNr=510 ordererId=0
+20:06:48.029 ERR Failed sending request to ordering peer. error=EOF clSeqNr=510 ordererId=0
+20:06:48.129 ERR Failed sending request to ordering peer. error=EOF clSeqNr=511 ordererId=0
+20:06:48.130 ERR Failed sending request to ordering peer. error=EOF clSeqNr=511 ordererId=0
+20:06:48.130 ERR Failed sending request to ordering peer. error=EOF clSeqNr=511 ordererId=0
+20:06:48.230 ERR Failed sending request to ordering peer. error=EOF clSeqNr=512 ordererId=0
+20:06:48.230 ERR Failed sending request to ordering peer. error=EOF clSeqNr=512 ordererId=0
+20:06:48.230 ERR Failed sending request to ordering peer. error=EOF clSeqNr=512 ordererId=0
+20:06:48.329 ERR Failed sending request to ordering peer. error=EOF clSeqNr=513 ordererId=0
+20:06:48.329 ERR Failed sending request to ordering peer. error=EOF clSeqNr=513 ordererId=0
+20:06:48.329 ERR Failed sending request to ordering peer. error=EOF clSeqNr=513 ordererId=0
+20:06:48.429 ERR Failed sending request to ordering peer. error=EOF clSeqNr=514 ordererId=0
+20:06:48.429 ERR Failed sending request to ordering peer. error=EOF clSeqNr=514 ordererId=0
+20:06:48.429 ERR Failed sending request to ordering peer. error=EOF clSeqNr=514 ordererId=0
+20:06:48.529 ERR Failed sending request to ordering peer. error=EOF clSeqNr=515 ordererId=0
+20:06:48.530 ERR Failed sending request to ordering peer. error=EOF clSeqNr=515 ordererId=0
+20:06:48.530 ERR Failed sending request to ordering peer. error=EOF clSeqNr=515 ordererId=0
+20:06:48.629 ERR Failed sending request to ordering peer. error=EOF clSeqNr=516 ordererId=0
+20:06:48.629 ERR Failed sending request to ordering peer. error=EOF clSeqNr=516 ordererId=0
+20:06:48.629 ERR Failed sending request to ordering peer. error=EOF clSeqNr=516 ordererId=0
+20:06:48.729 ERR Failed sending request to ordering peer. error=EOF clSeqNr=517 ordererId=0
+20:06:48.730 ERR Failed sending request to ordering peer. error=EOF clSeqNr=517 ordererId=0
+20:06:48.730 ERR Failed sending request to ordering peer. error=EOF clSeqNr=517 ordererId=0
+20:06:48.829 ERR Failed sending request to ordering peer. error=EOF clSeqNr=518 ordererId=0
+20:06:48.830 ERR Failed sending request to ordering peer. error=EOF clSeqNr=518 ordererId=0
+20:06:48.830 ERR Failed sending request to ordering peer. error=EOF clSeqNr=518 ordererId=0
+20:06:48.929 ERR Failed sending request to ordering peer. error=EOF clSeqNr=519 ordererId=0
+20:06:48.930 ERR Failed sending request to ordering peer. error=EOF clSeqNr=519 ordererId=0
+20:06:48.930 ERR Failed sending request to ordering peer. error=EOF clSeqNr=519 ordererId=0
+20:06:49.029 ERR Failed sending request to ordering peer. error=EOF clSeqNr=520 ordererId=0
+20:06:49.029 ERR Failed sending request to ordering peer. error=EOF clSeqNr=520 ordererId=0
+20:06:49.030 ERR Failed sending request to ordering peer. error=EOF clSeqNr=520 ordererId=0
+20:06:49.130 ERR Failed sending request to ordering peer. error=EOF clSeqNr=521 ordererId=0
+20:06:49.130 ERR Failed sending request to ordering peer. error=EOF clSeqNr=521 ordererId=0
+20:06:49.130 ERR Failed sending request to ordering peer. error=EOF clSeqNr=521 ordererId=0
+20:06:49.229 ERR Failed sending request to ordering peer. error=EOF clSeqNr=522 ordererId=0
+20:06:49.229 ERR Failed sending request to ordering peer. error=EOF clSeqNr=522 ordererId=0
+20:06:49.229 ERR Failed sending request to ordering peer. error=EOF clSeqNr=522 ordererId=0
+20:06:49.329 ERR Failed sending request to ordering peer. error=EOF clSeqNr=523 ordererId=0
+20:06:49.330 ERR Failed sending request to ordering peer. error=EOF clSeqNr=523 ordererId=0
+20:06:49.330 ERR Failed sending request to ordering peer. error=EOF clSeqNr=523 ordererId=0
+20:06:49.429 ERR Failed sending request to ordering peer. error=EOF clSeqNr=524 ordererId=0
+20:06:49.429 ERR Failed sending request to ordering peer. error=EOF clSeqNr=524 ordererId=0
+20:06:49.429 ERR Failed sending request to ordering peer. error=EOF clSeqNr=524 ordererId=0
+20:06:49.529 ERR Failed sending request to ordering peer. error=EOF clSeqNr=525 ordererId=0
+20:06:49.529 ERR Failed sending request to ordering peer. error=EOF clSeqNr=525 ordererId=0
+20:06:49.530 ERR Failed sending request to ordering peer. error=EOF clSeqNr=525 ordererId=0
+20:06:49.628 ERR Failed sending request to ordering peer. error=EOF clSeqNr=526 ordererId=0
+20:06:49.629 ERR Failed sending request to ordering peer. error=EOF clSeqNr=526 ordererId=0
+20:06:49.629 ERR Failed sending request to ordering peer. error=EOF clSeqNr=526 ordererId=0
+20:06:49.729 ERR Failed sending request to ordering peer. error=EOF clSeqNr=527 ordererId=0
+20:06:49.729 ERR Failed sending request to ordering peer. error=EOF clSeqNr=527 ordererId=0
+20:06:49.729 ERR Failed sending request to ordering peer. error=EOF clSeqNr=527 ordererId=0
+20:06:49.829 ERR Failed sending request to ordering peer. error=EOF clSeqNr=528 ordererId=0
+20:06:49.829 ERR Failed sending request to ordering peer. error=EOF clSeqNr=528 ordererId=0
+20:06:49.829 ERR Failed sending request to ordering peer. error=EOF clSeqNr=528 ordererId=0
+20:06:49.929 ERR Failed sending request to ordering peer. error=EOF clSeqNr=529 ordererId=0
+20:06:49.929 ERR Failed sending request to ordering peer. error=EOF clSeqNr=529 ordererId=0
+20:06:49.929 ERR Failed sending request to ordering peer. error=EOF clSeqNr=529 ordererId=0
+20:06:50.029 ERR Failed sending request to ordering peer. error=EOF clSeqNr=530 ordererId=0
+20:06:50.029 ERR Failed sending request to ordering peer. error=EOF clSeqNr=530 ordererId=0
+20:06:50.029 ERR Failed sending request to ordering peer. error=EOF clSeqNr=530 ordererId=0
+20:06:50.129 ERR Failed sending request to ordering peer. error=EOF clSeqNr=531 ordererId=0
+20:06:50.129 ERR Failed sending request to ordering peer. error=EOF clSeqNr=531 ordererId=0
+20:06:50.129 ERR Failed sending request to ordering peer. error=EOF clSeqNr=531 ordererId=0
+20:06:50.228 ERR Failed sending request to ordering peer. error=EOF clSeqNr=532 ordererId=0
+20:06:50.228 ERR Failed sending request to ordering peer. error=EOF clSeqNr=532 ordererId=0
+20:06:50.228 ERR Failed sending request to ordering peer. error=EOF clSeqNr=532 ordererId=0
+20:06:50.330 ERR Failed sending request to ordering peer. error=EOF clSeqNr=533 ordererId=0
+20:06:50.330 ERR Failed sending request to ordering peer. error=EOF clSeqNr=533 ordererId=0
+20:06:50.330 ERR Failed sending request to ordering peer. error=EOF clSeqNr=533 ordererId=0
+20:06:50.429 ERR Failed sending request to ordering peer. error=EOF clSeqNr=534 ordererId=0
+20:06:50.429 ERR Failed sending request to ordering peer. error=EOF clSeqNr=534 ordererId=0
+20:06:50.429 ERR Failed sending request to ordering peer. error=EOF clSeqNr=534 ordererId=0
+20:06:50.529 ERR Failed sending request to ordering peer. error=EOF clSeqNr=535 ordererId=0
+20:06:50.529 ERR Failed sending request to ordering peer. error=EOF clSeqNr=535 ordererId=0
+20:06:50.530 ERR Failed sending request to ordering peer. error=EOF clSeqNr=535 ordererId=0
+20:06:50.630 ERR Failed sending request to ordering peer. error=EOF clSeqNr=536 ordererId=0
+20:06:50.630 ERR Failed sending request to ordering peer. error=EOF clSeqNr=536 ordererId=0
+20:06:50.630 ERR Failed sending request to ordering peer. error=EOF clSeqNr=536 ordererId=0
+20:06:50.729 ERR Failed sending request to ordering peer. error=EOF clSeqNr=537 ordererId=0
+20:06:50.729 ERR Failed sending request to ordering peer. error=EOF clSeqNr=537 ordererId=0
+20:06:50.729 ERR Failed sending request to ordering peer. error=EOF clSeqNr=537 ordererId=0
+20:06:50.829 ERR Failed sending request to ordering peer. error=EOF clSeqNr=538 ordererId=0
+20:06:50.830 ERR Failed sending request to ordering peer. error=EOF clSeqNr=538 ordererId=0
+20:06:50.830 ERR Failed sending request to ordering peer. error=EOF clSeqNr=538 ordererId=0
+20:06:50.929 ERR Failed sending request to ordering peer. error=EOF clSeqNr=539 ordererId=0
+20:06:50.930 ERR Failed sending request to ordering peer. error=EOF clSeqNr=539 ordererId=0
+20:06:50.930 ERR Failed sending request to ordering peer. error=EOF clSeqNr=539 ordererId=0
+20:06:51.029 ERR Failed sending request to ordering peer. error=EOF clSeqNr=540 ordererId=0
+20:06:51.029 ERR Failed sending request to ordering peer. error=EOF clSeqNr=540 ordererId=0
+20:06:51.029 ERR Failed sending request to ordering peer. error=EOF clSeqNr=540 ordererId=0
+20:06:51.129 ERR Failed sending request to ordering peer. error=EOF clSeqNr=541 ordererId=0
+20:06:51.129 ERR Failed sending request to ordering peer. error=EOF clSeqNr=541 ordererId=0
+20:06:51.129 ERR Failed sending request to ordering peer. error=EOF clSeqNr=541 ordererId=0
+20:06:51.229 ERR Failed sending request to ordering peer. error=EOF clSeqNr=542 ordererId=0
+20:06:51.229 ERR Failed sending request to ordering peer. error=EOF clSeqNr=542 ordererId=0
+20:06:51.229 ERR Failed sending request to ordering peer. error=EOF clSeqNr=542 ordererId=0
+20:06:51.329 ERR Failed sending request to ordering peer. error=EOF clSeqNr=543 ordererId=0
+20:06:51.329 ERR Failed sending request to ordering peer. error=EOF clSeqNr=543 ordererId=0
+20:06:51.329 ERR Failed sending request to ordering peer. error=EOF clSeqNr=543 ordererId=0
+20:06:51.429 ERR Failed sending request to ordering peer. error=EOF clSeqNr=544 ordererId=0
+20:06:51.429 ERR Failed sending request to ordering peer. error=EOF clSeqNr=544 ordererId=0
+20:06:51.429 ERR Failed sending request to ordering peer. error=EOF clSeqNr=544 ordererId=0
+20:06:51.529 ERR Failed sending request to ordering peer. error=EOF clSeqNr=545 ordererId=0
+20:06:51.529 ERR Failed sending request to ordering peer. error=EOF clSeqNr=545 ordererId=0
+20:06:51.529 ERR Failed sending request to ordering peer. error=EOF clSeqNr=545 ordererId=0
