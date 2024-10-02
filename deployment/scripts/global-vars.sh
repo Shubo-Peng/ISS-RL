@@ -8,10 +8,12 @@ analysis_query_params="-q queries/ethereum.sql -q queries/aggregates.sql -q quer
 
 # Private key, of which the corresponding public key needs to be an authorized ssh key at each instance.
 # (Previously uploaded to IBM Cloud and specified at instance creation in the corresponding template file)
+# private_key_file=/root/.ssh/id_rsa.pub
 private_key_file=scripts/cloud-deploy/key/id_rsa
 
 # Options to use when communicating with the remote machines.
 ssh_options="-i $private_key_file -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null -o ServerAliveInterval=60"
+# ssh_options="-o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null -o ServerAliveInterval=60"
 
 # Command to kill children of exiting scripts
 trap_exit_command='{ jobs; if [ -n "$(jobs -p)" ]; then kill $(jobs -p); fi; sleep 0.5; } > /dev/null 2>&1'
@@ -23,7 +25,7 @@ master_machine=cloud-machine-templates/dedicated-machine-32-CPUs-32GB-RAM-fra02.
 #master_machine=cloud-machine-templates/dedicated-machine-32-CPUs-32GB-RAM-mil01.cmt
 #master_machine=cloud-machine-templates/small-machine-mil01.cmt
 #master_machine=cloud-machine-templates/small-machine-fra02.cmt
-master_port=9997
+master_port=9999
 machine_status_poll_period=5
 
 # The maximum number of open files to be set at remote machines.
@@ -62,11 +64,11 @@ remote_exp_dir=$remote_work_dir/current-deployment-data
 remote_analysis_processes=8
 
 remote_gopath=/root/go
-remote_code_dir="$remote_gopath/src/github.com/hyperledger-labs/mirbft"
+remote_code_dir="$remote_gopath/src/github.com/hyperledger-labs/ladon"
 remote_config_dir=$remote_work_dir/experiment-config
 remote_tls_directory="$remote_code_dir/tls-data"
 remote_log_archives="experiment-output-*.tar.gz"
-downloaded_code_dir=github.com/hyperledger-labs/mirbft/
+downloaded_code_dir=github.com/hyperledger-labs/ladon/
 # remote_delete_files must be on one line, as it is passed in a string to SSH as a command to execute
 remote_delete_files="$remote_work_dir/experiment-output-*.tar.gz $remote_work_dir/experiment-output $remote_master_log $remote_slave_log $remote_status_file $remote_ready_file $remote_instance_tag_file $remote_master_command_file $remote_code_dir $remote_config_dir $remote_exp_dir"
 downloaded_gopath="remote-gopath"

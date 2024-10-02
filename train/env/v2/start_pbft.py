@@ -12,7 +12,8 @@ def start_leader():
 
 if __name__ == "__main__":
     nodes = []
-    node_ports = [50051, 50052, 50053]
+    node_ports = [50051,50052,50053]
+    # node_ports = [50051,50052]
 
     # 启动三个节点
     for port in node_ports:

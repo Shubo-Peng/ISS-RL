@@ -19,8 +19,8 @@ cd ~
 
 echo "Installing golang."
 
-wget https://storage.googleapis.com/golang/go1.20.1.linux-amd64.tar.gz
-tar xpzf go1.20.1.linux-amd64.tar.gz
+wget https://storage.googleapis.com/golang/go1.17.2.linux-amd64.tar.gz
+tar xpzf go1.17.2.linux-amd64.tar.gz
 
 sudo mkdir -p /opt/gopath
 sudo chown -R  $user:$group /opt/gopath
@@ -62,3 +62,7 @@ go get golang.org/x/crypto/blake2b
 
 echo "Installing the YAML parser for Go"
 go get -u gopkg.in/yaml.v2
+
+echo "Installing bls"
+go get -u github.com/herumi/bls-eth-go-binary/bls
+cd $GOPATH/src/github.com/herumi/bls-eth-go-binary && make -j4
