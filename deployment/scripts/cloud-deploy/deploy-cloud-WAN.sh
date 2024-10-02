@@ -39,7 +39,7 @@ if [ "$1" = "-i" ]; then
             aws configure set region ${region_list[$i]}
             new_instance_info=$(aws ec2 run-instances \
              --launch-template LaunchTemplateId=${LaunchTemplateId_list[$i]} \
-             --tag-specifications 'ResourceType=instance,Tags=[{Key=Name,Value="Parallel-bft-instance"}]' \
+             --tag-specifications 'ResourceType=instance,Tags=[{Key=Name,Value="Rl-bft-instance"}]' \
              --count $count)
         done
 
@@ -56,7 +56,7 @@ if [ "$1" = "-i" ]; then
         aws configure set region $region
         public_ip+=$(
         aws ec2 describe-instances   \
-        --filters "Name=tag:Name,Values=Parallel-bft-instance" "Name=instance-state-name,Values=running" \
+        --filters "Name=tag:Name,Values=Rl-bft-instance" "Name=instance-state-name,Values=running" \
         --query "Reservations[*].Instances[*].PublicIpAddress"   \
         --output=text)
         public_ip+=" "
@@ -218,7 +218,7 @@ if [ "$1" = "-sd" ]; then
         aws configure set region $i
         aws ec2 terminate-instances --instance-ids \
         $(aws ec2 describe-instances \
-        --filters "Name=tag:Name,Values=Parallel-bft-instance" "Name=instance-state-name,Values=running" \
+        --filters "Name=tag:Name,Values=Rl-bft-instance" "Name=instance-state-name,Values=running" \
         --query "Reservations[].Instances[].InstanceId" \
         --output text)
         # scripts/cloud-deploy/shutdown_instances.sh
@@ -231,7 +231,7 @@ if [ "$1" = "-st" ]; then
         aws configure set region $i
         aws ec2 stop-instances --instance-ids \
         $(aws ec2 describe-instances \
-        --filters "Name=tag:Name,Values=Parallel-bft-instance" "Name=instance-state-name,Values=running" \
+        --filters "Name=tag:Name,Values=Rl-bft-instance" "Name=instance-state-name,Values=running" \
         --query "Reservations[].Instances[].InstanceId" \
         --output text)
         # scripts/cloud-deploy/shutdown_instances.sh
