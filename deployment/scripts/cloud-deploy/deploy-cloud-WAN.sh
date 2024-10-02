@@ -225,6 +225,20 @@ if [ "$1" = "-sd" ]; then
     done
 fi
 
+if [ "$1" = "-sr" ]; then
+    shift
+    for i in "${region_list[@]}" ; do
+        aws configure set region $i
+        aws ec2 start-instances --instance-ids \
+        $(aws ec2 describe-instances \
+        --filters "Name=tag:Name,Values=RL-bft-instance" "Name=instance-state-name,Values=stopped" \
+        --query "Reservations[].Instances[].InstanceId" \
+        --output text)
+        # You can add a short sleep if needed to wait between regions
+        # sleep 5
+    done
+fi
+
 if [ "$1" = "-st" ]; then
     shift
     for i in "${region_list[@]}" ; do
