@@ -72,6 +72,12 @@ ssh $ssh_options root@$master_ip "
 
 # Start master server
 echo "Starting result processor and master server."
+echo "ssh $ssh_options root@$master_ip 
+        ulimit -Sn $open_files_limit &&
+        $remote_work_dir/scripts/analyze/analyze-continuously.sh $remote_exp_dir $remote_status_file $remote_work_dir/scripts $remote_work_dir/queries $remote_gopath/bin/orderingpeer $remote_gopath/bin/orderingclient $remote_analysis_processes > $remote_exp_dir/continuous-analysis.log 2>&1 &
+        export PATH=\$PATH:$remote_gopath/bin:$remote_work_dir/bin &&
+        discoverymaster $master_port file $remote_master_command_file > $remote_master_log 2>&1 < /dev/null"
+
 ssh $ssh_options root@$master_ip "
   ulimit -Sn $open_files_limit &&
   $remote_work_dir/scripts/analyze/analyze-continuously.sh $remote_exp_dir $remote_status_file $remote_work_dir/scripts $remote_work_dir/queries $remote_gopath/bin/orderingpeer $remote_gopath/bin/orderingclient $remote_analysis_processes > $remote_exp_dir/continuous-analysis.log 2>&1 &
