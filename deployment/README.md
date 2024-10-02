@@ -8,7 +8,7 @@ Next, it describes how to run experiments:
 
 Finally, it describes how to export plots from the experimental results.
 
-**All the following commands should be run with `ladon/deployment` as working directory.**
+**All the following commands should be run with `mirbft/deployment` as working directory.**
 ## IBM cloud setup
 
 Scripts to install and setup IBM Cloud CLI are under `scripts/setup` directory: 
