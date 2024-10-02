@@ -1,338 +1,0 @@
-Waiting for master server.
-Warning: Identity file ibmcloud-ssh-key not accessible: No such file or directory.
-cat: /root/master-ready: No such file or directory
-Master not ready. Retrying in 5 seconds.
-Warning: Identity file ibmcloud-ssh-key not accessible: No such file or directory.
-cat: /root/master-ready: No such file or directory
-Master not ready. Retrying in 5 seconds.
-Warning: Identity file ibmcloud-ssh-key not accessible: No such file or directory.
-cat: /root/master-ready: No such file or directory
-Master not ready. Retrying in 5 seconds.
-Warning: Identity file ibmcloud-ssh-key not accessible: No such file or directory.
-cat: /root/master-ready: No such file or directory
-Master not ready. Retrying in 5 seconds.
-Warning: Identity file ibmcloud-ssh-key not accessible: No such file or directory.
-Warning: Identity file ibmcloud-ssh-key not accessible: No such file or directory.
-Warning: Permanently added '54.164.176.82' (ED25519) to the list of known hosts.
-receiving incremental file list
-orderingclient
-              0   0%    0.00kB/s    0:00:00        4,456,448  28%    3.73MB/s    0:00:02       15,591,853 100%    8.10MB/s    0:00:01 (xfr#1, to-chk=1/2)
-orderingpeer
-              0   0%    0.00kB/s    0:00:00        9,175,040  54%    7.64MB/s    0:00:00       16,873,104 100%    9.89MB/s    0:00:01 (xfr#2, to-chk=0/2)
-Warning: Identity file ibmcloud-ssh-key not accessible: No such file or directory.
-Warning: Permanently added '54.164.176.82' (ED25519) to the list of known hosts.
-receiving incremental file list
-run-protoc.sh
-              0   0%    0.00kB/s    0:00:00              239 100%  233.40kB/s    0:00:00 (xfr#1, to-chk=156/157)
-announcer/
-announcer/announcer.go
-              0   0%    0.00kB/s    0:00:00            1,096 100%    4.67kB/s    0:00:00 (xfr#2, to-chk=135/157)
-checkpoint/
-checkpoint/checkpointer.go
-              0   0%    0.00kB/s    0:00:00            2,258 100%    9.63kB/s    0:00:00 (xfr#3, to-chk=134/157)
-checkpoint/common.go
-              0   0%    0.00kB/s    0:00:00            1,463 100%    6.24kB/s    0:00:00 (xfr#4, to-chk=133/157)
-checkpoint/signingcheckpointer.go
-              0   0%    0.00kB/s    0:00:00           10,377 100%   44.06kB/s    0:00:00 (xfr#5, to-chk=132/157)
-checkpoint/simplecheckpointer.go
-              0   0%    0.00kB/s    0:00:00            6,733 100%   28.59kB/s    0:00:00 (xfr#6, to-chk=131/157)
-cmd/
-cmd/contentiontest/
-cmd/contentiontest/main.go
-              0   0%    0.00kB/s    0:00:00           17,750 100%   75.37kB/s    0:00:00 (xfr#7, to-chk=122/157)
-cmd/discoverymaster/
-cmd/discoverymaster/main.go
-              0   0%    0.00kB/s    0:00:00            3,166 100%   13.44kB/s    0:00:00 (xfr#8, to-chk=121/157)
-cmd/discoveryslave/
-cmd/discoveryslave/main.go
-              0   0%    0.00kB/s    0:00:00            8,103 100%   34.40kB/s    0:00:00 (xfr#9, to-chk=120/157)
-cmd/grpctest/
-cmd/grpctest/main.go
-              0   0%    0.00kB/s    0:00:00            8,031 100%   34.10kB/s    0:00:00 (xfr#10, to-chk=119/157)
-cmd/oldmirdiscovery/
-cmd/oldmirdiscovery/main.go
-              0   0%    0.00kB/s    0:00:00            2,896 100%   12.30kB/s    0:00:00 (xfr#11, to-chk=118/157)
-cmd/orderingclient/
-cmd/orderingclient/client.go
-              0   0%    0.00kB/s    0:00:00           26,854 100%  113.53kB/s    0:00:00 (xfr#12, to-chk=117/157)
-cmd/orderingclient/localclient.go
-              0   0%    0.00kB/s    0:00:00            6,213 100%   26.27kB/s    0:00:00 (xfr#13, to-chk=116/157)
-cmd/orderingclient/main.go
-              0   0%    0.00kB/s    0:00:00            3,438 100%   14.53kB/s    0:00:00 (xfr#14, to-chk=115/157)
-cmd/orderingpeer/
-cmd/orderingpeer/main.go
-              0   0%    0.00kB/s    0:00:00           16,652 100%   70.40kB/s    0:00:00 (xfr#15, to-chk=114/157)
-cmd/playground/
-cmd/playground/main.go
-              0   0%    0.00kB/s    0:00:00           20,799 100%   44.64kB/s    0:00:00 (xfr#16, to-chk=113/157)
-config/
-config/config.go
-              0   0%    0.00kB/s    0:00:00           12,479 100%   26.78kB/s    0:00:00 (xfr#17, to-chk=112/157)
-config/config.yml
-              0   0%    0.00kB/s    0:00:00            9,723 100%   20.87kB/s    0:00:00 (xfr#18, to-chk=111/157)
-crypto/
-crypto/crypto.go
-              0   0%    0.00kB/s    0:00:00            5,897 100%   12.66kB/s    0:00:00 (xfr#19, to-chk=110/157)
-crypto/ecdsa.go
-              0   0%    0.00kB/s    0:00:00            2,440 100%    5.24kB/s    0:00:00 (xfr#20, to-chk=109/157)
-crypto/tbls.go
-              0   0%    0.00kB/s    0:00:00            7,587 100%   16.28kB/s    0:00:00 (xfr#21, to-chk=108/157)
-crypto/tbls_test.go
-              0   0%    0.00kB/s    0:00:00            7,125 100%   15.26kB/s    0:00:00 (xfr#22, to-chk=107/157)
-discovery/
-discovery/client.go
-              0   0%    0.00kB/s    0:00:00            2,906 100%    6.22kB/s    0:00:00 (xfr#23, to-chk=106/157)
-discovery/const.go
-              0   0%    0.00kB/s    0:00:00            1,100 100%    2.36kB/s    0:00:00 (xfr#24, to-chk=105/157)
-discovery/master.go
-              0   0%    0.00kB/s    0:00:00           12,726 100%   27.25kB/s    0:00:00 (xfr#25, to-chk=104/157)
-discovery/rpcs.go
-              0   0%    0.00kB/s    0:00:00           11,408 100%   24.43kB/s    0:00:00 (xfr#26, to-chk=103/157)
-discovery/server.go
-              0   0%    0.00kB/s    0:00:00            7,126 100%   15.26kB/s    0:00:00 (xfr#27, to-chk=102/157)
-log/
-log/entry.go
-              0   0%    0.00kB/s    0:00:00              996 100%    2.13kB/s    0:00:00 (xfr#28, to-chk=101/157)
-log/log.go
-              0   0%    0.00kB/s    0:00:00           12,335 100%   26.42kB/s    0:00:00 (xfr#29, to-chk=100/157)
-log/log_test.go
-              0   0%    0.00kB/s    0:00:00            3,685 100%    7.89kB/s    0:00:00 (xfr#30, to-chk=99/157)
-manager/
-manager/contiguoussegment.go
-              0   0%    0.00kB/s    0:00:00            2,010 100%    4.30kB/s    0:00:00 (xfr#31, to-chk=98/157)
-manager/dummymanager.go
-              0   0%    0.00kB/s    0:00:00            9,701 100%   20.73kB/s    0:00:00 (xfr#32, to-chk=97/157)
-manager/leaderpolicies.go
-              0   0%    0.00kB/s    0:00:00            7,904 100%   16.89kB/s    0:00:00 (xfr#33, to-chk=96/157)
-manager/manager.go
-              0   0%    0.00kB/s    0:00:00            4,773 100%   10.20kB/s    0:00:00 (xfr#34, to-chk=95/157)
-manager/mirmanager.go
-              0   0%    0.00kB/s    0:00:00           20,710 100%   40.78kB/s    0:00:00 (xfr#35, to-chk=94/157)
-manager/segment.go
-              0   0%    0.00kB/s    0:00:00            2,089 100%    4.11kB/s    0:00:00 (xfr#36, to-chk=93/157)
-manager/skippingsegment.go
-              0   0%    0.00kB/s    0:00:00            2,173 100%    4.28kB/s    0:00:00 (xfr#37, to-chk=92/157)
-membership/
-membership/membership.go
-              0   0%    0.00kB/s    0:00:00            4,631 100%    9.12kB/s    0:00:00 (xfr#38, to-chk=91/157)
-messenger/
-messenger/clients.go
-              0   0%    0.00kB/s    0:00:00           12,768 100%   25.14kB/s    0:00:00 (xfr#39, to-chk=90/157)
-messenger/peerconnection.go
-              0   0%    0.00kB/s    0:00:00           12,566 100%   24.69kB/s    0:00:00 (xfr#40, to-chk=89/157)
-messenger/peers.go
-              0   0%    0.00kB/s    0:00:00           21,503 100%   42.25kB/s    0:00:00 (xfr#41, to-chk=88/157)
-messenger/tls.go
-              0   0%    0.00kB/s    0:00:00            3,070 100%    6.03kB/s    0:00:00 (xfr#42, to-chk=87/157)
-oldmir/
-oldmir/oldmir-key
-              0   0%    0.00kB/s    0:00:00            2,602 100%    5.11kB/s    0:00:00 (xfr#43, to-chk=86/157)
-oldmir/oldmir-key.pub
-              0   0%    0.00kB/s    0:00:00              570 100%    1.12kB/s    0:00:00 (xfr#44, to-chk=85/157)
-oldmir/oldmir-start.sh
-              0   0%    0.00kB/s    0:00:00            1,743 100%    3.42kB/s    0:00:00 (xfr#45, to-chk=84/157)
-orderer/
-orderer/README.md
-              0   0%    0.00kB/s    0:00:00            6,213 100%   12.21kB/s    0:00:00 (xfr#46, to-chk=83/157)
-orderer/common.go
-              0   0%    0.00kB/s    0:00:00            5,587 100%   10.98kB/s    0:00:00 (xfr#47, to-chk=82/157)
-orderer/dummyorderer.go
-              0   0%    0.00kB/s    0:00:00            6,995 100%   13.74kB/s    0:00:00 (xfr#48, to-chk=81/157)
-orderer/hotstuffbacklog.go
-              0   0%    0.00kB/s    0:00:00            1,644 100%    3.22kB/s    0:00:00 (xfr#49, to-chk=80/157)
-orderer/hotstuffinstance.go
-              0   0%    0.00kB/s    0:00:00           29,094 100%   41.78kB/s    0:00:00 (xfr#50, to-chk=79/157)
-orderer/hotstufforderer.go
-              0   0%    0.00kB/s    0:00:00            7,092 100%   10.18kB/s    0:00:00 (xfr#51, to-chk=78/157)
-orderer/instance.go
-              0   0%    0.00kB/s    0:00:00              812 100%    1.16kB/s    0:00:00 (xfr#52, to-chk=77/157)
-orderer/orderer.go
-              0   0%    0.00kB/s    0:00:00            3,030 100%    4.35kB/s    0:00:00 (xfr#53, to-chk=76/157)
-orderer/pbftbacklog.go
-              0   0%    0.00kB/s    0:00:00            1,666 100%    2.39kB/s    0:00:00 (xfr#54, to-chk=75/157)
-orderer/pbftinstance.go
-              0   0%    0.00kB/s    0:00:00           71,589 100%  102.66kB/s    0:00:00 (xfr#55, to-chk=74/157)
-orderer/pbftorderer.go
-              0   0%    0.00kB/s    0:00:00            8,250 100%   11.83kB/s    0:00:00 (xfr#56, to-chk=73/157)
-orderer/raftinstance.go
-              0   0%    0.00kB/s    0:00:00           26,381 100%   37.78kB/s    0:00:00 (xfr#57, to-chk=72/157)
-orderer/raftorderer.go
-              0   0%    0.00kB/s    0:00:00            6,371 100%    9.12kB/s    0:00:00 (xfr#58, to-chk=71/157)
-profiling/
-profiling/cpuusage.go
-              0   0%    0.00kB/s    0:00:00            4,023 100%    5.76kB/s    0:00:00 (xfr#59, to-chk=70/157)
-profiling/profiling.go
-              0   0%    0.00kB/s    0:00:00            4,880 100%    6.99kB/s    0:00:00 (xfr#60, to-chk=69/157)
-protobufs/
-protobufs/checkpoint.pb.go
-              0   0%    0.00kB/s    0:00:00            7,816 100%   11.19kB/s    0:00:00 (xfr#61, to-chk=68/157)
-protobufs/checkpoint.proto
-              0   0%    0.00kB/s    0:00:00              249 100%    0.36kB/s    0:00:00 (xfr#62, to-chk=67/157)
-protobufs/common.pb.go
-              0   0%    0.00kB/s    0:00:00            7,525 100%   10.78kB/s    0:00:00 (xfr#63, to-chk=66/157)
-protobufs/common.proto
-              0   0%    0.00kB/s    0:00:00              226 100%    0.32kB/s    0:00:00 (xfr#64, to-chk=65/157)
-protobufs/contentiontest.pb.go
-              0   0%    0.00kB/s    0:00:00           23,709 100%   33.90kB/s    0:00:00 (xfr#65, to-chk=64/157)
-protobufs/contentiontest.proto
-              0   0%    0.00kB/s    0:00:00              666 100%    0.95kB/s    0:00:00 (xfr#66, to-chk=63/157)
-protobufs/discovery.pb.go
-              0   0%    0.00kB/s    0:00:00           49,909 100%   71.36kB/s    0:00:00 (xfr#67, to-chk=62/157)
-protobufs/discovery.proto
-              0   0%    0.00kB/s    0:00:00            2,828 100%    4.04kB/s    0:00:00 (xfr#68, to-chk=61/157)
-protobufs/dummyorderer.pb.go
-              0   0%    0.00kB/s    0:00:00            4,963 100%    7.10kB/s    0:00:00 (xfr#69, to-chk=60/157)
-protobufs/dummyorderer.proto
-              0   0%    0.00kB/s    0:00:00              169 100%    0.24kB/s    0:00:00 (xfr#70, to-chk=59/157)
-protobufs/hotstufforderer.pb.go
-              0   0%    0.00kB/s    0:00:00           16,270 100%   23.26kB/s    0:00:00 (xfr#71, to-chk=58/157)
-protobufs/hotstufforderer.proto
-              0   0%    0.00kB/s    0:00:00              731 100%    1.05kB/s    0:00:00 (xfr#72, to-chk=57/157)
-protobufs/messenger.pb.go
-              0   0%    0.00kB/s    0:00:00           47,511 100%   67.83kB/s    0:00:00 (xfr#73, to-chk=56/157)
-protobufs/messenger.proto
-              0   0%    0.00kB/s    0:00:00            1,907 100%    2.72kB/s    0:00:00 (xfr#74, to-chk=55/157)
-protobufs/monitor.pb.go
-              0   0%    0.00kB/s    0:00:00           16,020 100%   22.87kB/s    0:00:00 (xfr#75, to-chk=54/157)
-protobufs/monitor.proto
-              0   0%    0.00kB/s    0:00:00              614 100%    0.88kB/s    0:00:00 (xfr#76, to-chk=53/157)
-protobufs/nodeidentity.pb.go
-              0   0%    0.00kB/s    0:00:00            5,842 100%    8.34kB/s    0:00:00 (xfr#77, to-chk=52/157)
-protobufs/nodeidentity.proto
-              0   0%    0.00kB/s    0:00:00              225 100%    0.32kB/s    0:00:00 (xfr#78, to-chk=51/157)
-protobufs/pbftorderer.pb.go
-              0   0%    0.00kB/s    0:00:00           30,265 100%   43.21kB/s    0:00:00 (xfr#79, to-chk=50/157)
-protobufs/pbftorderer.proto
-              0   0%    0.00kB/s    0:00:00            1,570 100%    2.24kB/s    0:00:00 (xfr#80, to-chk=49/157)
-protobufs/raftorderer.pb.go
-              0   0%    0.00kB/s    0:00:00           16,288 100%   23.22kB/s    0:00:00 (xfr#81, to-chk=48/157)
-protobufs/raftorderer.proto
-              0   0%    0.00kB/s    0:00:00            1,336 100%    1.90kB/s    0:00:00 (xfr#82, to-chk=47/157)
-protobufs/request.pb.go
-              0   0%    0.00kB/s    0:00:00           24,196 100%   34.49kB/s    0:00:00 (xfr#83, to-chk=46/157)
-protobufs/request.proto
-              0   0%    0.00kB/s    0:00:00              947 100%    1.35kB/s    0:00:00 (xfr#84, to-chk=45/157)
-protobufs/testservice.pb.go
-              0   0%    0.00kB/s    0:00:00           10,128 100%   14.44kB/s    0:00:00 (xfr#85, to-chk=44/157)
-protobufs/testservice.proto
-              0   0%    0.00kB/s    0:00:00              281 100%    0.40kB/s    0:00:00 (xfr#86, to-chk=43/157)
-request/
-request/batch.go
-              0   0%    0.00kB/s    0:00:00            6,580 100%    9.38kB/s    0:00:00 (xfr#87, to-chk=42/157)
-request/bucket.go
-              0   0%    0.00kB/s    0:00:00           16,226 100%   23.13kB/s    0:00:00 (xfr#88, to-chk=41/157)
-request/bucketgroup.go
-              0   0%    0.00kB/s    0:00:00           10,119 100%   14.41kB/s    0:00:00 (xfr#89, to-chk=40/157)
-request/buffer.go
-              0   0%    0.00kB/s    0:00:00            7,807 100%   11.11kB/s    0:00:00 (xfr#90, to-chk=39/157)
-request/request.go
-              0   0%    0.00kB/s    0:00:00           15,039 100%   21.41kB/s    0:00:00 (xfr#91, to-chk=38/157)
-request/requesthandler.go
-              0   0%    0.00kB/s    0:00:00            3,811 100%    5.43kB/s    0:00:00 (xfr#92, to-chk=37/157)
-request/responder.go
-              0   0%    0.00kB/s    0:00:00            2,472 100%    3.52kB/s    0:00:00 (xfr#93, to-chk=36/157)
-statetransfer/
-statetransfer/statetransfer.go
-              0   0%    0.00kB/s    0:00:00            6,465 100%    9.20kB/s    0:00:00 (xfr#94, to-chk=35/157)
-tls-data/
-tls-data/auth.csr
-              0   0%    0.00kB/s    0:00:00            1,773 100%    2.52kB/s    0:00:00 (xfr#95, to-chk=34/157)
-tls-data/auth.key
-              0   0%    0.00kB/s    0:00:00            3,272 100%    4.66kB/s    0:00:00 (xfr#96, to-chk=33/157)
-tls-data/auth.pem
-              0   0%    0.00kB/s    0:00:00            1,980 100%    2.82kB/s    0:00:00 (xfr#97, to-chk=32/157)
-tls-data/ca.key
-              0   0%    0.00kB/s    0:00:00            3,243 100%    4.62kB/s    0:00:00 (xfr#98, to-chk=31/157)
-tls-data/ca.pem
-              0   0%    0.00kB/s    0:00:00            1,862 100%    2.65kB/s    0:00:00 (xfr#99, to-chk=30/157)
-tls-data/ca.srl
-              0   0%    0.00kB/s    0:00:00               41 100%    0.06kB/s    0:00:00 (xfr#100, to-chk=29/157)
-tls-data/client-ecdsa-224.csr
-              0   0%    0.00kB/s    0:00:00              513 100%    0.73kB/s    0:00:00 (xfr#101, to-chk=28/157)
-tls-data/client-ecdsa-224.key
-              0   0%    0.00kB/s    0:00:00              221 100%    0.31kB/s    0:00:00 (xfr#102, to-chk=27/157)
-tls-data/client-ecdsa-224.pem
-              0   0%    0.00kB/s    0:00:00            1,245 100%    1.77kB/s    0:00:00 (xfr#103, to-chk=26/157)
-tls-data/client-ecdsa-256.csr
-              0   0%    0.00kB/s    0:00:00              538 100%    0.76kB/s    0:00:00 (xfr#104, to-chk=25/157)
-tls-data/client-ecdsa-256.key
-              0   0%    0.00kB/s    0:00:00              241 100%    0.34kB/s    0:00:00 (xfr#105, to-chk=24/157)
-tls-data/client-ecdsa-256.pem
-              0   0%    0.00kB/s    0:00:00            1,261 100%    1.79kB/s    0:00:00 (xfr#106, to-chk=23/157)
-tls-data/client-ecdsa-384.csr
-              0   0%    0.00kB/s    0:00:00              623 100%    0.89kB/s    0:00:00 (xfr#107, to-chk=22/157)
-tls-data/client-ecdsa-384.key
-              0   0%    0.00kB/s    0:00:00              306 100%    0.43kB/s    0:00:00 (xfr#108, to-chk=21/157)
-tls-data/client-ecdsa-384.pem
-              0   0%    0.00kB/s    0:00:00            1,302 100%    1.85kB/s    0:00:00 (xfr#109, to-chk=20/157)
-tls-data/client-rsa-2048.csr
-              0   0%    0.00kB/s    0:00:00            1,074 100%    1.53kB/s    0:00:00 (xfr#110, to-chk=19/157)
-tls-data/client-rsa-2048.key
-              0   0%    0.00kB/s    0:00:00            1,704 100%    2.31kB/s    0:00:00 (xfr#111, to-chk=18/157)
-tls-data/client-rsa-2048.pem
-              0   0%    0.00kB/s    0:00:00            1,537 100%    2.08kB/s    0:00:00 (xfr#112, to-chk=17/157)
-tls-data/client-rsa-4096.csr
-              0   0%    0.00kB/s    0:00:00            1,765 100%    2.39kB/s    0:00:00 (xfr#113, to-chk=16/157)
-tls-data/client-rsa-4096.key
-              0   0%    0.00kB/s    0:00:00            3,276 100%    4.44kB/s    0:00:00 (xfr#114, to-chk=15/157)
-tls-data/client-rsa-4096.pem
-              0   0%    0.00kB/s    0:00:00            1,883 100%    2.55kB/s    0:00:00 (xfr#115, to-chk=14/157)
-tls-data/generate-auth.sh
-              0   0%    0.00kB/s    0:00:00            1,518 100%    2.05kB/s    0:00:00 (xfr#116, to-chk=13/157)
-tls-data/generate-ca.sh
-              0   0%    0.00kB/s    0:00:00              867 100%    1.17kB/s    0:00:00 (xfr#117, to-chk=12/157)
-tls-data/generate-client.sh
-              0   0%    0.00kB/s    0:00:00            2,938 100%    3.97kB/s    0:00:00 (xfr#118, to-chk=11/157)
-tls-data/generate.sh
-              0   0%    0.00kB/s    0:00:00              498 100%    0.67kB/s    0:00:00 (xfr#119, to-chk=10/157)
-tls-data/openssl-local.conf
-              0   0%    0.00kB/s    0:00:00              312 100%    0.42kB/s    0:00:00 (xfr#120, to-chk=9/157)
-tls-data/openssl.conf
-              0   0%    0.00kB/s    0:00:00              291 100%    0.39kB/s    0:00:00 (xfr#121, to-chk=8/157)
-tls-data/plot-timeline.py
-              0   0%    0.00kB/s    0:00:00            2,080 100%    2.81kB/s    0:00:00 (xfr#122, to-chk=7/157)
-tracing/
-tracing/bufferedtrace.go
-              0   0%    0.00kB/s    0:00:00            9,889 100%   13.38kB/s    0:00:00 (xfr#123, to-chk=6/157)
-tracing/directtrace.go
-              0   0%    0.00kB/s    0:00:00            4,109 100%    5.56kB/s    0:00:00 (xfr#124, to-chk=5/157)
-tracing/event.go
-              0   0%    0.00kB/s    0:00:00            1,802 100%    2.44kB/s    0:00:00 (xfr#125, to-chk=4/157)
-tracing/trace.go
-              0   0%    0.00kB/s    0:00:00            2,050 100%    2.77kB/s    0:00:00 (xfr#126, to-chk=3/157)
-tracing/tracing.go
-              0   0%    0.00kB/s    0:00:00            1,349 100%    1.82kB/s    0:00:00 (xfr#127, to-chk=2/157)
-util/
-util/channelbuffer.go
-              0   0%    0.00kB/s    0:00:00            2,451 100%    3.31kB/s    0:00:00 (xfr#128, to-chk=1/157)
-validator/
-validator/validator.go
-              0   0%    0.00kB/s    0:00:00              763 100%    1.03kB/s    0:00:00 (xfr#129, to-chk=0/157)
-Warning: Identity file ibmcloud-ssh-key not accessible: No such file or directory.
-Master status: RUNNING
-Warning: Identity file ibmcloud-ssh-key not accessible: No such file or directory.
-Warning: Identity file ibmcloud-ssh-key not accessible: No such file or directory.
-Warning: Identity file ibmcloud-ssh-key not accessible: No such file or directory.
-Warning: Identity file ibmcloud-ssh-key not accessible: No such file or directory.
-Warning: Identity file ibmcloud-ssh-key not accessible: No such file or directory.
-Warning: Identity file ibmcloud-ssh-key not accessible: No such file or directory.
-Warning: Identity file ibmcloud-ssh-key not accessible: No such file or directory.
-Warning: Identity file ibmcloud-ssh-key not accessible: No such file or directory.
-Warning: Identity file ibmcloud-ssh-key not accessible: No such file or directory.
-Warning: Identity file ibmcloud-ssh-key not accessible: No such file or directory.
-Warning: Identity file ibmcloud-ssh-key not accessible: No such file or directory.
-Warning: Identity file ibmcloud-ssh-key not accessible: No such file or directory.
-Warning: Identity file ibmcloud-ssh-key not accessible: No such file or directory.
-Warning: Identity file ibmcloud-ssh-key not accessible: No such file or directory.
-Warning: Identity file ibmcloud-ssh-key not accessible: No such file or directory.
-Warning: Identity file ibmcloud-ssh-key not accessible: No such file or directory.
-Warning: Identity file ibmcloud-ssh-key not accessible: No such file or directory.
-Warning: Identity file ibmcloud-ssh-key not accessible: No such file or directory.
-Warning: Identity file ibmcloud-ssh-key not accessible: No such file or directory.
-Warning: Identity file ibmcloud-ssh-key not accessible: No such file or directory.
-Warning: Identity file ibmcloud-ssh-key not accessible: No such file or directory.
-Warning: Identity file ibmcloud-ssh-key not accessible: No such file or directory.
-Warning: Identity file ibmcloud-ssh-key not accessible: No such file or directory.
-Warning: Identity file ibmcloud-ssh-key not accessible: No such file or directory.
-Warning: Identity file ibmcloud-ssh-key not accessible: No such file or directory.
-Warning: Identity file ibmcloud-ssh-key not accessible: No such file or directory.

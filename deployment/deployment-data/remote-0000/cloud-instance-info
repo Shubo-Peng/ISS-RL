@@ -1,6 +1,0 @@
-master 54.164.176.82 54.164.176.82 master us-west-2a
-client 54.208.240.2 54.208.240.2 1client us-west-2a
-p1 3.8.159.83 3.8.159.83 peers us-west-2a
-p2 3.8.189.2 3.8.189.2 peers us-west-2a
-p3 43.203.195.186 43.203.195.186 peers us-west-2a
-p4 13.211.23.251 13.211.23.251 peers us-west-2a
