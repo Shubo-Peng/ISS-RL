@@ -37,10 +37,10 @@ machineLocations="fra05"
 faultyMachineLocations="sjc04 osa23 ams03 syd05 lon06 wdc07 che01 tok05 par01 dal10 fra05 mil01 mex01 tor01 tor04 seo01"
 
 # number of client instances per node for 1/16/32 client machines
-clients1=""    # deploys 1 client machine which run the specified number of client instances
-clients16="8"    # deploys 16 client machine which run the specified number of client instances
+clients1="1"    # deploys 1 client machine which run the specified number of client instances
+clients16=""    # deploys 16 client machine which run the specified number of client instances
 clients32=""    # deploys 32 client machine which run the specified number of client instances
-systemSizes="8" # Must be sorted in ascending order!
+systemSizes="4" # Must be sorted in ascending order!
 failureCounts=(0) # For each system size, the corresponding failure count (on top of the correct nodes)
 fixBatchRate=true
 networkInterface="ens5"
