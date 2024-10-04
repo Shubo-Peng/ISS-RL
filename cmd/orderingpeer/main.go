@@ -190,201 +190,206 @@ func main() {
 	go ord.Start(&wg)
 
 	// set up a GRPC connection.
-	conn, err := grpc.Dial(trainer_addr, grpc.WithInsecure(), grpc.WithBlock())
+	logger.Info().Msg("Try to set up a GRPC connection.")
+
+	ctx, cancel := context.WithTimeout(context.Background(), 5*time.Second)
+	defer cancel()
+
+	conn, err := grpc.DialContext(ctx, trainer_addr, grpc.WithInsecure(), grpc.WithBlock())
 	if err != nil {
 		// log.Fatalf("did not connect: %v", err)
-		logger.Fatal().Err(err).Msg("cannot set up the gRPC connection.")
-	}
-	defer conn.Close()
-	c := pb.NewMetricsServiceClient(conn)
-
-	// try to connect to the trainer
-	response, err := c.Connect(context.Background(), &pb.Timestamp{
-		Timestamp: time.Now().UnixNano(),
-	})
-	if err != nil {
-		logger.Fatal().Err(err).Msg("cannot connect.")
-	}
-	start_time := response.GetTimestamp()
-	// start_time := time.Now().UnixNano() + 5000000000
-
-	// send latency, throughput, workload, BS, BT, Leader to agent
-	// and modify the config by the output of RL agent every 20s
-	// use rule-based method to modify the config every 1s
-	go func() {
-		// Old code:
-		file, _ := os.OpenFile(fmt.Sprintf("../../../train/state%d.txt", ownID), os.O_CREATE|os.O_WRONLY|os.O_TRUNC, 0777)
-		// factor := 1
-		// lastD, lastR := int64(0), int64(0)
-		// for {
-		// 	latency, throughput := float32(1000), float32(0)
-		// 	if config.CommittedRequests[ownID] > int64(lastR) {
-		// 		latency = float32((config.TotalDelay[ownID] - lastD)) / float32(1e6) / float32((config.CommittedRequests[ownID] - lastR))
-		// 		throughput = float32((config.CommittedRequests[ownID] - lastR)) / float32(factor)
-		// 	}
-		// 	// #, byte, ms, # of requests/s, %, %
-		// 	file.WriteString(fmt.Sprintf("%8d\t%10.4f\t%8d\t%10.4f\t%10.2f\t%8.2f\t%8d\t%8d\t%8d\n", config.TotalRequests, float32(config.TotalPayload)/1024, (config.ProposedRequests[ownID] - config.CommittedRequests[ownID]), float32(config.PRPayload[ownID])/1024, latency, throughput, config.Config.BatchSize, config.Config.BatchTimeout, time.Now().UnixNano()/1000))
-		// 	lastD = config.TotalDelay[ownID]
-		// 	lastR = config.CommittedRequests[ownID]
-		// 	config.TotalRequests = 0
-		// 	config.TotalPayload = 0
-		// 	time.Sleep(time.Second * time.Duration(factor))
-		// }
-
-		// wait until the harmonization time to start
-		total_count, now_rule, next_rule := 0, int64(0), start_time-1000000000
-		now_RL, next_RL := int64(0), start_time+500000000
-		flag, lastD, lastR := true, int64(0), int64(0)
-		// Requests, binary, Smax, lastThr := 0, 0, 0, 0
-		msg := &pb.MetricsRequest{}
-
-		for i := 0; i < 10; i++ {
-			if i > 0 {
-				statistics[i].pre = &statistics[i-1]
-			} else {
-				statistics[i].pre = &statistics[9]
-			}
-			if i < 9 {
-				statistics[i].nxt = &statistics[i+1]
-			} else {
-				statistics[i].nxt = &statistics[0]
-			}
+		logger.Error().Err(err).Msg("cannot set up the gRPC connection.")
+	} else {
+		c := pb.NewMetricsServiceClient(conn) // try to connect to the trainer
+		response, err := c.Connect(context.Background(), &pb.Timestamp{
+			Timestamp: time.Now().UnixNano(),
+		})
+		if err != nil {
+			logger.Error().Err(err).Msg("cannot connect.")
 		}
-		sta_pointer, MTP, enough, avg_requests, avg_throughput := &statistics[0], 1, false, int32(0), int32(0)
-		// MTP = MTP * 2 / 2
+		start_time := response.GetTimestamp()
+		// start_time := time.Now().UnixNano() + 5000000000
 
+		// send latency, throughput, workload, BS, BT, Leader to agent
+		// and modify the config by the output of RL agent every 20s
+		// use rule-based method to modify the config every 1s
 		go func() {
+			// Old code:
+			file, _ := os.OpenFile(fmt.Sprintf("../../../train/state%d.txt", ownID), os.O_CREATE|os.O_WRONLY|os.O_TRUNC, 0777)
+			// factor := 1
+			// lastD, lastR := int64(0), int64(0)
+			// for {
+			// 	latency, throughput := float32(1000), float32(0)
+			// 	if config.CommittedRequests[ownID] > int64(lastR) {
+			// 		latency = float32((config.TotalDelay[ownID] - lastD)) / float32(1e6) / float32((config.CommittedRequests[ownID] - lastR))
+			// 		throughput = float32((config.CommittedRequests[ownID] - lastR)) / float32(factor)
+			// 	}
+			// 	// #, byte, ms, # of requests/s, %, %
+			// 	file.WriteString(fmt.Sprintf("%8d\t%10.4f\t%8d\t%10.4f\t%10.2f\t%8.2f\t%8d\t%8d\t%8d\n", config.TotalRequests, float32(config.TotalPayload)/1024, (config.ProposedRequests[ownID] - config.CommittedRequests[ownID]), float32(config.PRPayload[ownID])/1024, latency, throughput, config.Config.BatchSize, config.Config.BatchTimeout, time.Now().UnixNano()/1000))
+			// 	lastD = config.TotalDelay[ownID]
+			// 	lastR = config.CommittedRequests[ownID]
+			// 	config.TotalRequests = 0
+			// 	config.TotalPayload = 0
+			// 	time.Sleep(time.Second * time.Duration(factor))
+			// }
+
+			// wait until the harmonization time to start
+			total_count, now_rule, next_rule := 0, int64(0), start_time-1000000000
+			now_RL, next_RL := int64(0), start_time+500000000
+			flag, lastD, lastR := true, int64(0), int64(0)
+			// Requests, binary, Smax, lastThr := 0, 0, 0, 0
+			msg := &pb.MetricsRequest{}
+
+			for i := 0; i < 10; i++ {
+				if i > 0 {
+					statistics[i].pre = &statistics[i-1]
+				} else {
+					statistics[i].pre = &statistics[9]
+				}
+				if i < 9 {
+					statistics[i].nxt = &statistics[i+1]
+				} else {
+					statistics[i].nxt = &statistics[0]
+				}
+			}
+			sta_pointer, MTP, enough, avg_requests, avg_throughput := &statistics[0], 1, false, int32(0), int32(0)
+			// MTP = MTP * 2 / 2
+
+			go func() {
+				for {
+					now_RL, next_RL = time.Now().UnixNano(), next_RL+int64(MTP)*1000000000
+					if now_RL < next_RL {
+						time.Sleep(time.Duration((next_RL-now_RL)/1000) * time.Microsecond)
+					}
+					logger.Info().Int64("timestamp", time.Now().UnixNano()).Msg("send metrics to agent.")
+					msg_lock.Lock()
+					tmp_msg := msg
+					msg = &pb.MetricsRequest{}
+					msg_lock.Unlock()
+					response, err := c.SendMetrics(context.Background(), tmp_msg)
+					if err != nil {
+						logger.Fatal().Err(err).Msg("cannot send metrics.")
+					}
+					logger.Info().Int64("timestamp", time.Now().UnixNano()).Msg("receive response and modify the config")
+					config.Config.BatchSize = int(response.GetBatchSize())
+					config.Config.BatchTimeoutMs = int(response.GetBatchTimeout())
+					config.Config.BatchTimeout = time.Duration(config.Config.BatchTimeoutMs) * time.Millisecond
+				}
+			}()
+
 			for {
-				now_RL, next_RL = time.Now().UnixNano(), next_RL+int64(MTP)*1000000000
-				if now_RL < next_RL {
-					time.Sleep(time.Duration((next_RL-now_RL)/1000) * time.Microsecond)
+				now_rule, next_rule = time.Now().UnixNano(), next_rule+int64(1)*1000000000
+				if now_rule < next_rule {
+					time.Sleep(time.Duration((next_rule-now_rule)/1000) * time.Microsecond)
 				}
-				logger.Info().Int64("timestamp", time.Now().UnixNano()).Msg("send metrics to agent.")
+				latency, throughput := int32(1000), int32(0)
+				if config.CommittedRequests[ownID] > int64(lastR) {
+					latency = int32((config.TotalDelay[ownID] - lastD) / int64(1e6) / (config.CommittedRequests[ownID] - lastR))
+					throughput = int32(config.CommittedRequests[ownID] - lastR)
+				}
+				if flag {
+					flag, lastD, lastR = false, config.TotalDelay[ownID], config.CommittedRequests[ownID]
+					total_count, config.TotalRequests, config.TotalPayload = total_count+1, 0, 0
+					continue
+				}
+				lastD, lastR = config.TotalDelay[ownID], config.CommittedRequests[ownID]
+				TotalRequests, TotalPayload := config.TotalRequests, config.TotalPayload
+				total_count, config.TotalRequests, config.TotalPayload = total_count+1, 0, 0
+
+				logger.Info().Int32("times", int32(total_count)).Int64("timestamp", time.Now().UnixNano()).Msg("collect metrics.")
+				file.WriteString(fmt.Sprintf("%8d\t%8d\t%8d\t%10d\t%8d\t%8d\t%8d\n", throughput, latency, TotalRequests, TotalPayload, config.Config.BatchSize, config.Config.BatchTimeoutMs, mm.GETLEADERS()[0]))
+
 				msg_lock.Lock()
-				tmp_msg := msg
-				msg = &pb.MetricsRequest{}
+				msg.Throughput = append(msg.Throughput, throughput)
+				msg.Latency = append(msg.Latency, latency)
+				msg.Requests = append(msg.Requests, int32(TotalRequests))
+				msg.RequestsSize = append(msg.RequestsSize, int32(TotalPayload))
+				msg.BatchSize = append(msg.BatchSize, int32(config.Config.BatchSize))
+				msg.BatchTimeout = append(msg.BatchTimeout, int32(config.Config.BatchTimeoutMs))
+				msg.Leader = append(msg.Leader, mm.GETLEADERS()[0])
 				msg_lock.Unlock()
-				response, err := c.SendMetrics(context.Background(), tmp_msg)
-				if err != nil {
-					logger.Fatal().Err(err).Msg("cannot send metrics.")
+
+				if !enough {
+					avg_requests = avg_requests + int32(TotalRequests)
+					avg_throughput = avg_throughput + throughput
+					sta_pointer.requests = int32(TotalRequests)
+					sta_pointer.throughput = throughput
+					sta_pointer = sta_pointer.nxt
+					if sta_pointer == &statistics[0] {
+						enough = true
+					}
+				} else {
+					// Requests = int(avg_requests)
+					// avg_requests = avg_requests - sta_pointer.requests + int32(TotalRequests)
+					// avg_throughput = avg_throughput - sta_pointer.throughput + throughput
+					// sta_pointer.requests = int32(TotalRequests)
+					// sta_pointer.throughput = throughput
+					// sta_pointer = sta_pointer.nxt
+					// if Requests == 0 || ownID != msg.Leader[len(msg.Leader)-1] {
+					// 	continue
+					// }
+					// if avg_throughput*21 >= avg_requests*20 {
+					// 	binary, lastThr = 0, 0
+					// } else {
+					// 	if binary == 0 {
+					// 		binary = config.Config.BatchSize
+					// 		config.Config.BatchSize = config.Config.BatchSize * int(avg_requests) / Requests
+					// 		// TODO: consider the CPU
+					// 		if config.Config.BatchSize > binary {
+					// 			Smax = Min(config.Config.BatchSize-binary, 500)
+					// 		} else {
+					// 			Smax = Max(config.Config.BatchSize-binary, -500)
+					// 		}
+					// 	} else if lastThr == 0 {
+					// 		lastThr = int(avg_throughput)
+					// 		config.Config.BatchSize = binary + Smax
+					// 	} else {
+					// 		// TODO: 还需要判断有相等的情况，这种情况batchsize就不再变了
+					// 		if avg_throughput*20 <= int32(lastThr)*19 {
+					// 			Smax /= 2
+					// 		} else if avg_throughput*20 <= int32(lastThr)*21 {
+					// 			binary, lastThr = 0, 0
+					// 		} else {
+					// 			lastThr = int(avg_throughput)
+					// 			binary = config.Config.BatchSize
+					// 		}
+					// 		config.Config.BatchSize = binary + Smax
+					// 	}
+					// }
+					if config.Config.BatchSize <= 100 {
+						config.Config.BatchSize = 100
+						// binary = 0
+					} else if config.Config.BatchSize >= 5000 {
+						config.Config.BatchSize = 5000
+						// binary = 0
+					}
 				}
-				logger.Info().Int64("timestamp", time.Now().UnixNano()).Msg("receive response and modify the config")
-				config.Config.BatchSize = int(response.GetBatchSize())
-				config.Config.BatchTimeoutMs = int(response.GetBatchTimeout())
-				config.Config.BatchTimeout = time.Duration(config.Config.BatchTimeoutMs) * time.Millisecond
+				// else {
+				// 	response, err := c.SendMetrics(context.Background(), msg)
+				// 	if err != nil {
+				// 		logger.Fatal().Err(err).Msg("cannot send metrics.")
+				// 	}
+				// 	config.Config.BatchSize = int(response.GetBatchSize())
+				// 	config.Config.BatchTimeoutMs = int(response.GetBatchTimeout())
+				// 	config.Config.BatchTimeout = time.Duration(config.Config.BatchTimeoutMs) * time.Millisecond
+				// 	cnt, msg = 0, &pb.MetricsRequest{}
+				// }
+
+				// time.Sleep(time.Second)
 			}
 		}()
 
-		for {
-			now_rule, next_rule = time.Now().UnixNano(), next_rule+int64(1)*1000000000
-			if now_rule < next_rule {
-				time.Sleep(time.Duration((next_rule-now_rule)/1000) * time.Microsecond)
-			}
-			latency, throughput := int32(1000), int32(0)
-			if config.CommittedRequests[ownID] > int64(lastR) {
-				latency = int32((config.TotalDelay[ownID] - lastD) / int64(1e6) / (config.CommittedRequests[ownID] - lastR))
-				throughput = int32(config.CommittedRequests[ownID] - lastR)
-			}
-			if flag {
-				flag, lastD, lastR = false, config.TotalDelay[ownID], config.CommittedRequests[ownID]
-				total_count, config.TotalRequests, config.TotalPayload = total_count+1, 0, 0
-				continue
-			}
-			lastD, lastR = config.TotalDelay[ownID], config.CommittedRequests[ownID]
-			TotalRequests, TotalPayload := config.TotalRequests, config.TotalPayload
-			total_count, config.TotalRequests, config.TotalPayload = total_count+1, 0, 0
+		// modify the batchSize, batchTimeOut and so on.
+		// TODO: specify the "so on" part
+		// go func() {
+		// 	for {
+		// 		config.LoadParameters()
+		// 		time.Sleep(10 * time.Millisecond)
+		// 	}
+		// }()
+	}
 
-			logger.Info().Int32("times", int32(total_count)).Int64("timestamp", time.Now().UnixNano()).Msg("collect metrics.")
-			file.WriteString(fmt.Sprintf("%8d\t%8d\t%8d\t%10d\t%8d\t%8d\t%8d\n", throughput, latency, TotalRequests, TotalPayload, config.Config.BatchSize, config.Config.BatchTimeoutMs, mm.GETLEADERS()[0]))
-
-			msg_lock.Lock()
-			msg.Throughput = append(msg.Throughput, throughput)
-			msg.Latency = append(msg.Latency, latency)
-			msg.Requests = append(msg.Requests, int32(TotalRequests))
-			msg.RequestsSize = append(msg.RequestsSize, int32(TotalPayload))
-			msg.BatchSize = append(msg.BatchSize, int32(config.Config.BatchSize))
-			msg.BatchTimeout = append(msg.BatchTimeout, int32(config.Config.BatchTimeoutMs))
-			msg.Leader = append(msg.Leader, mm.GETLEADERS()[0])
-			msg_lock.Unlock()
-
-			if !enough {
-				avg_requests = avg_requests + int32(TotalRequests)
-				avg_throughput = avg_throughput + throughput
-				sta_pointer.requests = int32(TotalRequests)
-				sta_pointer.throughput = throughput
-				sta_pointer = sta_pointer.nxt
-				if sta_pointer == &statistics[0] {
-					enough = true
-				}
-			} else {
-				// Requests = int(avg_requests)
-				// avg_requests = avg_requests - sta_pointer.requests + int32(TotalRequests)
-				// avg_throughput = avg_throughput - sta_pointer.throughput + throughput
-				// sta_pointer.requests = int32(TotalRequests)
-				// sta_pointer.throughput = throughput
-				// sta_pointer = sta_pointer.nxt
-				// if Requests == 0 || ownID != msg.Leader[len(msg.Leader)-1] {
-				// 	continue
-				// }
-				// if avg_throughput*21 >= avg_requests*20 {
-				// 	binary, lastThr = 0, 0
-				// } else {
-				// 	if binary == 0 {
-				// 		binary = config.Config.BatchSize
-				// 		config.Config.BatchSize = config.Config.BatchSize * int(avg_requests) / Requests
-				// 		// TODO: consider the CPU
-				// 		if config.Config.BatchSize > binary {
-				// 			Smax = Min(config.Config.BatchSize-binary, 500)
-				// 		} else {
-				// 			Smax = Max(config.Config.BatchSize-binary, -500)
-				// 		}
-				// 	} else if lastThr == 0 {
-				// 		lastThr = int(avg_throughput)
-				// 		config.Config.BatchSize = binary + Smax
-				// 	} else {
-				// 		// TODO: 还需要判断有相等的情况，这种情况batchsize就不再变了
-				// 		if avg_throughput*20 <= int32(lastThr)*19 {
-				// 			Smax /= 2
-				// 		} else if avg_throughput*20 <= int32(lastThr)*21 {
-				// 			binary, lastThr = 0, 0
-				// 		} else {
-				// 			lastThr = int(avg_throughput)
-				// 			binary = config.Config.BatchSize
-				// 		}
-				// 		config.Config.BatchSize = binary + Smax
-				// 	}
-				// }
-				if config.Config.BatchSize <= 100 {
-					config.Config.BatchSize = 100
-					// binary = 0
-				} else if config.Config.BatchSize >= 5000 {
-					config.Config.BatchSize = 5000
-					// binary = 0
-				}
-			}
-			// else {
-			// 	response, err := c.SendMetrics(context.Background(), msg)
-			// 	if err != nil {
-			// 		logger.Fatal().Err(err).Msg("cannot send metrics.")
-			// 	}
-			// 	config.Config.BatchSize = int(response.GetBatchSize())
-			// 	config.Config.BatchTimeoutMs = int(response.GetBatchTimeout())
-			// 	config.Config.BatchTimeout = time.Duration(config.Config.BatchTimeoutMs) * time.Millisecond
-			// 	cnt, msg = 0, &pb.MetricsRequest{}
-			// }
-
-			// time.Sleep(time.Second)
-		}
-	}()
-
-	// modify the batchSize, batchTimeOut and so on.
-	// TODO: specify the "so on" part
-	// go func() {
-	// 	for {
-	// 		config.LoadParameters()
-	// 		time.Sleep(10 * time.Millisecond)
-	// 	}
-	// }()
+	defer conn.Close()
 
 	// Wait for all modules to finish.
 	wg.Wait()
