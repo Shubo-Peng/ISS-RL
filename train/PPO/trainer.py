@@ -29,7 +29,7 @@ requests = []
 old_state = []
 cnt = 0
 score = 0
-global model, scores
+global model, scores, metrics
 model_path = "ppo_model_checkpoint.pth"
 
 # MAX_EPISODE = 10000
@@ -152,14 +152,14 @@ class MetricsServiceServicer(monitor_pb2_grpc.MetricsServiceServicer):
             with received_msg_lock:
                 received_msg += 1
             requests.append(request)
-            # if request.requests[-1] > 0:
-            #     batchSize = int(request.BatchSize[-1])
-            #     batchTimeout = request.BatchTimeout[-1]
+            if request.requests[-1] > 0:
+                batchSize = int(request.BatchSize[-1])
+                batchTimeout = request.BatchTimeout[-1]
             if received_msg < num_node:
                 all_received.wait()
             else:
                 received_msg = 0
-                batchSize, batchTimeout = modelUpdate()
+                batchSize, batchTimeout = modelUpdate(batchSize, batchTimeout, False)
                 all_received.notify_all()
         
         response = monitor_pb2.MetricsResponse(
@@ -190,6 +190,7 @@ def getLength(requests):
     return min(length)
 
 def handleMetrics(requests, length):
+    global metrics
     thr, lat, rqs, size, BS, BT, lead = [], [], [], [], [], [], []
     for i in range(length):
         tmp_thr, tmp_lat, tmp_rqs, tmp_size, tmp_BS, tmp_BT, tmp_lead = [], [], [], [], [], [], []
@@ -210,17 +211,22 @@ def handleMetrics(requests, length):
         BS.append(statistics.mode(tmp_BS))
         BT.append(statistics.mode(tmp_BT))
         lead.append(statistics.mode(tmp_lead))
+        metrics.write('{:8d}\t{:8.2f}\t{:8d}\t{:8.2f}\t{:8d}\t{:8d}\t{:8d}\n'.format(thr[-1], lat[-1], rqs[-1], size[-1], BS[-1], BT[-1], lead[-1]))
+        metrics.flush()
     return thr, lat, rqs, size, BS, BT, lead
 
 def Normalized(state):
     return (state - np.mean(state, axis=0)) / np.std(state, axis=0)
 
-def modelUpdate():
+def modelUpdate(batchsize, batchtimeout, flag):
     global model, scores, cnt, requests, old_state, score
     # score = 0
     length = getLength(requests)
     thr, lat, rqs, size, BS, BT, lead = handleMetrics(requests, length)
     requests = []
+
+    if not flag:
+        return batchsize, batchtimeout
 
     if len(old_state) == 0:
         old_state = np.array([thr[0], lat[0], rqs[0], size[0], BS[0], BT[0], lead[0]])
@@ -233,7 +239,8 @@ def modelUpdate():
         prob_a, prob_b = model.pi(torch.from_numpy(Normalized(old_state)).float())
         # print("model update", i, prob_a)
 
-        a = (torch.abs(A_values - math.log2(BS[i]/old_state[4]))).argmin().item()
+        # a = (torch.abs(A_values - math.log2(BS[i]/old_state[4]))).argmin().item()
+        a = (torch.abs(A_values - BS[i])).argmin().item()
         b = (torch.abs(B_values - BT[i])).argmin().item()
         # print(a,b,A_values[a].item(),B_values[b].item())
 
@@ -266,9 +273,10 @@ def modelUpdate():
 
     
 def main():
-    global model, scores
+    global model, scores, metrics
     model = PPO()
     scores = open("scores.txt",'w')
+    metrics = open("metrics.txt",'w')
 
     if os.path.exists(model_path):
         checkpoint = torch.load(model_path)
