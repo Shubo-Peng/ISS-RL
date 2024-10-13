@@ -30,8 +30,6 @@ const (
 )
 
 var submittedRequests = 0
-var timestamp_rate = int64(0)
-var timestamp_size = int64(0)
 
 type client struct {
 	sync.Mutex
@@ -282,12 +280,50 @@ func (c *client) Run(wg *sync.WaitGroup) {
 
 		timeBetweenRequests := int64(1000000 / config.Config.RequestRate)
 		nextSubmitTime := time.Now().UnixNano() / 1000 // Submit first request immediately
-		timestamp_rate = time.Now().UnixNano() / 1000000000
-		timestamp_size = time.Now().UnixNano() / 1000000000
+
+		go func() {
+			for {
+				time.Sleep(1 * time.Second)
+				c.log.Info().
+					Int("RequestRate", config.Config.RequestRate).
+					Int32("ClientID", c.ownClientID).
+					Msg("RequestRate and ClientID output.")
+			}
+		}()
+
+		go func() {
+			for {
+				time.Sleep(120 * time.Second)
+				c.log.Info().Msg("Change request rate.")
+				if config.Config.RequestRate == 1000 {
+					config.Config.RequestRate = 8000
+				} else if config.Config.RequestRate == 8000 {
+					config.Config.RequestRate = 125
+				} else if config.Config.RequestRate == 125 {
+					config.Config.RequestRate = 1000
+				}
+				timeBetweenRequests = int64(1000000 / config.Config.RequestRate)
+			}
+		}()
+
+		go func() {
+			for {
+				time.Sleep(40 * time.Second)
+				c.log.Info().Msg("Change request size.")
+				if config.Config.RequestPayloadSize == 200 {
+					config.Config.RequestPayloadSize = 1000
+				} else if config.Config.RequestPayloadSize == 1000 {
+					config.Config.RequestPayloadSize = 50
+				} else if config.Config.RequestPayloadSize == 50 {
+					config.Config.RequestPayloadSize = 200
+				}
+				randomRequestPayload = make([]byte, config.Config.RequestPayloadSize)
+				rand.Read(randomRequestPayload)
+			}
+		}()
 
 		// Submit requests
 		var i int32
-		tmp_count, tmp_cnt := 0, 0
 		for i = int32(0); i < int32(c.numRequests) && atomic.LoadInt32(&c.stop) == 0; i++ {
 
 			// Before submitting each request, wait for some time to respect the maximum request rate.
@@ -316,11 +352,8 @@ func (c *client) Run(wg *sync.WaitGroup) {
 			}
 
 			// blocks while watermark window is full
-			tmp_count = tmp_count + 1
-			if tmp_count == 1 {
-				c.submitRequest(int32(tmp_cnt), &timeBetweenRequests)
-				tmp_count, tmp_cnt = 0, tmp_cnt+1
-			}
+			c.submitRequest(i)
+
 		}
 		c.log.Info().Int32("nReq", i).Msg("Finished submitting requests.")
 		atomic.StoreInt32(&c.stop, 1) // A non-zero value of the stop variable halts the request submissions.
@@ -408,7 +441,7 @@ func (c *client) sendRequests(ordererID int32, clientStub pb.Messenger_RequestCl
 
 // Submits a single client request with sequence number seqNr.
 // Blocks until the request fits in the client watermark window.
-func (c *client) submitRequest(seqNr int32, timeBetweenRequests *int64) {
+func (c *client) submitRequest(seqNr int32) {
 
 	var req *pb.ClientRequest = nil
 	if config.Config.PrecomputeRequests {
@@ -459,39 +492,6 @@ func (c *client) submitRequest(seqNr int32, timeBetweenRequests *int64) {
 			// TODO: change the payLoadSize and requestsRate every $requestsThreshold requests submitted
 			// submittedRequests += 1
 			// if submittedRequests >= requestsThreshold {
-			if time.Now().UnixNano()/1000000000-timestamp_rate > 100 {
-				c.log.Info().Msg("Change request rate.")
-				// randomRequestPayload will vary randomly within the range plus or minus 70% of the original
-				// factor := rand.Float64()*1.4 - 0.7
-				// randomRequestPayload = make([]byte, int(float64(config.Config.RequestPayloadSize)*(1+factor)))
-				// rand.Read(randomRequestPayload)
-				// requestRate will vary randomly within the range plus or minus 70% of the original
-				// factor := rand.Float64()*1.4 - 0.7
-				// *timeBetweenRequests = int64(1000000 / int(float64(config.Config.RequestRate)*(1+factor)))
-				// submittedRequests = 0
-				timestamp_rate = time.Now().UnixNano() / 1000000000
-				if config.Config.RequestRate == 1000 {
-					config.Config.RequestRate = 10000
-				} else if config.Config.RequestRate == 10000 {
-					config.Config.RequestRate = 100
-				} else {
-					config.Config.RequestRate = 1000
-				}
-				*timeBetweenRequests = int64(1000000 / config.Config.RequestRate)
-			}
-			if time.Now().UnixNano()/1000000000-timestamp_size > 30 {
-				c.log.Info().Msg("Change request size.")
-				timestamp_size = time.Now().UnixNano() / 1000000000
-				if config.Config.RequestPayloadSize == 200 {
-					config.Config.RequestPayloadSize = 1000
-				} else if config.Config.RequestPayloadSize == 1000 {
-					config.Config.RequestPayloadSize = 50
-				} else if config.Config.RequestPayloadSize == 50 {
-					config.Config.RequestPayloadSize = 200
-				}
-				randomRequestPayload = make([]byte, config.Config.RequestPayloadSize)
-				rand.Read(randomRequestPayload)
-			}
 		} else {
 			c.log.Warn().Int32("ordererId", ordererID).Msg("Not sending request to orderer. No connection established.")
 		}

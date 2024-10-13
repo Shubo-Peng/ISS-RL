@@ -23,12 +23,15 @@ lmbda = 0.98
 eps_clip = 0.1
 K_epoch = 2
 T_horizon = 10
-c_thr, c_lat = 1, -2
+c_thr, c_lat = 1, -4
 
 requests = []
 old_state = []
 cnt = 0
 score = 0
+notify_counter = 0
+max_notify_count = 36
+
 global model, scores, metrics
 model_path = "ppo_model_checkpoint.pth"
 
@@ -36,7 +39,7 @@ model_path = "ppo_model_checkpoint.pth"
 
 # Discretization
 # A_values = torch.linspace(-5, 5, 41)
-A_values = torch.linspace(100, 5000, 50).int()
+A_values = torch.linspace(100, 7000, 70).int()
 B_values = torch.linspace(100, 4000, 40).int() # BatchTimeout
 
 num_node = 4
@@ -50,8 +53,8 @@ class PPO(nn.Module):
         self.data = []
         hidden_dims = 256
         self.fc1 = nn.Linear(7, hidden_dims)
-        self.fc_pi_a = nn.Linear(hidden_dims, 41)
-        self.fc2 = nn.Linear(hidden_dims + 41, hidden_dims)
+        self.fc_pi_a = nn.Linear(hidden_dims, 70)
+        self.fc2 = nn.Linear(hidden_dims + 70, hidden_dims)
         self.fc_pi_b = nn.Linear(hidden_dims, 40)
         self.fc_v = nn.Linear(hidden_dims, 1)  # Value output
         self.optimizer = optim.Adam(self.parameters(), lr=learning_rate)
@@ -159,6 +162,10 @@ class MetricsServiceServicer(monitor_pb2_grpc.MetricsServiceServicer):
                 all_received.wait()
             else:
                 received_msg = 0
+                notify_counter += 1
+                if notify_counter > max_notify_count:
+                    print("One cycle completed. Quit running.")
+                    os._exit(0)
                 batchSize, batchTimeout = modelUpdate(batchSize, batchTimeout, False)
                 all_received.notify_all()
         
@@ -245,10 +252,10 @@ def modelUpdate(batchsize, batchtimeout, flag):
         # print(a,b,A_values[a].item(),B_values[b].item())
 
         reward = c_thr * old_state[0] + c_lat * old_state[1]
-        if reward == 0 : reward = -10000
-        model.put_data((Normalized(old_state), a, b, reward/10000, Normalized(new_state), prob_a[a].item(), prob_b[b].item()))
+        if reward == 0 : reward = -40000
+        model.put_data((Normalized(old_state), a, b, reward/40000, Normalized(new_state), prob_a[a].item(), prob_b[b].item()))
 
-        score, old_state = score+reward, new_state
+        score, old_state = score+reward/40000, new_state
 
     # if length > 0:
     if len(model.data) >= T_horizon:
